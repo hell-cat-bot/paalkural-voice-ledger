@@ -2,10 +2,10 @@
 
 **Category fit:** Noise Canceller · Mixed Vibes (Tamil/Tanglish) · Main Character
 
-**Entrant:** [your name] — solo
-**Repo:** [link after pushing `C:\Hackathons\Gnani\paalkural`]
-**Demo video:** `video/out/paalkural-demo.mp4` (72 s, 1080p, English narration, soft captions)
-**Posts:** [LinkedIn URL] · [X URL]
+**Entrants:** Ayandeep Bharadwaj | Prasenjeet Tiwari
+**Repo:** https://github.com/hell-cat-bot/paalkural-voice-ledger
+**Demo video:** `video/out/paalkural-demo-3min.mp4` (2 min 34 s, 1080p, English narration by Gnani Timbre v2.5)
+**One-page pitch:** `submission/PaalKural-solution-pitch.pdf` (A4; source: `submission/solution-pitch.html`)
 
 ---
 
@@ -24,11 +24,11 @@ This is a complete product, not a filter feature. It ships an operator console (
 | Model | Where | Status |
 | --- | --- | --- |
 | **Gnani Prisma v3.0** STT | Live console + video + 192-call provider check (`data/benchmark-gnani.json`) | **live, used** |
-| **Gnani Timbre v2.5** TTS | Tamil readback in the console and video | **live, used** |
+| **Gnani Timbre v2.5** TTS | Tamil readback in the console; English narration of the 2:34 demo (voice Nalini) | **live, used** |
 | faster-whisper **medium** (CTranslate2), float16, CUDA, beam 5 | Frozen 192-run local benchmark; no-key fallback | local, used |
 | edge-tts **ta-IN-PallaviNeural** at −6% | Readback fallback when no key is loaded | local, fallback |
 | edge-tts **ta-IN-ValluvarNeural** at −18% | 24 synthetic fixture voices (Microsoft Edge TTS) | local, used |
-| edge-tts **en-IN-NeerjaNeural** at −4% | Demo video narration | local, used |
+| edge-tts **en-IN-NeerjaNeural** at −4% | Narration of the earlier 72 s cut, kept in the repo | local, used |
 
 The live provider check is a separate artifact. The frozen benchmark and its claim remain local faster-whisper runs so they can be reproduced without a key; the two results are never merged.
 

@@ -1,12 +1,16 @@
-1
-00:00:00,100 --> 00:00:03,251
-The evidence lab keeps two books.
+WEBVTT
 
-2
-00:00:03,201 --> 00:00:12,276
-The frozen local benchmark reports the negative result; the live provider check reruns the same matrix through Gnani Prisma.
+00:00:00.200 --> 00:00:02.786
+The Evidence Lab keeps two separate books.
 
-3
-00:00:12,276 --> 00:00:18,839
-192 calls, no errors, no silent errors at any line level.
+00:00:03.106 --> 00:00:10.995
+Book one is our frozen local benchmark, and it reports a negative result: the filtered front end did not consistently beat raw audio.
 
+00:00:11.315 --> 00:00:15.364
+So the product ships two listens and a gate, not a magic filter.
+
+00:00:15.684 --> 00:00:27.726
+Book two reruns the same matrix live through Gnani Prisma: 192 calls, zero errors, and zero silent errors in every noise condition, across 24 synthetic clips, our benchmark.
+
+00:00:28.046 --> 00:00:30.632
+The gate, not the filter, is the claim.

@@ -1,0 +1,265 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>PaalKural — one-page solution pitch</title>
+<style>
+  @font-face { font-family:'Bricolage Grotesque'; font-style:normal; font-weight:400 800; src:url(../static/fonts/bricolage-grotesque-400-800-latin.woff2) format('woff2'); }
+  @font-face { font-family:'IBM Plex Mono'; font-style:normal; font-weight:400; src:url(../static/fonts/ibm-plex-mono-400-latin.woff2) format('woff2'); }
+  @font-face { font-family:'IBM Plex Mono'; font-style:normal; font-weight:500; src:url(../static/fonts/ibm-plex-mono-500-latin.woff2) format('woff2'); }
+  @font-face { font-family:'IBM Plex Mono'; font-style:normal; font-weight:600; src:url(../static/fonts/ibm-plex-mono-600-latin.woff2) format('woff2'); }
+  @font-face { font-family:'IBM Plex Sans'; font-style:normal; font-weight:400; src:url(../static/fonts/ibm-plex-sans-400-latin.woff2) format('woff2'); }
+  @font-face { font-family:'Noto Sans Tamil'; font-style:normal; font-weight:400; src:url(../static/fonts/noto-sans-tamil-400-tamil.woff2) format('woff2'); }
+
+  :root { --ink:#12211f; --paper:#fbf8f1; --indigo:#263b6b; --turmeric:#d99a1b; --red:#d5482e; --steel:#66736e; --line:#d9d2c2; --green:#1f7a5c; }
+  * { margin:0; padding:0; box-sizing:border-box; }
+  html, body { background:#e9e4d8; }
+  body { font-family:'IBM Plex Sans', sans-serif; color:var(--ink); -webkit-print-color-adjust:exact; print-color-adjust:exact; }
+
+  .sheet {
+    width:210mm; height:297mm; margin:0 auto; background:var(--paper); position:relative; overflow:hidden;
+    padding:9mm 13mm 7mm;
+    background-image:repeating-linear-gradient(to bottom, transparent 0, transparent 7.2mm, rgba(18,33,31,.045) 7.2mm, rgba(18,33,31,.045) 7.35mm);
+  }
+  .top-rule { position:absolute; top:0; left:0; right:0; height:3.2mm; background:var(--indigo); }
+  .top-rule:after { content:""; position:absolute; top:3.2mm; left:0; right:0; height:1.1mm; background:var(--turmeric); }
+
+  .mono { font-family:'IBM Plex Mono', monospace; }
+  .label { font-family:'IBM Plex Mono', monospace; font-size:6.4pt; letter-spacing:.17em; text-transform:uppercase; color:var(--steel); }
+  .label b { color:var(--ink); font-weight:500; }
+
+  header { display:flex; justify-content:space-between; align-items:flex-start; margin-top:2.2mm; }
+  .brand { display:flex; align-items:baseline; gap:3mm; }
+  .brand-ta { font-family:'Noto Sans Tamil', sans-serif; font-size:14pt; color:var(--indigo); }
+  .brand-en { font-family:'IBM Plex Mono', monospace; font-size:8pt; letter-spacing:.3em; font-weight:600; color:var(--indigo); }
+  .meta { text-align:right; font-family:'IBM Plex Mono', monospace; font-size:6.2pt; letter-spacing:.09em; color:var(--steel); line-height:1.65; text-transform:uppercase; }
+  .meta b { color:var(--ink); font-weight:500; }
+
+  h1 { font-family:'Bricolage Grotesque', sans-serif; font-weight:600; font-size:26pt; line-height:.96; letter-spacing:-.035em; margin-top:5mm; }
+  h1 em { font-style:normal; color:var(--red); }
+  .lead { margin-top:2.6mm; font-size:9.2pt; line-height:1.4; max-width:157mm; color:#2c3835; }
+  .lead b { font-weight:600; color:var(--ink); }
+  .flowline { margin-top:2.4mm; display:flex; align-items:center; gap:2mm; font-family:'IBM Plex Mono', monospace; font-size:6.6pt; letter-spacing:.08em; color:var(--indigo); text-transform:uppercase; }
+  .flowline span.sep { color:var(--turmeric); font-size:8pt; }
+  .flowline span.end { color:var(--green); }
+
+  section { margin-top:2.8mm; }
+  .rule { height:.35mm; background:var(--line); margin-bottom:2.4mm; }
+  h2 { font-family:'Bricolage Grotesque', sans-serif; font-weight:600; font-size:11.8pt; letter-spacing:-.015em; margin-top:1.4mm; }
+  h2 em { font-style:normal; color:var(--red); }
+
+  .problem-row { display:grid; grid-template-columns:1fr 1fr 1fr; gap:5mm; margin-top:2.2mm; }
+  .problem-row p { font-size:8.6pt; line-height:1.4; color:#35423e; }
+  .problem-row p b { color:var(--ink); font-weight:600; }
+  .tick { color:var(--red); font-family:'IBM Plex Mono', monospace; font-size:7pt; margin-right:1.2mm; }
+
+  .steps { display:grid; grid-template-columns:repeat(4,1fr); gap:3mm; margin-top:2mm; }
+  .step { border-top:.5mm solid var(--indigo); padding-top:2.2mm; }
+  .step .n { font-family:'IBM Plex Mono', monospace; font-size:7pt; color:var(--turmeric); letter-spacing:.1em; }
+  .step h3 { font-family:'Bricolage Grotesque', sans-serif; font-size:9.6pt; font-weight:600; letter-spacing:-.01em; margin-top:1mm; }
+  .step p { font-size:7.7pt; line-height:1.34; color:#35423e; margin-top:1.2mm; }
+  .step p b { font-weight:600; color:var(--ink); }
+
+  .moment { margin-top:3mm; background:var(--ink); color:var(--paper); padding:2.8mm 4.2mm 3mm; position:relative; }
+  .moment .label { color:#9fb0a9; }
+  .moment h2 { color:var(--paper); font-size:11.4pt; margin-top:.8mm; }
+  .gate { display:grid; grid-template-columns:1fr 1fr 28mm 1fr; align-items:stretch; gap:2.4mm; margin-top:2mm; }
+  .listen { border:.3mm solid rgba(251,248,241,.28); padding:2.2mm 2.6mm 2.4mm; background:rgba(251,248,241,.04); }
+  .listen .tag { font-family:'IBM Plex Mono', monospace; font-size:5.8pt; letter-spacing:.15em; color:#9fb0a9; text-transform:uppercase; }
+  .listen .val { font-family:'Bricolage Grotesque', sans-serif; font-size:15pt; line-height:1; margin-top:1.2mm; }
+  .listen .val small { font-family:'IBM Plex Mono', monospace; font-size:7pt; color:#c9d3cd; margin-left:1mm; letter-spacing:.05em; }
+  .listen .ok { font-family:'IBM Plex Mono', monospace; font-size:5.8pt; letter-spacing:.08em; color:#8fc3ae; margin-top:1.2mm; text-transform:uppercase; }
+  .listen.clean .val { color:var(--turmeric); }
+  .stampcell { display:flex; align-items:center; justify-content:center; }
+  .stamp { border:.6mm solid var(--red); color:#ff8a72; font-family:'IBM Plex Mono', monospace; font-weight:600; font-size:10pt; letter-spacing:.16em; padding:1.8mm 2.4mm; transform:rotate(-4deg); text-transform:uppercase; white-space:nowrap; }
+  .write { border:.3mm solid rgba(251,248,241,.28); display:flex; flex-direction:column; justify-content:center; padding:2mm 2.6mm; gap:1.6mm; }
+  .write .bar { font-family:'IBM Plex Mono', monospace; font-size:5.8pt; letter-spacing:.14em; color:#9fb0a9; text-transform:uppercase; }
+  .write .track { height:5.4mm; border:.3mm solid rgba(213,72,46,.8); position:relative; overflow:hidden; background:rgba(213,72,46,.16); }
+  .write .fill { position:absolute; inset:0; background:rgba(18,33,31,.72); display:flex; align-items:center; justify-content:center; font-family:'IBM Plex Mono', monospace; font-size:5.5pt; letter-spacing:.12em; color:#ffb3a2; text-transform:uppercase; }
+  .moment .caption { margin-top:1.8mm; display:flex; justify-content:space-between; gap:6mm; font-size:7.8pt; line-height:1.4; color:#d7ded8; }
+  .moment .caption b { color:#fff; font-weight:600; }
+  .moment .caption .receipt { font-family:'IBM Plex Mono', monospace; font-size:6.6pt; letter-spacing:.06em; color:#9fb0a9; text-align:right; white-space:nowrap; line-height:1.7; }
+
+  .wins { display:grid; grid-template-columns:1fr 1fr; gap:2mm 6mm; margin-top:2mm; }
+  .win { display:grid; grid-template-columns:5.6mm 1fr; gap:2mm; align-items:baseline; }
+  .win .mark { font-family:'Bricolage Grotesque', sans-serif; font-size:13pt; color:var(--red); line-height:1; }
+  .win h3 { font-family:'Bricolage Grotesque', sans-serif; font-size:9pt; font-weight:600; letter-spacing:-.01em; }
+  .win p { font-size:7.6pt; line-height:1.34; color:#35423e; margin-top:.8mm; }
+  .win p b { font-weight:600; color:var(--ink); }
+
+  .proof { display:grid; grid-template-columns:repeat(4,1fr); gap:3.6mm; margin-top:2mm; }
+  .stat { border-left:.5mm solid var(--turmeric); padding-left:2.4mm; }
+  .stat .big { font-family:'Bricolage Grotesque', sans-serif; font-size:16.5pt; line-height:.95; letter-spacing:-.02em; }
+  .stat .big small { font-size:10pt; color:var(--steel); letter-spacing:0; }
+  .stat p { font-size:6.7pt; line-height:1.3; color:#47534f; margin-top:1.2mm; }
+  .scope { font-size:6.6pt; line-height:1.4; color:#5b6864; margin-top:1.8mm; }
+  .scope b { color:var(--ink); font-weight:600; }
+
+  .impact { display:grid; grid-template-columns:repeat(3,1fr); gap:5mm; margin-top:2.4mm; }
+  .impact .who { font-family:'IBM Plex Mono', monospace; font-size:6.4pt; letter-spacing:.12em; text-transform:uppercase; color:var(--indigo); }
+  .impact p { font-size:7.6pt; line-height:1.32; color:#35423e; margin-top:1mm; }
+  .impact p b { font-weight:600; color:var(--ink); }
+
+  footer { position:absolute; left:13mm; right:13mm; bottom:5.5mm; border-top:.35mm solid var(--line); padding-top:1.7mm; display:grid; grid-template-columns:66mm 1fr; gap:8mm; font-family:'IBM Plex Mono', monospace; font-size:5.5pt; line-height:1.55; letter-spacing:.03em; color:#6d7a76; }
+  footer b { color:var(--ink); font-weight:500; }
+
+  @page { size:A4; margin:0; }
+  @media print { html, body { background:var(--paper); } .sheet { margin:0; } }
+</style>
+</head>
+<body>
+<div class="sheet">
+  <div class="top-rule"></div>
+
+  <header>
+    <div class="brand">
+      <span class="brand-ta">பால்குரல்</span>
+      <span class="brand-en">PAALKURAL</span>
+    </div>
+    <div class="meta">
+      <b>Solution pitch · 2026</b><br>
+      Great Indian AI Internship Challenge<br>
+      Category fit: Noise Canceller · Mixed Vibes · Main Character
+    </div>
+  </header>
+
+  <h1>Listen twice.<br>Write once. <em>Or refuse.</em></h1>
+  <p class="lead">A wrong pour entry is money paid for milk that was never poured. PaalKural turns a spoken Tamil or Tanglish pour into <b>one confirmed ledger entry</b> for a milk society: two independent listens check the member, litres, fat and shift, and a disagreement blocks the write until the operator decides.</p>
+
+  <section>
+    <div class="rule"></div>
+    <div class="label">The problem</div>
+    <h2>A transcript is not an entry.</h2>
+    <div class="problem-row">
+      <p><span class="tick">●</span><b>The line is loud.</b> Fans, cans, people — the operator is writing down money by ear.</p>
+      <p><span class="tick">●</span><b>Speech-to-text returns words,</b> not numbers that have been checked against a roster and a range.</p>
+      <p><span class="tick">●</span><b>A confident wrong number</b> becomes a wrong payment, and nobody notices until the books are reconciled.</p>
+    </div>
+  </section>
+
+  <section>
+    <div class="rule"></div>
+    <div class="label">The solution · how one pour moves</div>
+    <div class="steps">
+      <div class="step">
+        <div class="n">01</div>
+        <h3>Listen twice</h3>
+        <p>The same clip is decoded raw, then again after a band-limit and spectral gate. In this build both listens are live <b>Gnani Prisma</b>.</p>
+      </div>
+      <div class="step">
+        <div class="n">02</div>
+        <h3>Compile four facts</h3>
+        <p>A deterministic compiler turns each transcript into <b>member · litres · fat · shift</b>, then checks the roster and valid ranges.</p>
+      </div>
+      <div class="step">
+        <div class="n">03</div>
+        <h3>Gate the write</h3>
+        <p>Both agree → pre-fill. One validates → pre-fill. Both valid but different → <b>CHECK blocks the log</b>. Neither → re-ask in Tamil.</p>
+      </div>
+      <div class="step">
+        <div class="n">04</div>
+        <h3>Read back, confirm</h3>
+        <p>The operator hears the entry in Tamil and confirms. The receipt stores transcript, correction, provider and <b>audit hash</b>; the day book exports to CSV.</p>
+      </div>
+    </div>
+  </section>
+
+  <div class="moment">
+    <div class="label">The moment that matters · demo clip b05 at 15 dB</div>
+    <h2>When the listens disagree, it refuses to choose.</h2>
+    <div class="gate">
+      <div class="listen raw">
+        <div class="tag">Listen 1 · raw</div>
+        <div class="val">4.7 <small>% FAT</small></div>
+        <div class="ok">✓ passed validation</div>
+      </div>
+      <div class="listen clean">
+        <div class="tag">Listen 2 · conditioned</div>
+        <div class="val">4.0 <small>% FAT</small></div>
+        <div class="ok">✓ passed validation</div>
+      </div>
+      <div class="stampcell"><div class="stamp">Check</div></div>
+      <div class="write">
+        <div class="bar">Ledger write</div>
+        <div class="track"><div class="fill">Blocked until resolved</div></div>
+      </div>
+    </div>
+    <div class="caption">
+      <div>Both answers are plausible. A transcript-only app has to pick one. PaalKural makes the disagreement <b>the operator's decision</b>: keep 4.7, save, and the entry lands as a receipt — ₹107.00, fully traceable.</div>
+      <div class="receipt">Receipt E-0907AE<br>Audit hash 5a9ea86add4a</div>
+    </div>
+  </div>
+
+  <section>
+    <div class="rule"></div>
+    <div class="label">Why it wins</div>
+    <div class="wins">
+      <div class="win">
+        <div class="mark">✳</div>
+        <div>
+          <h3>It refuses to guess.</h3>
+          <p>A split listen stops the write. A bad turn costs a re-ask, not a wrong payout.</p>
+        </div>
+      </div>
+      <div class="win">
+        <div class="mark">✳</div>
+        <div>
+          <h3>It ships the evidence — including the bad news.</h3>
+          <p>On our own 24-clip benchmark the filter alone did not beat raw. We published that negative result and built the gate that does.</p>
+        </div>
+      </div>
+      <div class="win">
+        <div class="mark">✳</div>
+        <div>
+          <h3>It is a complete product, not a filter demo.</h3>
+          <p>Operator console, ledger, receipts, CSV day book, Evidence Lab, live replay and 26 automated tests.</p>
+        </div>
+      </div>
+      <div class="win">
+        <div class="mark">✳</div>
+        <div>
+          <h3>It speaks the line's language.</h3>
+          <p>Tamil/Tanglish code-mix in, Tamil readback out, typed fallback when the line is too loud — all in a browser.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="rule"></div>
+    <div class="label">The evidence · 24 synthetic Tamil/Tanglish clips, 4 noise conditions, our benchmark</div>
+    <div class="proof">
+      <div class="stat"><div class="big">24</div><p>clips × 4 conditions (clean, 15, 5, 0 dB) × 2 listens</p></div>
+      <div class="stat"><div class="big">192+192</div><p>frozen local runs and live Prisma calls; 0 live API errors</p></div>
+      <div class="stat"><div class="big">0</div><p>silent errors in every condition — live Prisma gate</p></div>
+      <div class="stat"><div class="big">26</div><p>tests: parser variants, ranges, all gate outcomes, export</p></div>
+    </div>
+    <p class="scope">The gate pre-filled <b>22/24</b> clean and <b>12/24</b> at 5 dB with <b>0 silent errors</b> in the frozen local book; the live book pre-filled <b>20/24</b> clean with 0 silent errors at every level. The books stay separate: the frozen benchmark is local faster-whisper, never a Gnani result.</p>
+  </section>
+
+  <section>
+    <div class="rule"></div>
+    <div class="label">Why it matters</div>
+    <div class="impact">
+      <div>
+        <div class="who">For the operator</div>
+        <p>A disagreement becomes <b>a question, not a wrong payment</b> — and confirmation is by ear, in Tamil.</p>
+      </div>
+      <div>
+        <div class="who">For the society</div>
+        <p>Every rupee in the day book carries <b>a transcript, a receipt and an audit hash</b>.</p>
+      </div>
+      <div>
+        <div class="who">For trust</div>
+        <p>When a member disputes a pour, the line can show <b>what was heard and what was decided</b> — no one has to take a number on faith.</p>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div><b>Built for the Great Indian AI Internship Challenge</b><br>Solo entry · demo 2 min 34 s · real UI footage</div>
+    <div style="text-align:right">Synthetic voices, names and pours only; no field data. Live Gnani Prisma STT + Timbre TTS via a participant-supplied key; the frozen benchmark is a local faster-whisper run.</div>
+  </footer>
+</div>
+</body>
+</html>

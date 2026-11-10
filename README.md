@@ -3,7 +3,9 @@
 A two-listen Tamil/Tanglish voice ledger for a milk collection line.
 The operator speaks a pour; the line writes one confirmed entry, or refuses.
 
-**Demo video:** [`video/out/paalkural-demo.mp4`](video/out/paalkural-demo.mp4) — 72 s, English narration, English soft captions, real UI footage. A separate [`paalkural-demo.srt`](video/out/paalkural-demo.srt) is included.
+**Demo video:** [`video/out/paalkural-demo-3min.mp4`](video/out/paalkural-demo-3min.mp4) — 2 min 34 s, English narration spoken by **Gnani Timbre v2.5** (Nalini), English soft captions, real UI footage plus two concept overlays. The SRT ships as [`paalkural-demo-3min.srt`](video/out/paalkural-demo-3min.srt); the earlier 72 s cut remains at [`paalkural-demo.mp4`](video/out/paalkural-demo.mp4).
+
+**One-page pitch:** [`submission/PaalKural-solution-pitch.pdf`](submission/PaalKural-solution-pitch.pdf) — the problem, the four-step gate, the evidence and the impact on one A4 page.
 
 **Disclosure:** this build runs live on **Gnani Prisma v3.0 STT** and **Timbre v2.5 TTS** through a participant-supplied key. The frozen 192-run benchmark is a separate local faster-whisper run, kept local so its claim can be reproduced; a live provider check over the same matrix is reported next to it, never merged into it. Every voice, name, member number and pour in this repository is synthetic.
 
@@ -198,8 +200,8 @@ video/      narration, overlays, config, captions, final mp4
 
 ## Demo path in the video
 
-1. **b12 at 5 dB** — babble and cans; both live Prisma listens agree on 127 · 3.0 L · 4.4% · evening; the sheet pre-fills; the operator confirms the Tamil readback and writes receipt `E-3F13FD`.
-2. **b05 at 15 dB** — raw hears fat 4.7, the conditioned listen hears 4.0; both pass validation, so the sheet stamps CHECK and blocks the log. The operator keeps the raw value (4.7), saves, and receipt `E-A4C126` lands with amount ₹107.00 instead of a silent entry.
+1. **b12 at 5 dB** — babble and cans; both live Prisma listens agree on 127 · 3.0 L · 4.4% · evening; the sheet pre-fills; the operator confirms the Tamil readback and writes receipt `E-DAF88B` (audit hash `5ceb0f2a3875`).
+2. **b05 at 15 dB** — raw hears fat 4.7, the conditioned listen hears 4.0; both pass validation, so the sheet stamps CHECK and blocks the log. The operator keeps the raw value (4.7), saves, and receipt `E-0907AE` lands with audit hash `5a9ea86add4a` and amount ₹107.00 instead of a silent entry.
 3. **Evidence** — the frozen local book, the live provider check (192 calls, 0 errors, 0 silent wrong in its gate), the chart and the two-path policy table.
 4. **Outro** — live Prisma/Timbre through a participant-supplied key; the frozen benchmark stays local; synthetic voices and pours.
 

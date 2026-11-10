@@ -1,12 +1,13 @@
-1
-00:00:00,100 --> 00:00:06,271
-At five decibels, with babble and cans, both live Prisma listens agree.
+WEBVTT
 
-2
-00:00:06,221 --> 00:00:11,260
-The sheet pre-fills, and the operator confirms the Tamil readback.
+00:00:00.200 --> 00:00:05.189
+This is a five-decibel line: a fan, clinking cans, people talking.
 
-3
-00:00:11,260 --> 00:00:14,451
-One entry, with an audit hash.
+00:00:05.509 --> 00:00:13.398
+Both listens return the same four values: member 127, three litres, fat 4.4, evening shift.
 
+00:00:13.718 --> 00:00:17.584
+The sheet pre-fills, and the operator hears it read back in Tamil.
+
+00:00:17.904 --> 00:00:22.424
+The operator confirms, and one entry lands with a receipt and an audit hash.

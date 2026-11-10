@@ -14,3 +14,4 @@ video/out/m*.mp4
 video/out/concat.txt
 video/diag/
 .tools/
+data/ledger.before-3min.json

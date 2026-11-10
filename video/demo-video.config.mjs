@@ -1,3 +1,5 @@
+import { readFileSync } from 'node:fs';
+
 const BASE = process.env.DV_BASE_URL || 'http://127.0.0.1:7860';
 
 const COMPACT = `
@@ -21,6 +23,14 @@ const EVIDENCE = `
 .panel{padding-top:18px!important}
 .claim{margin-top:0!important}
 `;
+
+/** Sentence start times from the Timbre VTT, so actions follow the real voice. */
+function starts(id) {
+  const raw = readFileSync(new URL(`./audio/${id}.vtt`, import.meta.url), 'utf8');
+  return [...raw.matchAll(/(\d{2}):(\d{2}):(\d{2})\.(\d{3})\s+-->/g)].map(
+    (m) => Number(m[1]) * 3600 + Number(m[2]) * 60 + Number(m[3]) + Number(m[4]) / 1000
+  );
+}
 
 async function boot(page, css, zoom, hash = '', clip = '', snr = '') {
   await page.addInitScript(() => {
@@ -59,7 +69,7 @@ async function boot(page, css, zoom, hash = '', clip = '', snr = '') {
     await page.selectOption('#snr-select', snr);
     await page.waitForTimeout(120);
   }
-  await page.addStyleTag({ content: css });
+  if (css) await page.addStyleTag({ content: css });
   await page.evaluate((z) => { document.documentElement.style.zoom = z; }, zoom);
   await page.evaluate(async () => {
     if (document.fonts && document.fonts.ready) await document.fonts.ready;
@@ -82,14 +92,17 @@ async function chooseClip(page, ctx, clip, snr) {
 }
 
 export default {
-  name: 'PaalKural demo',
+  name: 'PaalKural demo · 3 min',
   narration: 'narration.md',
-  finalVideo: 'paalkural-demo.mp4',
+  finalVideo: 'paalkural-demo-3min.mp4',
   viewport: { width: 1920, height: 1080 },
   fps: 25,
   baseUrl: BASE,
   browser: { channel: 'chrome', headless: true },
 
+  // Narration audio was synthesized with Gnani Timbre v2.5 (Nalini) by
+  // video/tools/timbre_narration.py; this block only configures the engine's
+  // edge-tts fallback if someone regenerates it without the key.
   tts: {
     voice: 'en-IN-NeerjaNeural',
     rate: '-4%',
@@ -100,24 +113,26 @@ export default {
 
   scenes: [
     { id: 'm00', title: 'Title', overlay: 'overlay/title.html' },
+    { id: 'm01', title: 'The idea', overlay: 'overlay/idea.html' },
 
     { id: 'm1', title: 'Both listens agree', async run(ctx) {
-      const { page, at, clickLoc, ensureInView } = ctx;
+      const { page, at, clickLoc } = ctx;
+      const s = starts('m1');
       await boot(page, COMPACT, '0.93', '', 'b12', '5');
 
-      await at(1.3);
+      await at(s[0] + 1.0);
       await chooseClip(page, ctx, 'b12', '5');
       await ctx.moveMouse(page, 800, 760);
 
-      await at(2.5);
+      await at(s[0] + 1.5);
       await clickLoc(page, page.locator('#run-clip'), 260, 'read b12');
       await page.waitForSelector('#sheet-body:not([hidden])', { timeout: 60000 });
-      await page.waitForTimeout(500);
+      await page.waitForTimeout(450);
 
-      await at(7.6);
+      await at(Math.max(s[1] + 0.3, s[0] + 3.4));
       await ctx.moveMouse(page, 1260, 700);
 
-      await at(11.5);
+      await at(Math.max(s[2] + 0.7, s[1] + 2.4));
       await clickLoc(page, page.locator('#confirm-btn'), 260, 'confirm b12');
       await page.waitForSelector('#receipt:not([hidden])', { timeout: 30000 });
       await page.waitForTimeout(500);
@@ -125,57 +140,79 @@ export default {
 
     { id: 'm2', title: 'Listens disagree', async run(ctx) {
       const { page, at, clickLoc } = ctx;
+      const s = starts('m2');
       await boot(page, COMPACT, '0.93', '', 'b05', '15');
 
-      await at(0.9);
+      await at(s[0] + 0.6);
       await chooseClip(page, ctx, 'b05', '15');
 
-      await at(2.5);
+      await at(s[0] + 1.1);
       await clickLoc(page, page.locator('#run-clip'), 260, 'read b05');
       await page.waitForSelector('#sheet-body:not([hidden])', { timeout: 60000 });
       await page.waitForTimeout(600);
 
-      await at(4.9);
+      await at(s[1] + 0.5);
       await ctx.moveMouse(page, 1260, 660);
 
-      await at(8.5);
+      await at(s[2] + 0.4);
       await ctx.moveMouse(page, 1476, 146);
 
-      await at(13.0);
+      await at(s[3] + 0.2);
       await clickLoc(page, page.locator('#confirm-btn'), 260, 'resolve');
       await page.waitForSelector('#edit-dialog[open]', { timeout: 8000 });
       await page.waitForTimeout(300);
 
-      await at(14.4);
+      await at(s[3] + 1.0);
       await clickLoc(page, page.locator('#edit-fat'), 180, 'keep 4.7');
 
-      await at(15.7);
+      await at(s[3] + 1.8);
       await clickLoc(page, page.locator('#edit-save'), 260, 'save');
       await page.waitForSelector('#receipt:not([hidden])', { timeout: 30000 });
       await page.waitForTimeout(500);
     } },
 
-    { id: 'm3', title: 'Evidence', async run(ctx) {
+    { id: 'm4', title: 'The day book', async run(ctx) {
       const { page, at } = ctx;
+      const s = starts('m4');
+      await boot(page, '', '0.95', '#ledger');
+      await page.waitForSelector('.ledger-export', { timeout: 15000 });
+      await page.waitForTimeout(300);
+
+      await at(s[0] + 0.9);
+      await ctx.moveMouse(page, 900, 330);
+
+      await at(s[1] + 0.4);
+      await page.locator('.ledger-export').scrollIntoViewIfNeeded();
+      const box = await page.locator('.ledger-export').boundingBox();
+      if (box) await ctx.moveMouse(page, box.x + box.width / 2, box.y + box.height / 2);
+      await page.waitForTimeout(300);
+    } },
+
+    { id: 'm3', title: 'The evidence', async run(ctx) {
+      const { page, at } = ctx;
+      const s = starts('m3');
       await boot(page, EVIDENCE, '0.90', '#evidence');
       await page.waitForSelector('#evidence-run:not([hidden])', { timeout: 30000 });
       await page.waitForSelector('#provider-card:not([hidden])', { timeout: 30000 });
       await page.waitForTimeout(400);
 
-      await at(1.4);
+      await at(s[0] + 0.6);
       await ctx.moveMouse(page, 950, 230);
 
-      await at(8.2);
-      await ctx.moveMouse(page, 950, 560);
+      await at(s[2] + 0.5);
+      await ctx.moveMouse(page, 950, 360);
 
-      await at(12.6);
+      await at(s[3] + 0.6);
       await ctx.scrollAt(page, 950, 760, 300, 4);
       await page.waitForTimeout(240);
+      await ctx.moveMouse(page, 950, 560);
 
-      await at(13.4);
+      await at(s[4] + 0.4);
+      await ctx.scrollAt(page, 950, 760, 300, 3);
+      await page.waitForTimeout(200);
       await ctx.moveMouse(page, 900, 850);
     } },
 
-    { id: 'm4', title: 'Close', overlay: 'overlay/outro.html' },
+    { id: 'm5', title: 'Close', overlay: 'overlay/outro.html' },
   ],
 };

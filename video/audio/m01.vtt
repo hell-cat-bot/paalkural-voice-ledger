@@ -1,0 +1,22 @@
+WEBVTT
+
+00:00:00.200 --> 00:00:02.159
+A transcript is not an entry.
+
+00:00:02.479 --> 00:00:09.245
+So PaalKural decodes the same audio twice: once raw, and once after a band-limit and a spectral gate.
+
+00:00:09.565 --> 00:00:16.644
+A deterministic compiler turns each transcript into four facts: member, litres, fat, and shift.
+
+00:00:16.964 --> 00:00:21.326
+Both listens are validated against the society roster and the allowed ranges.
+
+00:00:21.646 --> 00:00:24.232
+If both agree, the sheet pre-fills.
+
+00:00:24.552 --> 00:00:27.792
+If only one validates, it pre-fills from that one.
+
+00:00:28.112 --> 00:00:32.161
+If both validate but disagree, it stamps CHECK and blocks the log.
