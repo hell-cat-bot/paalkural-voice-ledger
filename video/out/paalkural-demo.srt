@@ -1,0 +1,59 @@
+1
+00:00:00,100 --> 00:00:01,818
+PaalKural.
+
+2
+00:00:01,768 --> 00:00:06,326
+A Tamil voice ledger for a milk line that never sleeps.
+
+3
+00:00:06,436 --> 00:00:12,607
+At five decibels, with babble and cans, both live Prisma listens agree.
+
+4
+00:00:12,557 --> 00:00:17,596
+The sheet pre-fills, and the operator confirms the Tamil readback.
+
+5
+00:00:17,596 --> 00:00:20,787
+One entry, with an audit hash.
+
+6
+00:00:20,908 --> 00:00:23,290
+Fifteen decibels.
+
+7
+00:00:23,240 --> 00:00:29,035
+Raw hears fat four point seven; the conditioned listen hears four point zero.
+
+8
+00:00:29,035 --> 00:00:33,969
+Both validate, so the sheet stamps check and blocks the log.
+
+9
+00:00:33,969 --> 00:00:39,048
+The operator keeps the raw value, and nothing lands silently.
+
+10
+00:00:39,172 --> 00:00:42,323
+The evidence lab keeps two books.
+
+11
+00:00:42,273 --> 00:00:51,348
+The frozen local benchmark reports the negative result; the live provider check reruns the same matrix through Gnani Prisma.
+
+12
+00:00:51,348 --> 00:00:57,911
+192 calls, no errors, no silent errors at any line level.
+
+13
+00:00:58,012 --> 00:01:03,194
+Prisma and Timbre are wired live through a participant-supplied key.
+
+14
+00:01:03,144 --> 00:01:08,365
+The frozen benchmark stays local so its claim can be reproduced.
+
+15
+00:01:08,365 --> 00:01:11,998
+Synthetic voices, synthetic pours.

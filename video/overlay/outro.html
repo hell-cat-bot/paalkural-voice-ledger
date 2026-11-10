@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>PaalKural · close</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,600;12..96,700&family=IBM+Plex+Mono:wght@400;500;600&family=Noto+Sans+Tamil:wght@400;600;700&display=swap" rel="stylesheet">
+<style>
+  :root { --delta:0s; --ink:#12211f; --milk:#fbf8f1; --indigo:#263b6b; --turmeric:#d99a1b; --red:#d5482e; --steel:#7e8b86; }
+  * { margin:0; padding:0; box-sizing:border-box; }
+  html, body { width:1920px; height:1080px; overflow:hidden; }
+  body {
+    background: var(--milk); color: var(--ink);
+    font-family:"IBM Plex Mono", monospace;
+    background-image:
+      linear-gradient(rgba(18,33,31,.05) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(18,33,31,.05) 1px, transparent 1px);
+    background-size: 64px 64px;
+  }
+  .top-rule { position:absolute; top:0; left:0; right:0; height:10px; background:var(--indigo); }
+  .top-rule:after { content:""; position:absolute; top:10px; left:0; right:0; height:4px; background:var(--turmeric); }
+  .stage { position:relative; width:100%; height:100%; padding:112px 128px 90px; display:grid; grid-template-columns:1.08fr .92fr; gap:80px; align-items:center; }
+  .eyebrow { font-size:13px; letter-spacing:.22em; text-transform:uppercase; color:var(--steel); }
+  .brand { display:flex; align-items:baseline; gap:16px; margin-top:22px; }
+  .brand-ta { font-family:"Noto Sans Tamil",sans-serif; font-size:30px; font-weight:600; color:var(--indigo); }
+  .brand-en { font-size:13px; letter-spacing:.28em; font-weight:600; color:var(--indigo); }
+  h1 { font-family:"Bricolage Grotesque",sans-serif; font-size:96px; line-height:.98; letter-spacing:-.04em; font-weight:600; margin-top:42px; }
+  h1 em { font-style:normal; color:var(--indigo); }
+  .para { margin-top:32px; max-width:720px; font-family:"Bricolage Grotesque",sans-serif; font-size:25px; line-height:1.45; color:#3c4a46; letter-spacing:-.005em; }
+  .para b { font-weight:600; color:var(--ink); }
+  .foot { position:absolute; left:128px; bottom:56px; right:128px; display:flex; justify-content:space-between; gap:40px; border-top:1px solid #d6d0c2; padding-top:18px; font-size:12px; letter-spacing:.08em; color:#6d7a76; }
+  .foot b { color:var(--ink); font-weight:500; }
+
+  .stats { display:grid; grid-template-columns:1fr 1fr; gap:2px; background:#d6d0c2; border:1px solid #d6d0c2; }
+  .stat { background:var(--milk); padding:30px 28px 26px; min-height:170px; }
+  .stat .n { font-family:"Bricolage Grotesque",sans-serif; font-size:64px; line-height:1; letter-spacing:-.05em; color:var(--ink); }
+  .stat .n small { font-family:"IBM Plex Mono",monospace; font-size:13px; letter-spacing:.12em; color:var(--steel); }
+  .stat .k { margin-top:14px; font-size:11px; letter-spacing:.13em; text-transform:uppercase; color:#6d7a76; line-height:1.5; }
+  .stat.wide { grid-column:1 / -1; display:flex; align-items:center; gap:28px; min-height:140px; }
+  .stat.wide .n { color:var(--indigo); font-size:38px; letter-spacing:-.03em; white-space:nowrap; }
+  .stat.wide .k { margin-top:0; font-size:13px; letter-spacing:.04em; text-transform:none; line-height:1.55; max-width:470px; }
+  .stat .n .ok { color:#1f7a5c; }
+  .tagrow { display:flex; gap:10px; flex-wrap:wrap; margin-top:28px; }
+  .tag { border:1px solid #c9c2b2; padding:7px 10px; font-size:11px; letter-spacing:.12em; text-transform:uppercase; color:#5e6b67; }
+  .tag.hot { border-color:var(--turmeric); color:#9a6b0b; }
+
+  .anim { opacity:0; transform:translateY(18px); }
+  body.playing .anim { animation: rise .9s cubic-bezier(.2,.7,.2,1) forwards; animation-delay: calc(var(--d,0s) - var(--delta)); }
+  @keyframes rise { to { opacity:1; transform:none; } }
+  #veil { position:fixed; inset:0; background:var(--milk); z-index:99; pointer-events:none; opacity:1; transition:opacity .9s ease .35s; }
+  body.playing #veil { opacity:0; }
+  .dv-cursor { display:none !important; }
+</style>
+</head>
+<body>
+  <div class="top-rule"></div>
+  <div class="stage">
+    <div>
+      <p class="eyebrow anim" style="--d:.2s">What ships</p>
+      <div class="brand anim" style="--d:.3s">
+        <span class="brand-ta">பால்குரல்</span><span class="brand-en">PAALKURAL</span>
+      </div>
+      <h1 class="anim" style="--d:.5s">Two listens.<br><em>One decision.</em></h1>
+      <p class="para anim" style="--d:1.9s">Prisma STT and Timbre TTS answer live through a participant-supplied key. The frozen local benchmark stays separate, so the <b>negative result can be reproduced</b>.</p>
+      <div class="tagrow anim" style="--d:10.2s">
+        <span class="tag hot">synthetic demo</span>
+        <span class="tag">no field data</span>
+        <span class="tag">no bought engagement</span>
+        <span class="tag">live provider check</span>
+      </div>
+    </div>
+
+    <div class="anim" style="--d:1.2s">
+      <div class="stats">
+        <div class="stat"><div class="n">24</div><p class="k">synthetic Tamil / Tanglish clips<br>4 conditions · 2 arms</p></div>
+        <div class="stat"><div class="n">0</div><p class="k">silent errors at clean and 5 dB<br>frozen local gate · our benchmark</p></div>
+        <div class="stat"><div class="n">22<small>/24</small></div><p class="k">clean pours pre-filled correctly<br>frozen local gate · 0 silent · 2 re-ask</p></div>
+        <div class="stat"><div class="n">1</div><p class="k">operator confirmation<br>before any ledger write</p></div>
+        <div class="stat wide"><div class="n">20<small>/24</small></div><p class="k">clean pours pre-filled by live Gnani Prisma · 0 silent · 4 re-ask · 192 calls, 0 errors. The frozen benchmark stays local so its claim can be reproduced.</p></div>
+      </div>
+    </div>
+  </div>
+  <div class="foot anim" style="--d:11.2s">
+    <span><b>PaalKural</b> · Kizhakku Colony Milk Society · synthetic</span>
+    <span>Built for the Great Indian AI Internship Challenge · 2026</span>
+  </div>
+  <div id="veil"></div>
+</body>
+</html>

@@ -1,0 +1,141 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>PaalKural</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,600;12..96,700&family=IBM+Plex+Mono:wght@400;500;600&family=Noto+Sans+Tamil:wght@400;600;700&display=swap" rel="stylesheet">
+<style>
+  :root { --delta: 0s; --ink:#12211f; --milk:#fbf8f1; --indigo:#263b6b; --turmeric:#d99a1b; --red:#d5482e; --steel:#7e8b86; }
+  * { margin:0; padding:0; box-sizing:border-box; }
+  html, body { width:1920px; height:1080px; overflow:hidden; }
+  body {
+    background: var(--indigo);
+    color: var(--milk);
+    font-family: "IBM Plex Mono", monospace;
+    background-image:
+      linear-gradient(rgba(251,248,241,.045) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(251,248,241,.045) 1px, transparent 1px);
+    background-size: 64px 64px;
+  }
+  .top-rule { position:absolute; top:0; left:0; right:0; height:10px; background:var(--turmeric); z-index:3; }
+  .stage {
+    position:relative; width:100%; height:100%;
+    padding:104px 128px 84px;
+    display:grid; grid-template-columns: 1.12fr .88fr; gap:70px;
+    align-items:center;
+  }
+  .eyebrow { font-size:14px; letter-spacing:.22em; text-transform:uppercase; color:rgba(251,248,241,.62); }
+  .brand { display:flex; align-items:baseline; gap:20px; margin-top:36px; }
+  .brand-ta { font-family:"Noto Sans Tamil",sans-serif; font-size:42px; font-weight:600; color:var(--turmeric); }
+  .brand-en { font-size:16px; letter-spacing:.34em; font-weight:600; }
+  .brand-rule { width:48px; height:1px; background:rgba(251,248,241,.5); align-self:center; }
+  h1 {
+    font-family:"Bricolage Grotesque", sans-serif;
+    font-size:104px; line-height:.97; letter-spacing:-.035em; font-weight:600;
+    margin-top:46px; max-width:900px;
+  }
+  h1 em { font-style:normal; color:var(--turmeric); }
+  .lead { margin-top:36px; font-family:"Bricolage Grotesque",sans-serif; font-size:30px; line-height:1.35; color:rgba(251,248,241,.9); max-width:760px; letter-spacing:-.01em; }
+  .chips { display:flex; gap:12px; margin-top:54px; flex-wrap:wrap; }
+  .chip { font-size:12px; letter-spacing:.16em; text-transform:uppercase; border:1px solid rgba(251,248,241,.38); padding:8px 13px; color:rgba(251,248,241,.82); }
+  .chip.hot { border-color:var(--turmeric); color:var(--turmeric); }
+  .footline { position:absolute; left:128px; bottom:52px; font-size:12px; letter-spacing:.14em; color:rgba(251,248,241,.55); text-transform:uppercase; }
+
+  .slip-wrap { position:relative; height:720px; }
+  .ghost {
+    position:absolute; inset:34px -8px auto 44px; height:640px;
+    border:1px solid rgba(251,248,241,.28);
+    transform:rotate(3.5deg);
+  }
+  .slip {
+    position:absolute; inset:0 0 auto 0; width:640px; min-height:660px;
+    background:var(--milk); color:var(--ink);
+    padding:42px 42px 34px;
+    transform:rotate(-2.2deg);
+    box-shadow: 26px 30px 0 rgba(8,16,15,.22);
+    border-top:10px solid var(--turmeric);
+  }
+  .slip .sheet-eyebrow { font-size:12px; letter-spacing:.2em; text-transform:uppercase; color:var(--steel); }
+  .slip h2 { font-family:"Bricolage Grotesque",sans-serif; font-size:38px; letter-spacing:-.02em; margin-top:10px; }
+  .stamp { position:absolute; right:40px; top:42px; border:2px solid var(--turmeric); color:#a9740d; font-size:13px; letter-spacing:.14em; padding:8px 12px; transform:rotate(2deg); }
+  .divider { height:1px; background:#d9d3c3; margin:24px 0 18px; }
+  .line { display:flex; justify-content:space-between; align-items:baseline; padding:11px 0; border-bottom:1px dashed #ddd7c7; font-size:17px; }
+  .line span:first-child { color:#6f7b77; font-size:12px; letter-spacing:.12em; text-transform:uppercase; }
+  .litres { font-family:"Bricolage Grotesque",sans-serif; font-size:46px; letter-spacing:-.03em; }
+  .listen { margin-top:22px; border:1px solid #d9d3c3; padding:16px 18px; background:#f4efe3; }
+  .listen .top { display:flex; justify-content:space-between; align-items:center; }
+  .listen .top b { font-size:11px; letter-spacing:.16em; text-transform:uppercase; color:#8a5f10; background:#f1dfb4; padding:5px 8px; font-weight:500; }
+  .listen .top span { font-size:12px; letter-spacing:.12em; text-transform:uppercase; color:var(--steel); }
+  .listen p { font-size:15px; line-height:1.5; color:#4d5a56; margin-top:10px; }
+  .listen .vals { display:flex; gap:22px; margin-top:12px; font-size:14px; }
+  .listen .vals b { color:var(--ink); font-weight:600; }
+  .slip .note { margin-top:26px; font-size:12px; line-height:1.6; color:#7a8783; }
+  .signal { position:absolute; left:0; right:0; bottom:130px; height:120px; opacity:.5; z-index:0; }
+  .signal path { fill:none; stroke:var(--turmeric); stroke-width:2; }
+  .signal path.raw { stroke:rgba(251,248,241,.45); stroke-width:1.4; }
+
+  .anim { opacity:0; transform:translateY(20px); }
+  body.playing .anim {
+    animation: rise .9s cubic-bezier(.2,.7,.2,1) forwards;
+    animation-delay: calc(var(--d, 0s) - var(--delta));
+  }
+  @keyframes rise { to { opacity:1; transform:none; } }
+  .slip.anim { transform: rotate(-2.2deg) translateY(22px); }
+  body.playing .slip.anim { animation-name: sliprise; }
+  @keyframes sliprise { to { opacity:1; transform: rotate(-2.2deg); } }
+  #veil { position:fixed; inset:0; background:var(--indigo); z-index:99; pointer-events:none; opacity:1; transition:opacity .9s ease .35s; }
+  body.playing #veil { opacity:0; }
+  .dv-cursor { display:none !important; }
+</style>
+</head>
+<body>
+  <div class="top-rule"></div>
+  <svg class="signal" viewBox="0 0 1920 120" preserveAspectRatio="none" aria-hidden="true">
+    <path class="raw" d="M0 64 L40 62 L64 38 L88 82 L112 54 L150 68 L190 31 L230 76 L270 58 L310 44 L350 72 L390 52 L440 66 L490 42 L540 74 L590 56 L640 35 L690 80 L740 60 L800 48 L850 70 L900 54 L960 40 L1020 76 L1080 58 L1140 44 L1200 72 L1260 52 L1320 66 L1380 38 L1440 78 L1500 60 L1560 46 L1620 70 L1680 54 L1740 36 L1800 74 L1860 58 L1920 62"/>
+    <path d="M0 60 L40 58 L64 30 L88 88 L112 48 L150 64 L190 22 L230 80 L270 54 L310 38 L350 76 L390 46 L440 62 L490 34 L540 78 L590 50 L640 26 L690 84 L740 56 L800 40 L850 68 L900 48 L960 32 L1020 80 L1080 52 L1140 36 L1200 76 L1260 46 L1320 62 L1380 30 L1440 82 L1500 56 L1560 40 L1620 66 L1680 48 L1740 28 L1800 78 L1860 52 L1920 58"/>
+  </svg>
+
+  <div class="stage">
+    <div>
+      <p class="eyebrow anim" style="--d:.15s">Great Indian AI Internship Challenge · 2026</p>
+      <div class="brand anim" style="--d:.35s">
+        <span class="brand-ta">பால்குரல்</span>
+        <span class="brand-en">PAALKURAL</span>
+        <span class="brand-rule"></span>
+        <span class="brand-en" style="font-size:10px; letter-spacing:.18em; opacity:.6">LINE LEDGER</span>
+      </div>
+      <h1 class="anim" style="--d:.55s">Hear the pour.<br>Read it back.<br><em>Log it once.</em></h1>
+      <p class="lead anim" style="--d:2s">A two-listen Tamil voice ledger for a milk collection line that is never quiet.</p>
+      <div class="chips anim" style="--d:4.3s">
+        <span class="chip hot">Synthetic demo</span>
+        <span class="chip">Gnani Prisma · live</span>
+        <span class="chip">Timbre readback</span>
+        <span class="chip">Two-path gate</span>
+      </div>
+    </div>
+
+    <div class="slip-wrap">
+      <div class="ghost anim" style="--d:.8s"></div>
+      <div class="slip anim" style="--d:.9s">
+        <p class="sheet-eyebrow">Pour sheet / பால் சீட்டு</p>
+        <h2>Member 113 · 2.5 L</h2>
+        <span class="stamp">CHECK</span>
+        <div class="divider"></div>
+        <div class="line"><span>Readback</span><span class="litres">2.5 L</span></div>
+        <div class="line"><span>Fat</span><span>4.7 %</span></div>
+        <div class="line"><span>Shift</span><span>Morning</span></div>
+        <div class="listen">
+          <div class="top"><span>Second listen</span><b>listens disagree</b></div>
+          <p>The two listens heard different values. The sheet will not choose.</p>
+          <div class="vals"><span>raw · <b>4.7</b></span><span>processed · <b>4.0</b></span></div>
+        </div>
+        <p class="note">Nothing is written until the operator resolves the sheet.</p>
+      </div>
+    </div>
+  </div>
+  <p class="footline">Synthetic voices, names and pours · no real farmer data</p>
+  <div id="veil"></div>
+</body>
+</html>

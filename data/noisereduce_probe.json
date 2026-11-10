@@ -1,0 +1,3456 @@
+[
+ {
+  "variant": "raw",
+  "condition": "5 dB",
+  "clip": "b01",
+  "exact": true,
+  "valid": true,
+  "pred": {
+   "member_id": 101,
+   "litres": 2.0,
+   "fat": 4.5,
+   "shift": "morning"
+  },
+  "ms": 3842,
+  "wer": 0.2121,
+  "text": "சொசைட்டி நம்பர். 101. ரெண்டு லிட்டர் பால். ஃபேட் நாலு பாயம் ஐந்தே. காலை ஷிஃப்ட்."
+ },
+ {
+  "variant": "raw",
+  "condition": "5 dB",
+  "clip": "b02",
+  "exact": false,
+  "valid": false,
+  "pred": {},
+  "ms": 482,
+  "wer": 0.75,
+  "text": "லிட்டர். லிட்டர். ஷிஃப்ட்."
+ },
+ {
+  "variant": "raw",
+  "condition": "5 dB",
+  "clip": "b03",
+  "exact": false,
+  "valid": false,
+  "pred": {
+   "member_id": 108,
+   "litres": 105.0,
+   "fat": 3.8,
+   "shift": "morning"
+  },
+  "ms": 715,
+  "wer": 0.4,
+  "text": "சொசைட்டி நம்பர். 108. 105 லிட்டர் பால். ஃபேட் மூன்று பாயின்ட். 8. காலை."
+ },
+ {
+  "variant": "raw",
+  "condition": "5 dB",
+  "clip": "b04",
+  "exact": true,
+  "valid": true,
+  "pred": {
+   "member_id": 108,
+   "litres": 4.0,
+   "fat": 6.0,
+   "shift": "evening"
+  },
+  "ms": 740,
+  "wer": 0.3529,
+  "text": "நம்பர் நூற்று எட்டு. நாலு லிட்டர். ஃபேட் ஆறு. ஈவினின் ஷிஃப்ட்."
+ },
+ {
+  "variant": "raw",
+  "condition": "5 dB",
+  "clip": "b05",
+  "exact": true,
+  "valid": true,
+  "pred": {
+   "member_id": 113,
+   "litres": 2.5,
+   "fat": 4.7,
+   "shift": "morning"
+  },
+  "ms": 699,
+  "wer": 0.1739,
+  "text": "நம்பர் ஒன் ஒன்றி. ரெண்டரை லிட்டர். ஃபேட் நாலு பாயின் ஏழு. காலை."
+ },
+ {
+  "variant": "raw",
+  "condition": "5 dB",
+  "clip": "b06",
+  "exact": false,
+  "valid": false,
+  "pred": {
+   "member_id": 113,
+   "fat": 5.5
+  },
+  "ms": 4127,
+  "wer": 0.2857,
+  "text": "நம்பர். 113. மூன்றுரை லிட்டர் பால். ஃபேட் ஐந்து பாயின்ட் ஐந்து ஃபாயங்காலம்."
+ },
+ {
+  "variant": "raw",
+  "condition": "5 dB",
+  "clip": "b07",
+  "exact": true,
+  "valid": true,
+  "pred": {
+   "member_id": 119,
+   "litres": 0.5,
+   "fat": 6.8,
+   "shift": "morning"
+  },
+  "ms": 839,
+  "wer": 0.0435,
+  "text": "நம்பர் ஒன் ஒன்னைன் அரை லிட்டர் ஃபேட் ஆறு பாயெண்ட் எட்டு மார்ணிங்"
+ },
+ {
+  "variant": "raw",
+  "condition": "5 dB",
+  "clip": "b08",
+  "exact": false,
+  "valid": false,
+  "pred": {},
+  "ms": 559,
+  "wer": 0.7241,
+  "text": "லிட்டர். லிட்டர். ஷிஃப்ட்."
+ },
+ {
+  "variant": "raw",
+  "condition": "5 dB",
+  "clip": "b09",
+  "exact": false,
+  "valid": true,
+  "pred": {
+   "member_id": 124,
+   "litres": 3.0,
+   "fat": 4.8,
+   "shift": "morning"
+  },
+  "ms": 900,
+  "wer": 0.3939,
+  "text": "நம்பர். 124. மூன்று லிட்டர். இல்லை இல்லை மூன்று ஓரை லிட்டர். ஸேட் நாலு பாயின் ஏற்று. காலை."
+ },
+ {
+  "variant": "raw",
+  "condition": "5 dB",
+  "clip": "b10",
+  "exact": true,
+  "valid": true,
+  "pred": {
+   "member_id": 124,
+   "litres": 2.0,
+   "fat": 5.1,
+   "shift": "evening"
+  },
+  "ms": 799,
+  "wer": 0.087,
+  "text": "நம்பர் 124. ரெண்டு லிட்டர். ஃபேட் ஐந்து பாயங்ட் ஒன்று. சாயங்காலம்."
+ },
+ {
+  "variant": "raw",
+  "condition": "5 dB",
+  "clip": "b11",
+  "exact": false,
+  "valid": false,
+  "pred": {
+   "member_id": 127,
+   "fat": 3.9
+  },
+  "ms": 741,
+  "wer": 0.6,
+  "text": "நம்பர். 127. நாரரை லிகேட். ஸ்டேட் மூன்று பாயின் ஒன்பது. மாற்றினி."
+ },
+ {
+  "variant": "raw",
+  "condition": "5 dB",
+  "clip": "b12",
+  "exact": true,
+  "valid": true,
+  "pred": {
+   "member_id": 127,
+   "litres": 3.0,
+   "fat": 4.4,
+   "shift": "evening"
+  },
+  "ms": 762,
+  "wer": 0.3793,
+  "text": "நம்பர். 127. மூனு விட்டர் பார். ஃபேட் நாலு பாயன். நாலு. ஈவினின் ஷிஃப்ட்."
+ },
+ {
+  "variant": "raw",
+  "condition": "5 dB",
+  "clip": "b13",
+  "exact": true,
+  "valid": true,
+  "pred": {
+   "member_id": 132,
+   "litres": 1.5,
+   "fat": 5.8,
+   "shift": "morning"
+  },
+  "ms": 943,
+  "wer": 0.2609,
+  "text": "நம்பர் ஒன்றி டூ. ஒன்று ரை லிட்டர். ஃபேட் ஐந்து பாயின்ட் ஏட்டு காலை."
+ },
+ {
+  "variant": "raw",
+  "condition": "5 dB",
+  "clip": "b14",
+  "exact": true,
+  "valid": true,
+  "pred": {
+   "member_id": 132,
+   "litres": 2.0,
+   "fat": 6.2,
+   "shift": "evening"
+  },
+  "ms": 700,
+  "wer": 0.25,
+  "text": "நம்பர். 132. ரெண்டு லிட்டர். ஃபேட் ஆறு பாயின்ஸ் டூ. சாயங்காலம்."
+ },
+ {
+  "variant": "raw",
+  "condition": "5 dB",
+  "clip": "b15",
+  "exact": false,
+  "valid": false,
+  "pred": {
+   "member_id": 137,
+   "litres": 3.5,
+   "fat": 4.9
+  },
+  "ms": 702,
+  "wer": 0.4444,
+  "text": "நம்பர். 137. மூன்றுறை லிட்டர். ஃபேட் நாலு பாயின் ஒன்பது. மாற்றினி."
+ },
+ {
+  "variant": "raw",
+  "condition": "5 dB",
+  "clip": "b16",
+  "exact": false,
+  "valid": false,
+  "pred": {
+   "member_id": 137,
+   "litres": 5.5,
+   "fat": 3.7
+  },
+  "ms": 685,
+  "wer": 0.4,
+  "text": "நம்பர் 137. ஐந்தரை லிட்டர் பால். ஃபேட் மூன்று பாயின்ட் ஏகு."
+ },
+ {
+  "variant": "raw",
+  "condition": "5 dB",
+  "clip": "b17",
+  "exact": true,
+  "valid": true,
+  "pred": {
+   "member_id": 143,
+   "litres": 2.0,
+   "fat": 5.3,
+   "shift": "morning"
+  },
+  "ms": 673,
+  "wer": 0.32,
+  "text": "நம்பர் 143. ரெண்டு லிட்டர். ஃபேட் ஐந்து பாயின் மோனு. காலை."
+ },
+ {
+  "variant": "raw",
+  "condition": "5 dB",
+  "clip": "b18",
+  "exact": true,
+  "valid": true,
+  "pred": {
+   "member_id": 143,
+   "litres": 4.0,
+   "fat": 4.1,
+   "shift": "evening"
+  },
+  "ms": 685,
+  "wer": 0.3462,
+  "text": "நம்பர் 143. நாளு லிட்டர். ஃபேட் நாளு பாயின் ஒன்று. சாயங்காலம்."
+ },
+ {
+  "variant": "raw",
+  "condition": "5 dB",
+  "clip": "b19",
+  "exact": true,
+  "valid": true,
+  "pred": {
+   "member_id": 146,
+   "litres": 1.5,
+   "fat": 6.5,
+   "shift": "morning"
+  },
+  "ms": 764,
+  "wer": 0.2857,
+  "text": "நம்பர் 146. ஒன்று ரை லிட்டர் பால். ஃபேட் ஆறு பாயிண்ட் ஐந்து. மார்ணிங்"
+ },
+ {
+  "variant": "raw",
+  "condition": "5 dB",
+  "clip": "b20",
+  "exact": false,
+  "valid": false,
+  "pred": {
+   "member_id": 146,
+   "fat": 3.0,
+   "shift": "evening"
+  },
+  "ms": 1311,
+  "wer": 0.6207,
+  "text": "நம்பர் 146. மூன்று டிகேர். ஃபேட் மூன்று பாய்கென்று நாதே. ஈவ்ணின் ஷிஃப்ட்."
+ },
+ {
+  "variant": "raw",
+  "condition": "5 dB",
+  "clip": "b21",
+  "exact": true,
+  "valid": true,
+  "pred": {
+   "member_id": 151,
+   "litres": 2.5,
+   "fat": 5.6,
+   "shift": "morning"
+  },
+  "ms": 679,
+  "wer": 0.3043,
+  "text": "நம்பர். 151. ரெண்டரை லிட்டர். ஃபேட் ஐந்து பாயங்கள். ஆறு. காலை."
+ },
+ {
+  "variant": "raw",
+  "condition": "5 dB",
+  "clip": "b22",
+  "exact": false,
+  "valid": false,
+  "pred": {
+   "member_id": 100,
+   "litres": 4.5,
+   "fat": 4.0,
+   "shift": "evening"
+  },
+  "ms": 848,
+  "wer": 0.5714,
+  "text": "நம்பர் நூற்று ஐம்பத்து ஒன்று நானரை லிட்டர். ஃபேட் நாலு பாயின்த் தூ. சாயங்காலம்."
+ },
+ {
+  "variant": "raw",
+  "condition": "5 dB",
+  "clip": "b23",
+  "exact": false,
+  "valid": false,
+  "pred": {
+   "member_id": 156,
+   "fat": 9.0
+  },
+  "ms": 1227,
+  "wer": 0.5926,
+  "text": "நம்பர் 156. ஒருளிக் கர்பாக. ஷேட் ஆது பாயின் ஒன்பது. மார்தின்."
+ },
+ {
+  "variant": "raw",
+  "condition": "5 dB",
+  "clip": "b24",
+  "exact": false,
+  "valid": true,
+  "pred": {
+   "member_id": 156,
+   "litres": 2.0,
+   "fat": 3.3,
+   "shift": "evening"
+  },
+  "ms": 1022,
+  "wer": 0.4211,
+  "text": "நம்பர் 156. ரெண்டு லிட்டர். இல்லை, இரண்டு ரை லிட்டர். ஃபேட் மூன்று பாயின் மூன்று. ஈவினின் ஷிஃப்ட்."
+ },
+ {
+  "variant": "raw",
+  "condition": "0 dB",
+  "clip": "b01",
+  "exact": false,
+  "valid": false,
+  "pred": {
+   "member_id": 101,
+   "fat": 4.5,
+   "shift": "morning"
+  },
+  "ms": 803,
+  "wer": 0.3939,
+  "text": "சொசைட்டி நம்பர். 101. ரென்டு விக்ரர் பால். சேக் நாலு பாயம் ஐந்தே. காலை ஷிஃப்ட்."
+ },
+ {
+  "variant": "raw",
+  "condition": "0 dB",
+  "clip": "b02",
+  "exact": false,
+  "valid": false,
+  "pred": {},
+  "ms": 494,
+  "wer": 0.75,
+  "text": "லிட்டர். லிட்டர். ஷிஃப்ட்."
+ },
+ {
+  "variant": "raw",
+  "condition": "0 dB",
+  "clip": "b03",
+  "exact": false,
+  "valid": false,
+  "pred": {},
+  "ms": 749,
+  "wer": 0.5667,
+  "text": "சொசைட்டி நம்பர். லிட்டர். லிட்டர். ஷிஃப்ட். லிட்டர்."
+ },
+ {
+  "variant": "raw",
+  "condition": "0 dB",
+  "clip": "b04",
+  "exact": true,
+  "valid": true,
+  "pred": {
+   "member_id": 108,
+   "litres": 4.0,
+   "fat": 6.0,
+   "shift": "evening"
+  },
+  "ms": 702,
+  "wer": 0.3529,
+  "text": "நம்பர் நூற்று எட்டு. நாலு லிட்டர். ஃபேட் ஆறு. ஈவினின் ஷிஃப்ட்."
+ },
+ {
+  "variant": "raw",
+  "condition": "0 dB",
+  "clip": "b05",
+  "exact": false,
+  "valid": false,
+  "pred": {},
+  "ms": 469,
+  "wer": 0.6957,
+  "text": "லிட்டர். லிட்டர். ஷிஃப்ட். லிட்டர்."
+ },
+ {
+  "variant": "raw",
+  "condition": "0 dB",
+  "clip": "b06",
+  "exact": false,
+  "valid": false,
+  "pred": {
+   "member_id": 113,
+   "litres": 3.0,
+   "fat": 5.5
+  },
+  "ms": 5888,
+  "wer": 0.3571,
+  "text": "நம்பர். ஒன்று ஒன்று மூன்று லிட்டர் காள். ஃபேட் ஐந்து பாயின், ஐந்தே, சாய் அங்காலம்."
+ },
+ {
+  "variant": "raw",
+  "condition": "0 dB",
+  "clip": "b07",
+  "exact": true,
+  "valid": true,
+  "pred": {
+   "member_id": 119,
+   "litres": 0.5,
+   "fat": 6.8,
+   "shift": "morning"
+  },
+  "ms": 802,
+  "wer": 0.2609,
+  "text": "நம்பர் ஒன் ஒன் நெய்ன். ஹரை லிட்டர். ஃபேட் ஆறு பாயின்ட் ஏட்டு. மார்ணிங்"
+ },
+ {
+  "variant": "raw",
+  "condition": "0 dB",
+  "clip": "b08",
+  "exact": false,
+  "valid": false,
+  "pred": {
+   "fat": 3.5,
+   "shift": "evening"
+  },
+  "ms": 1404,
+  "wer": 0.2759,
+  "text": "நம்பர் ஒன்றொன்னாய் ஐந்தி லிட்டர் பார் ஃபேட் மூன்று பாயின் ஐந்தே. ஈவினின் ஷிஃப்ட்."
+ },
+ {
+  "variant": "raw",
+  "condition": "0 dB",
+  "clip": "b09",
+  "exact": false,
+  "valid": true,
+  "pred": {
+   "member_id": 124,
+   "litres": 3.5,
+   "fat": 4.0,
+   "shift": "morning"
+  },
+  "ms": 924,
+  "wer": 0.3939,
+  "text": "நம்பர். 124. மூன்று லிட்டர். இல்லை இல்லை மூன்று ஹரை லிட்டர். ஷேட் நாலு பாயின் ஏற்றே. காலை."
+ },
+ {
+  "variant": "raw",
+  "condition": "0 dB",
+  "clip": "b10",
+  "exact": true,
+  "valid": true,
+  "pred": {
+   "member_id": 124,
+   "litres": 2.0,
+   "fat": 5.1,
+   "shift": "evening"
+  },
+  "ms": 890,
+  "wer": 0.1304,
+  "text": "நம்பர் 124. இரண்டு லிட்டர். ஃபேட் ஐந்து பாயின்ட் ஒன்று. சாயங்காலம்."
+ },
+ {
+  "variant": "raw",
+  "condition": "0 dB",
+  "clip": "b11",
+  "exact": false,
+  "valid": false,
+  "pred": {
+   "member_id": 127
+  },
+  "ms": 788,
+  "wer": 0.64,
+  "text": "நம்பர். 127. நாறரை விகெஞ்சு. ஸ்டீட் லூனு பாயின் ஒன்பதே. மாறினி."
+ },
+ {
+  "variant": "raw",
+  "condition": "0 dB",
+  "clip": "b12",
+  "exact": true,
+  "valid": true,
+  "pred": {
+   "member_id": 127,
+   "litres": 3.0,
+   "fat": 4.4,
+   "shift": "evening"
+  },
+  "ms": 839,
+  "wer": 0.5517,
+  "text": "நம்பர். 127. மூன்று விட்டர் பார். ஃபேட் நான்கு பாயன். நான்கு. ஈவினின் ஷிஃப்ட்."
+ },
+ {
+  "variant": "raw",
+  "condition": "0 dB",
+  "clip": "b13",
+  "exact": true,
+  "valid": true,
+  "pred": {
+   "member_id": 132,
+   "litres": 1.5,
+   "fat": 5.8,
+   "shift": "morning"
+  },
+  "ms": 860,
+  "wer": 0.2609,
+  "text": "நம்பர் ஒன்றி டூ. ஒன்று ரை லிட்டர். ஃபேட் ஐந்து பாயின்ட் ஏட்டு. காலை."
+ },
+ {
+  "variant": "raw",
+  "condition": "0 dB",
+  "clip": "b14",
+  "exact": false,
+  "valid": false,
+  "pred": {
+   "member_id": 132,
+   "fat": 6.0,
+   "shift": "evening"
+  },
+  "ms": 719,
+  "wer": 0.375,
+  "text": "நம்பர். 132. ரென்டு லிட்டர். ஃபேட் ஆறு பாயன். ஸூ. சாயங்காலம்."
+ },
+ {
+  "variant": "raw",
+  "condition": "0 dB",
+  "clip": "b15",
+  "exact": false,
+  "valid": false,
+  "pred": {
+   "member_id": 137,
+   "litres": 137.0,
+   "fat": 4.9,
+   "shift": "morning"
+  },
+  "ms": 654,
+  "wer": 0.5556,
+  "text": "நம்பர். 137. லிட்டர். ஷேக்ட் நாலு பாயின் ஒன்பது. மாற்றின்."
+ },
+ {
+  "variant": "raw",
+  "condition": "0 dB",
+  "clip": "b16",
+  "exact": false,
+  "valid": false,
+  "pred": {
+   "member_id": 137,
+   "litres": 5.5,
+   "fat": 3.7
+  },
+  "ms": 832,
+  "wer": 0.24,
+  "text": "நம்பர் 137. ஐந்தரை லிட்டர் பால். ஃபேட் மூன்று பாயின்ட் ஏழு. இவ்ணின் ஷிஃப்ட்."
+ },
+ {
+  "variant": "raw",
+  "condition": "0 dB",
+  "clip": "b17",
+  "exact": false,
+  "valid": false,
+  "pred": {
+   "member_id": 143,
+   "fat": 5.3
+  },
+  "ms": 1348,
+  "wer": 0.6,
+  "text": "நம்பர் 143. ரெண்டு விஷன். ஷேக் ஐந்து பாயின் மோனு. சானி."
+ },
+ {
+  "variant": "raw",
+  "condition": "0 dB",
+  "clip": "b18",
+  "exact": true,
+  "valid": true,
+  "pred": {
+   "member_id": 143,
+   "litres": 4.0,
+   "fat": 4.1,
+   "shift": "evening"
+  },
+  "ms": 717,
+  "wer": 0.4615,
+  "text": "நம்பர். 143. நாளு லிட்டர். ஷேக். நாளு வாயின். ஒன்று. சாயங்காலம்."
+ },
+ {
+  "variant": "raw",
+  "condition": "0 dB",
+  "clip": "b19",
+  "exact": true,
+  "valid": true,
+  "pred": {
+   "member_id": 146,
+   "litres": 1.5,
+   "fat": 6.5,
+   "shift": "morning"
+  },
+  "ms": 797,
+  "wer": 0.3571,
+  "text": "நம்பர் 146. ஒன்று ரை லிட்டர் பால். ஃபேட் ஆறு பையன்ட் ஐந்து. மார்ணிங்"
+ },
+ {
+  "variant": "raw",
+  "condition": "0 dB",
+  "clip": "b20",
+  "exact": false,
+  "valid": false,
+  "pred": {
+   "fat": 3.0,
+   "shift": "evening"
+  },
+  "ms": 1343,
+  "wer": 0.6207,
+  "text": "நம்பர் ஒன்றோர் ஸிக். மூன்று ரிக்ஹேட். ஷேர் மூன்று பாய்கன். நாதே. ஈவினின் ஷிக்."
+ },
+ {
+  "variant": "raw",
+  "condition": "0 dB",
+  "clip": "b21",
+  "exact": false,
+  "valid": false,
+  "pred": {
+   "litres": 2.5,
+   "fat": 5.6,
+   "shift": "morning"
+  },
+  "ms": 1337,
+  "wer": 0.2609,
+  "text": "நம்பர் ஒன்பை ஒன்று. ரெண்டரை விட்டர். ஃபேட் ஐந்து பாயின் ஆறு. காலை."
+ },
+ {
+  "variant": "raw",
+  "condition": "0 dB",
+  "clip": "b22",
+  "exact": false,
+  "valid": false,
+  "pred": {
+   "member_id": 151,
+   "litres": 45.0,
+   "fat": 4.0,
+   "shift": "evening"
+  },
+  "ms": 682,
+  "wer": 0.2381,
+  "text": "நம்பர் 151. 45 லிட்டர். ஃபேட் நாலு பாயின்ஸ்2. சாயங்காலம்."
+ },
+ {
+  "variant": "raw",
+  "condition": "0 dB",
+  "clip": "b23",
+  "exact": false,
+  "valid": false,
+  "pred": {},
+  "ms": 437,
+  "wer": 0.7778,
+  "text": "லிட்டர். லிட்டர். ஷிஃப்ட்."
+ },
+ {
+  "variant": "raw",
+  "condition": "0 dB",
+  "clip": "b24",
+  "exact": false,
+  "valid": true,
+  "pred": {
+   "member_id": 156,
+   "litres": 2.0,
+   "fat": 3.3,
+   "shift": "evening"
+  },
+  "ms": 1056,
+  "wer": 0.4737,
+  "text": "நம்பர் 156. ரெண்டு லிட்டர். இல்லை, இரண்டுரை லிட்டர். ஸேக் மூன்று பாயின் மூன்று. ஈவினின் ஷிஃப்ட்."
+ },
+ {
+  "variant": "band+gate",
+  "condition": "5 dB",
+  "clip": "b01",
+  "exact": true,
+  "valid": true,
+  "pred": {
+   "member_id": 101,
+   "litres": 2.0,
+   "fat": 4.5,
+   "shift": "morning"
+  },
+  "ms": 922,
+  "wer": 0.2424,
+  "text": "சொசைட்டி நம்பர் 101. ரெண்டு லிட்டர் பால். ஃபேட் நாலு பாயம் ஐந்தே. காலை ஷிஃப்"
+ },
+ {
+  "variant": "band+gate",
+  "condition": "5 dB",
+  "clip": "b02",
+  "exact": false,
+  "valid": false,
+  "pred": {},
+  "ms": 484,
+  "wer": 0.75,
+  "text": "லிட்டர். லிட்டர். ஷிஃப்ட்."
+ },
+ {
+  "variant": "band+gate",
+  "condition": "5 dB",
+  "clip": "b03",
+  "exact": false,
+  "valid": false,
+  "pred": {
+   "fat": 3.8,
+   "shift": "morning"
+  },
+  "ms": 894,
+  "wer": 0.1333,
+  "text": "சொசைட்டி நம்பர். ஒன்ஜீரோ எட்டு. ஒன்றரை வீட்டர் பால். ஃபேட் மூன்று பாயின்ட் எட்டு. காலை."
+ },
+ {
+  "variant": "band+gate",
+  "condition": "5 dB",
+  "clip": "b04",
+  "exact": true,
+  "valid": true,
+  "pred": {
+   "member_id": 108,
+   "litres": 4.0,
+   "fat": 6.0,
+   "shift": "evening"
+  },
+  "ms": 693,
+  "wer": 0.4118,
+  "text": "நம்பர் நூற்று எட்டு. நாலு லிட்டர். ஃபேட் ஆறு. ஈவனின் ஷிஃப்ட்."
+ },
+ {
+  "variant": "band+gate",
+  "condition": "5 dB",
+  "clip": "b05",
+  "exact": false,
+  "valid": false,
+  "pred": {
+   "litres": 2.5
+  },
+  "ms": 782,
+  "wer": 0.6087,
+  "text": "லிட்டர். ரெண்டரை லிட்டர். ஃபேட். லிட்டர். ஷிஃப்ட்."
+ },
+ {
+  "variant": "band+gate",
+  "condition": "5 dB",
+  "clip": "b06",
+  "exact": false,
+  "valid": false,
+  "pred": {},
+  "ms": 603,
+  "wer": 0.7857,
+  "text": "லிட்டர். லிட்டர். ஷிஃப்ட். லிட்டர்."
+ },
+ {
+  "variant": "band+gate",
+  "condition": "5 dB",
+  "clip": "b07",
+  "exact": true,
+  "valid": true,
+  "pred": {
+   "member_id": 119,
+   "litres": 0.5,
+   "fat": 6.8,
+   "shift": "morning"
+  },
+  "ms": 807,
+  "wer": 0.1739,
+  "text": "நம்பர் ஒன் ஒன் நெய்ன். ஹரை லிட்டர். ஃபேட் ஆறு பாயெண்டு எட்டு. மார்ணிங்"
+ },
+ {
+  "variant": "band+gate",
+  "condition": "5 dB",
+  "clip": "b08",
+  "exact": false,
+  "valid": false,
+  "pred": {},
+  "ms": 413,
+  "wer": 0.7241,
+  "text": "லிட்டர். லிட்டர். ஷிஃப்ட்."
+ },
+ {
+  "variant": "band+gate",
+  "condition": "5 dB",
+  "clip": "b09",
+  "exact": true,
+  "valid": true,
+  "pred": {
+   "member_id": 124,
+   "litres": 3.5,
+   "fat": 4.8,
+   "shift": "morning"
+  },
+  "ms": 968,
+  "wer": 0.3636,
+  "text": "நம்பர். 124. மூன்று லிட்டர். இல்லை இல்லை மூன்று ரெய் லிட்டர். டேட் நாலு பாயின் எட்டு காலை."
+ },
+ {
+  "variant": "band+gate",
+  "condition": "5 dB",
+  "clip": "b10",
+  "exact": true,
+  "valid": true,
+  "pred": {
+   "member_id": 124,
+   "litres": 2.0,
+   "fat": 5.1,
+   "shift": "evening"
+  },
+  "ms": 968,
+  "wer": 0.1739,
+  "text": "நம்பர் 124. இரண்டு லிட்டர். ஃபேட் ஐந்து பையன்ட் ஒன்று. சாயங்காலம்."
+ },
+ {
+  "variant": "band+gate",
+  "condition": "5 dB",
+  "clip": "b11",
+  "exact": true,
+  "valid": true,
+  "pred": {
+   "member_id": 127,
+   "litres": 4.5,
+   "fat": 3.9,
+   "shift": "morning"
+  },
+  "ms": 704,
+  "wer": 0.6,
+  "text": "நம்பர். 127. நாரரை விக்கர். ஃபேட் மூன்று பாயின் ஒன்பது. மாற்றின்"
+ },
+ {
+  "variant": "band+gate",
+  "condition": "5 dB",
+  "clip": "b12",
+  "exact": true,
+  "valid": true,
+  "pred": {
+   "member_id": 127,
+   "litres": 3.0,
+   "fat": 4.4,
+   "shift": "evening"
+  },
+  "ms": 800,
+  "wer": 0.4483,
+  "text": "நம்பர். 127. மூன்று விட்டர் பார். ஃபேட் நாலு பாயன் நாலு. ஈவினின் ஷிஃப்"
+ },
+ {
+  "variant": "band+gate",
+  "condition": "5 dB",
+  "clip": "b13",
+  "exact": true,
+  "valid": true,
+  "pred": {
+   "member_id": 132,
+   "litres": 1.5,
+   "fat": 5.8,
+   "shift": "morning"
+  },
+  "ms": 811,
+  "wer": 0.2609,
+  "text": "நம்பர் ஒன்றி டூ. ஒன்று ரை லிட்டர். ஃபேட் ஐந்து பாயங்ட் எட்டு காலை."
+ },
+ {
+  "variant": "band+gate",
+  "condition": "5 dB",
+  "clip": "b14",
+  "exact": true,
+  "valid": true,
+  "pred": {
+   "member_id": 132,
+   "litres": 2.0,
+   "fat": 6.2,
+   "shift": "evening"
+  },
+  "ms": 788,
+  "wer": 0.2917,
+  "text": "நம்பர். 132. ரெண்டு லிட்டர். ஃபேட் ஆறு பாயங்க் டூ. சாயங்காலம்."
+ },
+ {
+  "variant": "band+gate",
+  "condition": "5 dB",
+  "clip": "b15",
+  "exact": false,
+  "valid": false,
+  "pred": {
+   "member_id": 137,
+   "fat": 4.9
+  },
+  "ms": 1483,
+  "wer": 0.4444,
+  "text": "நம்பர் 137. மூன்று ரெஜிட்டர். ஃபேட் நாலு பாயின் ஒன்பது. மார்ணின்"
+ },
+ {
+  "variant": "band+gate",
+  "condition": "5 dB",
+  "clip": "b16",
+  "exact": false,
+  "valid": false,
+  "pred": {
+   "member_id": 137,
+   "litres": 5.5,
+   "fat": 3.7
+  },
+  "ms": 924,
+  "wer": 0.2,
+  "text": "நம்பர் 137. ஐந்தரை லிட்டர் பால். ஃபேட் மூன்று பாயின்ட் ஏழு. இவனின் ஷிஃப்ட்."
+ },
+ {
+  "variant": "band+gate",
+  "condition": "5 dB",
+  "clip": "b17",
+  "exact": false,
+  "valid": false,
+  "pred": {
+   "member_id": 143,
+   "litres": 2.0,
+   "fat": 5.3
+  },
+  "ms": 848,
+  "wer": 0.36,
+  "text": "நம்பர் 143. ரெண்டு லிட்டர். ஃபேட் ஐந்து பாயின் மோனு. கானை."
+ },
+ {
+  "variant": "band+gate",
+  "condition": "5 dB",
+  "clip": "b18",
+  "exact": true,
+  "valid": true,
+  "pred": {
+   "member_id": 143,
+   "litres": 4.0,
+   "fat": 4.1,
+   "shift": "evening"
+  },
+  "ms": 749,
+  "wer": 0.3462,
+  "text": "நம்பர் 143. நாளு லிட்டர். ஃபேட் நாளு பாயின் ஒன்று. சாயங்காலம்."
+ },
+ {
+  "variant": "band+gate",
+  "condition": "5 dB",
+  "clip": "b19",
+  "exact": false,
+  "valid": true,
+  "pred": {
+   "member_id": 146,
+   "litres": 1.5,
+   "fat": 5.0,
+   "shift": "morning"
+  },
+  "ms": 885,
+  "wer": 0.3571,
+  "text": "நம்பர் 146. ஒன்று ரை லிட்டர் பால். ஃபேட் ஆறுஸ் பாயின்ட் ஐந்து. மார்ணிங்"
+ },
+ {
+  "variant": "band+gate",
+  "condition": "5 dB",
+  "clip": "b20",
+  "exact": false,
+  "valid": false,
+  "pred": {
+   "member_id": 146,
+   "litres": 3.0,
+   "fat": 3.0
+  },
+  "ms": 1500,
+  "wer": 0.6552,
+  "text": "நம்பர் 146. மூன்று லிட்டர். ஃபேட் மூன்று பாய்கின்று நாதே."
+ },
+ {
+  "variant": "band+gate",
+  "condition": "5 dB",
+  "clip": "b21",
+  "exact": false,
+  "valid": false,
+  "pred": {
+   "litres": 2.5,
+   "fat": 5.6,
+   "shift": "morning"
+  },
+  "ms": 1542,
+  "wer": 0.2609,
+  "text": "நம்பர் ஒன்பை ஒன்று. ரெண்டரை லிட்டர். ஃபேட் ஐந்து பாயங்கள் ஆறு. காலை."
+ },
+ {
+  "variant": "band+gate",
+  "condition": "5 dB",
+  "clip": "b22",
+  "exact": false,
+  "valid": false,
+  "pred": {
+   "litres": 0.5,
+   "fat": 2.0,
+   "shift": "evening"
+  },
+  "ms": 1010,
+  "wer": 0.5714,
+  "text": "நம்பர் லூற்று ஐம்பத்து ஒன்று. நான் அரை லிட்டர். ஃபேட் நாலுஸ் பாயின்ட் டூ. சாயங்காலம்."
+ },
+ {
+  "variant": "band+gate",
+  "condition": "5 dB",
+  "clip": "b23",
+  "exact": false,
+  "valid": false,
+  "pred": {
+   "member_id": 156,
+   "fat": 6.9
+  },
+  "ms": 1270,
+  "wer": 0.5926,
+  "text": "நம்பர் 156. ஒரு நிகர்பாக. ஷேட் ஆறு வாயின் ஒன்பது. மார்தின்"
+ },
+ {
+  "variant": "band+gate",
+  "condition": "5 dB",
+  "clip": "b24",
+  "exact": true,
+  "valid": true,
+  "pred": {
+   "member_id": 156,
+   "litres": 2.5,
+   "fat": 3.3,
+   "shift": "evening"
+  },
+  "ms": 1169,
+  "wer": 0.3421,
+  "text": "நம்பர் 156. ரெண்டு லிட்டர். இல்லை, ரெண்டரை லிட்டர். ஃபேட் மூன்று பாயின் மூன்று. ஈவினின் ஷிஃப்ட்."
+ },
+ {
+  "variant": "band+gate",
+  "condition": "0 dB",
+  "clip": "b01",
+  "exact": false,
+  "valid": false,
+  "pred": {
+   "member_id": 101
+  },
+  "ms": 782,
+  "wer": 0.6667,
+  "text": "சொசைட்டி நம்பர். 101. ரெண்டு விக்ரர் பால்."
+ },
+ {
+  "variant": "band+gate",
+  "condition": "0 dB",
+  "clip": "b02",
+  "exact": false,
+  "valid": false,
+  "pred": {},
+  "ms": 424,
+  "wer": 0.75,
+  "text": "லிட்டர். லிட்டர். ஷிஃப்ட்."
+ },
+ {
+  "variant": "band+gate",
+  "condition": "0 dB",
+  "clip": "b03",
+  "exact": false,
+  "valid": false,
+  "pred": {},
+  "ms": 707,
+  "wer": 0.5667,
+  "text": "சொசைட்டி நம்பர். லிட்டர். லிட்டர். லிட்டர். ஷிஃப்ட்."
+ },
+ {
+  "variant": "band+gate",
+  "condition": "0 dB",
+  "clip": "b04",
+  "exact": false,
+  "valid": false,
+  "pred": {
+   "litres": 4.0,
+   "fat": 6.0,
+   "shift": "evening"
+  },
+  "ms": 788,
+  "wer": 0.3529,
+  "text": "நம்பர் லூற்று எட்டு. நால் லிட்டர். ஃபேட் ஆறு. ஈவினின் ஷிஃப்ட்."
+ },
+ {
+  "variant": "band+gate",
+  "condition": "0 dB",
+  "clip": "b05",
+  "exact": false,
+  "valid": false,
+  "pred": {},
+  "ms": 435,
+  "wer": 0.7826,
+  "text": "லிட்டர். லிட்டர். ஷிஃப்ட்."
+ },
+ {
+  "variant": "band+gate",
+  "condition": "0 dB",
+  "clip": "b06",
+  "exact": false,
+  "valid": false,
+  "pred": {},
+  "ms": 497,
+  "wer": 0.7857,
+  "text": "லிட்டர். லிட்டர். ஷிஃப்ட். லிட்டர்."
+ },
+ {
+  "variant": "band+gate",
+  "condition": "0 dB",
+  "clip": "b07",
+  "exact": true,
+  "valid": true,
+  "pred": {
+   "member_id": 119,
+   "litres": 0.5,
+   "fat": 6.8,
+   "shift": "morning"
+  },
+  "ms": 860,
+  "wer": 0.0435,
+  "text": "நம்பர் ஒன் ஒன்னைன் அரை லிட்டர் ஃபேட் ஆறு பாயெண்டு எட்டு மார்ணிங்"
+ },
+ {
+  "variant": "band+gate",
+  "condition": "0 dB",
+  "clip": "b08",
+  "exact": false,
+  "valid": false,
+  "pred": {
+   "fat": 5.0
+  },
+  "ms": 6007,
+  "wer": 0.5862,
+  "text": "நம்பர் ஒன்றொன்னாய் ஐந்து விஷயத்தாள் ஃபேட் முனுவாய்ஞ் ஐந்தே."
+ },
+ {
+  "variant": "band+gate",
+  "condition": "0 dB",
+  "clip": "b09",
+  "exact": false,
+  "valid": false,
+  "pred": {
+   "member_id": 124,
+   "litres": 3.5,
+   "shift": "morning"
+  },
+  "ms": 1843,
+  "wer": 0.4545,
+  "text": "நம்பர். 124. லூனு லிட்டர். இல்லை இல்லை. மூன்று ஹரை லிட்டர். ஸ்டேக் நானு பாயின் ஏற்றே. காலை."
+ },
+ {
+  "variant": "band+gate",
+  "condition": "0 dB",
+  "clip": "b10",
+  "exact": true,
+  "valid": true,
+  "pred": {
+   "member_id": 124,
+   "litres": 2.0,
+   "fat": 5.1,
+   "shift": "evening"
+  },
+  "ms": 738,
+  "wer": 0.1739,
+  "text": "நம்பர் 124. இரண்டு லிட்டர். ஃபேட் ஐந்து பையன்ட் ஒன்று. சாயங்காலம்."
+ },
+ {
+  "variant": "band+gate",
+  "condition": "0 dB",
+  "clip": "b11",
+  "exact": false,
+  "valid": false,
+  "pred": {},
+  "ms": 532,
+  "wer": 0.8,
+  "text": "லிட்டர். லிட்டர். ஷிஃப்ட்."
+ },
+ {
+  "variant": "band+gate",
+  "condition": "0 dB",
+  "clip": "b12",
+  "exact": false,
+  "valid": false,
+  "pred": {
+   "member_id": 127,
+   "litres": 3.0
+  },
+  "ms": 764,
+  "wer": 0.8276,
+  "text": "நம்பர். 127. மூன்று விட்டர் பார்."
+ },
+ {
+  "variant": "band+gate",
+  "condition": "0 dB",
+  "clip": "b13",
+  "exact": true,
+  "valid": true,
+  "pred": {
+   "member_id": 132,
+   "litres": 1.5,
+   "fat": 5.8,
+   "shift": "morning"
+  },
+  "ms": 860,
+  "wer": 0.2174,
+  "text": "நம்பர் ஒன்றி டூ. ஒன்று ரை லிட்டர். ஃபேட் ஐந்து பாயின்ட் எட்டு. காலை."
+ },
+ {
+  "variant": "band+gate",
+  "condition": "0 dB",
+  "clip": "b14",
+  "exact": false,
+  "valid": false,
+  "pred": {},
+  "ms": 496,
+  "wer": 0.75,
+  "text": "லிட்டர். லிட்டர். ஷிஃப்ட். லிட்டர்."
+ },
+ {
+  "variant": "band+gate",
+  "condition": "0 dB",
+  "clip": "b15",
+  "exact": false,
+  "valid": false,
+  "pred": {
+   "member_id": 137,
+   "fat": 4.9,
+   "shift": "morning"
+  },
+  "ms": 2464,
+  "wer": 0.5185,
+  "text": "நம்பர் 137. லூன்வரி லிட்டர். ஷேக் நாலு பாயின் ஒன்பதே. மாற்றின்"
+ },
+ {
+  "variant": "band+gate",
+  "condition": "0 dB",
+  "clip": "b16",
+  "exact": false,
+  "valid": false,
+  "pred": {
+   "member_id": 137,
+   "litres": 5.5,
+   "fat": 3.7
+  },
+  "ms": 998,
+  "wer": 0.2,
+  "text": "நம்பர் 137. ஐந்தரை லிட்டர் பால். ஃபேட் மூன்று பாயின்ட் ஏழு. இவனின் ஷிஃப்ட்."
+ },
+ {
+  "variant": "band+gate",
+  "condition": "0 dB",
+  "clip": "b17",
+  "exact": false,
+  "valid": false,
+  "pred": {},
+  "ms": 554,
+  "wer": 0.8,
+  "text": "லிட்டர். லிட்டர். ஷிஃப்ட். லிட்டர்."
+ },
+ {
+  "variant": "band+gate",
+  "condition": "0 dB",
+  "clip": "b18",
+  "exact": true,
+  "valid": true,
+  "pred": {
+   "member_id": 143,
+   "litres": 4.0,
+   "fat": 4.1,
+   "shift": "evening"
+  },
+  "ms": 1309,
+  "wer": 0.4615,
+  "text": "நம்பர் 143. நாளு லிட்டர். ஷேக் நாளு வாயின் ஒன்று. சாயங்காலம்."
+ },
+ {
+  "variant": "band+gate",
+  "condition": "0 dB",
+  "clip": "b19",
+  "exact": false,
+  "valid": true,
+  "pred": {
+   "member_id": 146,
+   "litres": 1.5,
+   "fat": 5.0,
+   "shift": "morning"
+  },
+  "ms": 1366,
+  "wer": 0.5,
+  "text": "நம்பர் 146. ஒன்று ரை லிட்டர் பால். ஃபேட் ஆர்வு பாய்க்கின்ற ஐந்தே. மார்ணிங்"
+ },
+ {
+  "variant": "band+gate",
+  "condition": "0 dB",
+  "clip": "b20",
+  "exact": false,
+  "valid": false,
+  "pred": {},
+  "ms": 420,
+  "wer": 0.7586,
+  "text": "லிட்டர். லிட்டர். ஷிஃப்ட்."
+ },
+ {
+  "variant": "band+gate",
+  "condition": "0 dB",
+  "clip": "b21",
+  "exact": false,
+  "valid": false,
+  "pred": {},
+  "ms": 524,
+  "wer": 0.7391,
+  "text": "லிட்டர். லிட்டர். ஷிஃப்ட். லிட்டர்."
+ },
+ {
+  "variant": "band+gate",
+  "condition": "0 dB",
+  "clip": "b22",
+  "exact": false,
+  "valid": false,
+  "pred": {
+   "litres": 4.5,
+   "fat": 2.0,
+   "shift": "evening"
+  },
+  "ms": 951,
+  "wer": 0.5714,
+  "text": "நம்பர் லூற்று ஐம்பத்து ஒன்று. நானரை லிட்டர். ஃபேட் நாலுஸ் பாயின்ஸ் டூ. சாயங்காலம்."
+ },
+ {
+  "variant": "band+gate",
+  "condition": "0 dB",
+  "clip": "b23",
+  "exact": false,
+  "valid": false,
+  "pred": {},
+  "ms": 9255,
+  "wer": 0.7778,
+  "text": "லிட்டர். லிட்டர். லிட்டர். ஷிஃப்ட்."
+ },
+ {
+  "variant": "band+gate",
+  "condition": "0 dB",
+  "clip": "b24",
+  "exact": true,
+  "valid": true,
+  "pred": {
+   "member_id": 156,
+   "litres": 2.5,
+   "fat": 3.3,
+   "shift": "evening"
+  },
+  "ms": 1033,
+  "wer": 0.3684,
+  "text": "நம்பர் 156. ரெண்டு லிட்டர். இல்லை, ரெண்டரை லிட்டர். ஃபேட் மூன்று பாயின் மூன்று. ஈவினின் ஷிக்ட்."
+ },
+ {
+  "variant": "band+nr0.7",
+  "condition": "5 dB",
+  "clip": "b01",
+  "exact": true,
+  "valid": true,
+  "pred": {
+   "member_id": 101,
+   "litres": 2.0,
+   "fat": 4.5,
+   "shift": "morning"
+  },
+  "ms": 870,
+  "wer": 0.2424,
+  "text": "சொசைட்டி நம்பர். 101. ரெண்டு லிட்டர் பால். ஃபேட் நாலு பாயம் ஐந்தே. காலை ஷிஃப்"
+ },
+ {
+  "variant": "band+nr0.7",
+  "condition": "5 dB",
+  "clip": "b02",
+  "exact": false,
+  "valid": false,
+  "pred": {},
+  "ms": 399,
+  "wer": 0.75,
+  "text": "லிட்டர். லிட்டர். ஷிஃப்ட்."
+ },
+ {
+  "variant": "band+nr0.7",
+  "condition": "5 dB",
+  "clip": "b03",
+  "exact": true,
+  "valid": true,
+  "pred": {
+   "member_id": 108,
+   "litres": 1.5,
+   "fat": 3.8,
+   "shift": "morning"
+  },
+  "ms": 1034,
+  "wer": 0.2667,
+  "text": "சொசைட்டி நம்பர். ஒன்று ஜீரோ எட்டு. ஒன்று ரை விட்டர் கால். ஃபேட் மூன்று பாயின்ட் எட்டு. காலை."
+ },
+ {
+  "variant": "band+nr0.7",
+  "condition": "5 dB",
+  "clip": "b04",
+  "exact": true,
+  "valid": true,
+  "pred": {
+   "member_id": 108,
+   "litres": 4.0,
+   "fat": 6.0,
+   "shift": "evening"
+  },
+  "ms": 808,
+  "wer": 0.4118,
+  "text": "நம்பர் நூற்று எட்டு. நாலு லிட்டர். ஃபேட் ஆறு. ஈவனின் ஷிஃப்ட்."
+ },
+ {
+  "variant": "band+nr0.7",
+  "condition": "5 dB",
+  "clip": "b05",
+  "exact": false,
+  "valid": false,
+  "pred": {},
+  "ms": 514,
+  "wer": 0.6957,
+  "text": "லிட்டர். லிட்டர். ஷிஃப்ட். லிட்டர்."
+ },
+ {
+  "variant": "band+nr0.7",
+  "condition": "5 dB",
+  "clip": "b06",
+  "exact": false,
+  "valid": false,
+  "pred": {
+   "fat": 5.5
+  },
+  "ms": 1629,
+  "wer": 0.3571,
+  "text": "நம்பர் ஓன் ஓன் ஷிஃப்ட். மூன்று ரெஇ லிட்டர் பால். ஃபேட் ஐந்து பாயின்ட் ஐந்தே. சாய்யங்காலம்."
+ },
+ {
+  "variant": "band+nr0.7",
+  "condition": "5 dB",
+  "clip": "b07",
+  "exact": true,
+  "valid": true,
+  "pred": {
+   "member_id": 119,
+   "litres": 0.5,
+   "fat": 6.8,
+   "shift": "morning"
+  },
+  "ms": 826,
+  "wer": 0.2609,
+  "text": "நம்பர் ஒன் ஒன் நெய்ன். ஹரை லிட்டர். ஃபேட் ஆறு பாயின்ட் ஏட்டு. மார்ணிங்"
+ },
+ {
+  "variant": "band+nr0.7",
+  "condition": "5 dB",
+  "clip": "b08",
+  "exact": false,
+  "valid": false,
+  "pred": {},
+  "ms": 409,
+  "wer": 0.7241,
+  "text": "லிட்டர். லிட்டர். ஷிஃப்ட்."
+ },
+ {
+  "variant": "band+nr0.7",
+  "condition": "5 dB",
+  "clip": "b09",
+  "exact": false,
+  "valid": true,
+  "pred": {
+   "member_id": 124,
+   "litres": 3.0,
+   "fat": 4.0,
+   "shift": "morning"
+  },
+  "ms": 950,
+  "wer": 0.3636,
+  "text": "நம்பர். 124. மூன்று லிட்டர். இல்லை இல்லை மூன்று ஹரு லிட்டர். டேட் நாலு பாயின் எடு. காலை."
+ },
+ {
+  "variant": "band+nr0.7",
+  "condition": "5 dB",
+  "clip": "b10",
+  "exact": true,
+  "valid": true,
+  "pred": {
+   "member_id": 124,
+   "litres": 2.0,
+   "fat": 5.1,
+   "shift": "evening"
+  },
+  "ms": 736,
+  "wer": 0.1304,
+  "text": "நம்பர் 124. இரண்டு லிட்டர். ஃபேட் ஐந்து பாயின்ட் ஒன்று. சாயங்காலம்."
+ },
+ {
+  "variant": "band+nr0.7",
+  "condition": "5 dB",
+  "clip": "b11",
+  "exact": false,
+  "valid": false,
+  "pred": {
+   "member_id": 127,
+   "fat": 3.9
+  },
+  "ms": 745,
+  "wer": 0.6,
+  "text": "நம்பர். 127. நாரரை விக்ஸ். ஃபேட் மூன்று பாயின் ஒன்பது. மாற்றினி."
+ },
+ {
+  "variant": "band+nr0.7",
+  "condition": "5 dB",
+  "clip": "b12",
+  "exact": false,
+  "valid": false,
+  "pred": {
+   "member_id": 127,
+   "litres": 3.0,
+   "shift": "evening"
+  },
+  "ms": 794,
+  "wer": 0.4828,
+  "text": "நம்பர். 127. மூன்று விட்டர் பார். ஃபேட் நானு பாயன். நானு. ஈவினின் ஷிஃப்ட்."
+ },
+ {
+  "variant": "band+nr0.7",
+  "condition": "5 dB",
+  "clip": "b13",
+  "exact": true,
+  "valid": true,
+  "pred": {
+   "member_id": 132,
+   "litres": 1.5,
+   "fat": 5.8,
+   "shift": "morning"
+  },
+  "ms": 806,
+  "wer": 0.2174,
+  "text": "நம்பர் ஒன்றி டூ. ஒன்று ரை லிட்டர். ஃபேட் ஐந்து பாயின்ட் எட்டு காலை."
+ },
+ {
+  "variant": "band+nr0.7",
+  "condition": "5 dB",
+  "clip": "b14",
+  "exact": true,
+  "valid": true,
+  "pred": {
+   "member_id": 132,
+   "litres": 2.0,
+   "fat": 6.2,
+   "shift": "evening"
+  },
+  "ms": 854,
+  "wer": 0.25,
+  "text": "நம்பர். 132. ரெண்டு லிட்டர். ஃபேட் ஆறு பாயின் டூ. சாயங்காலம்."
+ },
+ {
+  "variant": "band+nr0.7",
+  "condition": "5 dB",
+  "clip": "b15",
+  "exact": false,
+  "valid": false,
+  "pred": {
+   "member_id": 137,
+   "litres": 3.5,
+   "fat": 9.0
+  },
+  "ms": 1485,
+  "wer": 0.4074,
+  "text": "நம்பர். 137. மூன்றுறை லிட்டர். ஃபேட் நானு பாயின் ஒன்பது. மாரினின்"
+ },
+ {
+  "variant": "band+nr0.7",
+  "condition": "5 dB",
+  "clip": "b16",
+  "exact": false,
+  "valid": false,
+  "pred": {
+   "member_id": 137,
+   "litres": 5.5,
+   "fat": 3.7
+  },
+  "ms": 642,
+  "wer": 0.36,
+  "text": "நம்பர் 137. ஐந்தரை லிட்டர் பால். ஃபேட் மூன்று பாயின்ட் ஏழு."
+ },
+ {
+  "variant": "band+nr0.7",
+  "condition": "5 dB",
+  "clip": "b17",
+  "exact": false,
+  "valid": false,
+  "pred": {
+   "member_id": 143,
+   "litres": 2.0,
+   "fat": 5.3
+  },
+  "ms": 621,
+  "wer": 0.36,
+  "text": "நம்பர் 143. ரெண்டு லிட்டர். ஃபேட் ஐந்து பாயின் மோனு. காலின்."
+ },
+ {
+  "variant": "band+nr0.7",
+  "condition": "5 dB",
+  "clip": "b18",
+  "exact": false,
+  "valid": false,
+  "pred": {
+   "member_id": 143,
+   "fat": 1.0,
+   "shift": "evening"
+  },
+  "ms": 628,
+  "wer": 0.4231,
+  "text": "நம்பர். 143. நான் லிட்டர். ஃபேட். நான் லிட்டர். ஒன்று. சாயங்காலம்."
+ },
+ {
+  "variant": "band+nr0.7",
+  "condition": "5 dB",
+  "clip": "b19",
+  "exact": true,
+  "valid": true,
+  "pred": {
+   "member_id": 146,
+   "litres": 1.5,
+   "fat": 6.5,
+   "shift": "morning"
+  },
+  "ms": 678,
+  "wer": 0.3214,
+  "text": "நம்பர் 146. ஒன்று ரை லிட்டர் பால். ஃபேட் ஆறு பாயின்ட் ஐந்து மார்ணிங்"
+ },
+ {
+  "variant": "band+nr0.7",
+  "condition": "5 dB",
+  "clip": "b20",
+  "exact": false,
+  "valid": false,
+  "pred": {
+   "litres": 3.0,
+   "fat": 3.0
+  },
+  "ms": 1324,
+  "wer": 0.6552,
+  "text": "நம்பர் லிட்டர். மூன்று லிட்டர். ஃபேட் மூன்று பாய்கின்று நாது."
+ },
+ {
+  "variant": "band+nr0.7",
+  "condition": "5 dB",
+  "clip": "b21",
+  "exact": true,
+  "valid": true,
+  "pred": {
+   "member_id": 151,
+   "litres": 2.5,
+   "fat": 5.6,
+   "shift": "morning"
+  },
+  "ms": 639,
+  "wer": 0.3043,
+  "text": "நம்பர். 151. ரெண்டரை லிட்டர். ஃபேட் ஐந்து பாயங்கள். ஆறு. காலை."
+ },
+ {
+  "variant": "band+nr0.7",
+  "condition": "5 dB",
+  "clip": "b22",
+  "exact": false,
+  "valid": true,
+  "pred": {
+   "member_id": 151,
+   "litres": 4.5,
+   "fat": 4.0,
+   "shift": "evening"
+  },
+  "ms": 622,
+  "wer": 0.1905,
+  "text": "நம்பர் 151. நானரை லிட்டர். ஃபேட் நாலு பாயின்த் தூ. சாயங்காலம்."
+ },
+ {
+  "variant": "band+nr0.7",
+  "condition": "5 dB",
+  "clip": "b23",
+  "exact": false,
+  "valid": false,
+  "pred": {
+   "member_id": 156,
+   "fat": 6.9
+  },
+  "ms": 1140,
+  "wer": 0.5556,
+  "text": "நம்பர் 156. ஒரு நிகர் பார். கேட் ஆறு பாயின் ஒன்பது. மார்தின்."
+ },
+ {
+  "variant": "band+nr0.7",
+  "condition": "5 dB",
+  "clip": "b24",
+  "exact": false,
+  "valid": true,
+  "pred": {
+   "member_id": 156,
+   "litres": 2.0,
+   "fat": 3.3,
+   "shift": "evening"
+  },
+  "ms": 938,
+  "wer": 0.4211,
+  "text": "நம்பர் 156. ரெண்டு லிட்டர். இல்லை, இரண்டுரை லிட்டர். ஃபேட் மூன்று பாயின் மூன்று. ஈவினின் ஷிஃப்ட்."
+ },
+ {
+  "variant": "band+nr0.7",
+  "condition": "0 dB",
+  "clip": "b01",
+  "exact": false,
+  "valid": false,
+  "pred": {
+   "member_id": 101,
+   "fat": 4.5,
+   "shift": "morning"
+  },
+  "ms": 761,
+  "wer": 0.4848,
+  "text": "சொசைட்டி நம்பர் 101. ரென்டு விக்ரன் ஃபால். சேக் நாலு பாயம் ஐந்தே. காலை ஷிக்."
+ },
+ {
+  "variant": "band+nr0.7",
+  "condition": "0 dB",
+  "clip": "b02",
+  "exact": false,
+  "valid": false,
+  "pred": {},
+  "ms": 450,
+  "wer": 0.75,
+  "text": "லிட்டர். லிட்டர். ஷிஃப்ட்."
+ },
+ {
+  "variant": "band+nr0.7",
+  "condition": "0 dB",
+  "clip": "b03",
+  "exact": false,
+  "valid": false,
+  "pred": {
+   "fat": 3.0,
+   "shift": "morning"
+  },
+  "ms": 876,
+  "wer": 0.4667,
+  "text": "சொசைட்டி நம்பர். ஒன்று ஜீரோ ஏக்டில். ஒன்று ரை வீட்ஷர்கால். ஃபேட் மூன்று பாயின் ஏக்டில். காலை."
+ },
+ {
+  "variant": "band+nr0.7",
+  "condition": "0 dB",
+  "clip": "b04",
+  "exact": false,
+  "valid": false,
+  "pred": {
+   "litres": 4.0,
+   "fat": 6.0,
+   "shift": "evening"
+  },
+  "ms": 651,
+  "wer": 0.3529,
+  "text": "நம்பர் லூற்று எட்டு. நால் லிட்டர். ஃபேட் ஆறு. ஈவினின் ஷிஃப்ட்."
+ },
+ {
+  "variant": "band+nr0.7",
+  "condition": "0 dB",
+  "clip": "b05",
+  "exact": false,
+  "valid": false,
+  "pred": {},
+  "ms": 377,
+  "wer": 0.7826,
+  "text": "லிட்டர். லிட்டர். ஷிஃப்ட்."
+ },
+ {
+  "variant": "band+nr0.7",
+  "condition": "0 dB",
+  "clip": "b06",
+  "exact": false,
+  "valid": false,
+  "pred": {},
+  "ms": 451,
+  "wer": 0.7857,
+  "text": "லிட்டர். லிட்டர். ஷிஃப்ட். லிட்டர்."
+ },
+ {
+  "variant": "band+nr0.7",
+  "condition": "0 dB",
+  "clip": "b07",
+  "exact": true,
+  "valid": true,
+  "pred": {
+   "member_id": 119,
+   "litres": 0.5,
+   "fat": 6.8,
+   "shift": "morning"
+  },
+  "ms": 701,
+  "wer": 0.2609,
+  "text": "நம்பர் ஒன் ஒன் நெய்ன். ஹரை லிட்டர். ஃபேட் ஆறு பாயின்ட் ஏட்டு. மார்ணிங்"
+ },
+ {
+  "variant": "band+nr0.7",
+  "condition": "0 dB",
+  "clip": "b08",
+  "exact": false,
+  "valid": false,
+  "pred": {},
+  "ms": 436,
+  "wer": 0.6897,
+  "text": "லிட்டர். லிட்டர். லிட்டர். ஷிஃப்ட்."
+ },
+ {
+  "variant": "band+nr0.7",
+  "condition": "0 dB",
+  "clip": "b09",
+  "exact": false,
+  "valid": false,
+  "pred": {
+   "litres": 3.5,
+   "fat": 4.0,
+   "shift": "morning"
+  },
+  "ms": 887,
+  "wer": 0.3939,
+  "text": "நம்பர். ஒன்றூக்கோர். மூன்று லிட்டர். இல்லை இல்லை மூன்று ஹரை லிட்டர். சேக் நாலு பாயின் ஏற்றே. காலை."
+ },
+ {
+  "variant": "band+nr0.7",
+  "condition": "0 dB",
+  "clip": "b10",
+  "exact": true,
+  "valid": true,
+  "pred": {
+   "member_id": 124,
+   "litres": 2.0,
+   "fat": 5.1,
+   "shift": "evening"
+  },
+  "ms": 675,
+  "wer": 0.1304,
+  "text": "நம்பர் 124. இரண்டு லிட்டர். ஃபேட் ஐந்து பாயின்ட் ஒன்று. சாயங்காலம்."
+ },
+ {
+  "variant": "band+nr0.7",
+  "condition": "0 dB",
+  "clip": "b11",
+  "exact": false,
+  "valid": false,
+  "pred": {},
+  "ms": 449,
+  "wer": 0.8,
+  "text": "லிட்டர். லிட்டர். ஷிஃப்ட்."
+ },
+ {
+  "variant": "band+nr0.7",
+  "condition": "0 dB",
+  "clip": "b12",
+  "exact": false,
+  "valid": false,
+  "pred": {
+   "member_id": 127,
+   "litres": 3.0
+  },
+  "ms": 674,
+  "wer": 0.7241,
+  "text": "நம்பர். 127. மூன்று விட்டர் பார். ஷிஃப்ட்."
+ },
+ {
+  "variant": "band+nr0.7",
+  "condition": "0 dB",
+  "clip": "b13",
+  "exact": true,
+  "valid": true,
+  "pred": {
+   "member_id": 132,
+   "litres": 1.5,
+   "fat": 5.8,
+   "shift": "morning"
+  },
+  "ms": 684,
+  "wer": 0.3043,
+  "text": "நம்பர். 132. ஒன்று ரை லிட்டர். ஃபேட் ஐந்து பாயின்ட் ஏட்டு. காலை."
+ },
+ {
+  "variant": "band+nr0.7",
+  "condition": "0 dB",
+  "clip": "b14",
+  "exact": false,
+  "valid": false,
+  "pred": {
+   "member_id": 132,
+   "litres": 132.0
+  },
+  "ms": 506,
+  "wer": 0.7083,
+  "text": "நம்பர். 132. லிட்டர். லிட்டர். ஷிஃப்டி நம்பர்."
+ },
+ {
+  "variant": "band+nr0.7",
+  "condition": "0 dB",
+  "clip": "b15",
+  "exact": false,
+  "valid": false,
+  "pred": {
+   "member_id": 137,
+   "shift": "morning"
+  },
+  "ms": 620,
+  "wer": 0.5556,
+  "text": "நம்பர். 137. மூன்றுரை விட்டர். ஷேக்நாலு பாயின் ஒன்பது. மாற்றின்"
+ },
+ {
+  "variant": "band+nr0.7",
+  "condition": "0 dB",
+  "clip": "b16",
+  "exact": false,
+  "valid": false,
+  "pred": {
+   "member_id": 137,
+   "litres": 5.5,
+   "fat": 3.7
+  },
+  "ms": 754,
+  "wer": 0.4,
+  "text": "நம்பர் 137. ஐந்தரை லிட்டர் பான். ஃபேட் மூன்று பாயின்ட் ஏழு."
+ },
+ {
+  "variant": "band+nr0.7",
+  "condition": "0 dB",
+  "clip": "b17",
+  "exact": false,
+  "valid": false,
+  "pred": {
+   "member_id": 143,
+   "fat": 5.1
+  },
+  "ms": 1372,
+  "wer": 0.64,
+  "text": "நம்பர் 143. ரென்டு விஷன். ஸ்ரீக் ஐந்து பாயின் ஓனு. காணி."
+ },
+ {
+  "variant": "band+nr0.7",
+  "condition": "0 dB",
+  "clip": "b18",
+  "exact": true,
+  "valid": true,
+  "pred": {
+   "member_id": 143,
+   "litres": 4.0,
+   "fat": 4.1,
+   "shift": "evening"
+  },
+  "ms": 604,
+  "wer": 0.4615,
+  "text": "நம்பர். 143. நாளு லிட்டர். ஷேக். நாளு பாயன். ஒன்று. சாயங்காலம்."
+ },
+ {
+  "variant": "band+nr0.7",
+  "condition": "0 dB",
+  "clip": "b19",
+  "exact": false,
+  "valid": false,
+  "pred": {
+   "member_id": 146,
+   "litres": 1.5,
+   "fat": 5.0
+  },
+  "ms": 2498,
+  "wer": 0.5357,
+  "text": "நம்பர் 146. ஒன்று ரை லிட்டர் பால். ஃபேட் ஆர்வு பாய்க்கின்ற ஐந்து மார்ணிங்க்"
+ },
+ {
+  "variant": "band+nr0.7",
+  "condition": "0 dB",
+  "clip": "b20",
+  "exact": false,
+  "valid": false,
+  "pred": {},
+  "ms": 449,
+  "wer": 0.7586,
+  "text": "லிட்டர். லிட்டர். ஷிஃப்ட்."
+ },
+ {
+  "variant": "band+nr0.7",
+  "condition": "0 dB",
+  "clip": "b21",
+  "exact": false,
+  "valid": false,
+  "pred": {
+   "fat": 5.6,
+   "shift": "morning"
+  },
+  "ms": 1166,
+  "wer": 0.3913,
+  "text": "நம்பர் ஒன்பை ஒன்று. ரெண்டுரை விட்ட. ஃபேட் ஐந்து பாயின் ஆறு. காலை."
+ },
+ {
+  "variant": "band+nr0.7",
+  "condition": "0 dB",
+  "clip": "b22",
+  "exact": false,
+  "valid": false,
+  "pred": {
+   "litres": 4.5,
+   "fat": 4.2,
+   "shift": "evening"
+  },
+  "ms": 818,
+  "wer": 0.5238,
+  "text": "நம்பர் லூற்று ஐம்பத்து ஒன்று. நானரை லிட்டர். ஃபேட் நாலு பாயின்ஸ் டூ. சாயங்காலம்."
+ },
+ {
+  "variant": "band+nr0.7",
+  "condition": "0 dB",
+  "clip": "b23",
+  "exact": false,
+  "valid": false,
+  "pred": {
+   "member_id": 156
+  },
+  "ms": 7332,
+  "wer": 0.8889,
+  "text": "லிட்டர். நம்பர். 156."
+ },
+ {
+  "variant": "band+nr0.7",
+  "condition": "0 dB",
+  "clip": "b24",
+  "exact": true,
+  "valid": true,
+  "pred": {
+   "member_id": 156,
+   "litres": 2.5,
+   "fat": 3.3,
+   "shift": "evening"
+  },
+  "ms": 904,
+  "wer": 0.3421,
+  "text": "நம்பர் 156. ரெண்டு லிட்டர். இல்லை, ரெண்டரை லிட்டர். ஃபேட் மூன்று பாயின் மூன்று. ஈவினின் ஷிஃப்ட்."
+ },
+ {
+  "variant": "band+nr0.85",
+  "condition": "5 dB",
+  "clip": "b01",
+  "exact": true,
+  "valid": true,
+  "pred": {
+   "member_id": 101,
+   "litres": 2.0,
+   "fat": 4.5,
+   "shift": "morning"
+  },
+  "ms": 765,
+  "wer": 0.2424,
+  "text": "சொசைட்டி நம்பர். 101. ரெண்டு லிட்டர் பால். ஃபேட் நாலு பாயம் ஐந்தே. காலை ஷிஃப்."
+ },
+ {
+  "variant": "band+nr0.85",
+  "condition": "5 dB",
+  "clip": "b02",
+  "exact": false,
+  "valid": false,
+  "pred": {
+   "litres": 3.0,
+   "fat": 5.1
+  },
+  "ms": 1342,
+  "wer": 0.3214,
+  "text": "நம்பர் ஓன் டேரோ ஒன்று, மூன்று லிட்டர், ஃபேட் ஐந்து பாயின் ஒன்று, தாய்யங்காலம் ஷிஃப்ட்."
+ },
+ {
+  "variant": "band+nr0.85",
+  "condition": "5 dB",
+  "clip": "b03",
+  "exact": false,
+  "valid": false,
+  "pred": {
+   "member_id": 108,
+   "fat": 3.8,
+   "shift": "morning"
+  },
+  "ms": 851,
+  "wer": 0.2667,
+  "text": "சொசைட்டி நம்பர். ஒன்று ஜீரோ எட்டு. ஒன்று ரை டிட்டர் கால். ஃபேட் மூன்று பாயின்ட் எட்டு. காலை."
+ },
+ {
+  "variant": "band+nr0.85",
+  "condition": "5 dB",
+  "clip": "b04",
+  "exact": false,
+  "valid": false,
+  "pred": {
+   "litres": 4.0,
+   "fat": 6.0,
+   "shift": "evening"
+  },
+  "ms": 677,
+  "wer": 0.4118,
+  "text": "நம்பர் லூற்று எட்டு. நால் லிட்டர். ஃபேட் ஆறு. ஈவனின் ஷிஃப்ட்."
+ },
+ {
+  "variant": "band+nr0.85",
+  "condition": "5 dB",
+  "clip": "b05",
+  "exact": false,
+  "valid": false,
+  "pred": {},
+  "ms": 439,
+  "wer": 0.6957,
+  "text": "லிட்டர். லிட்டர். ஷிஃப்ட். லிட்டர்."
+ },
+ {
+  "variant": "band+nr0.85",
+  "condition": "5 dB",
+  "clip": "b06",
+  "exact": false,
+  "valid": false,
+  "pred": {
+   "fat": 5.5
+  },
+  "ms": 1405,
+  "wer": 0.3571,
+  "text": "நம்பர் ஓன் ஓன் ஷிஃப்ட். மூன்று ரெஇ லிட்டர் பால். ஃபேட் ஐந்து பாயின்ட் ஐந்து சாய்யங்காலம்."
+ },
+ {
+  "variant": "band+nr0.85",
+  "condition": "5 dB",
+  "clip": "b07",
+  "exact": true,
+  "valid": true,
+  "pred": {
+   "member_id": 119,
+   "litres": 0.5,
+   "fat": 6.8,
+   "shift": "morning"
+  },
+  "ms": 709,
+  "wer": 0.1739,
+  "text": "நம்பர் ஒன் ஒன் நெய்ன். ஆறை லிட்டர். ஃபேட் ஆறு பாயெண்ட் எட்டு. மார்ணிங்"
+ },
+ {
+  "variant": "band+nr0.85",
+  "condition": "5 dB",
+  "clip": "b08",
+  "exact": false,
+  "valid": false,
+  "pred": {},
+  "ms": 468,
+  "wer": 0.7241,
+  "text": "லிட்டர். லிட்டர். ஷிஃப்ட்."
+ },
+ {
+  "variant": "band+nr0.85",
+  "condition": "5 dB",
+  "clip": "b09",
+  "exact": false,
+  "valid": true,
+  "pred": {
+   "member_id": 124,
+   "litres": 3.0,
+   "fat": 4.0,
+   "shift": "morning"
+  },
+  "ms": 805,
+  "wer": 0.3636,
+  "text": "நம்பர். 124. மூன்று லிட்டர். இல்லை இல்லை மூன்று ஹரு லிட்டர். டேட் நாலு பாயின் எடு. காலை."
+ },
+ {
+  "variant": "band+nr0.85",
+  "condition": "5 dB",
+  "clip": "b10",
+  "exact": true,
+  "valid": true,
+  "pred": {
+   "member_id": 124,
+   "litres": 2.0,
+   "fat": 5.1,
+   "shift": "evening"
+  },
+  "ms": 666,
+  "wer": 0.1304,
+  "text": "நம்பர் 124. இரண்டு லிட்டர். ஃபேட் ஐந்து பாயின்ட் ஒன்று. சாயங்காலம்."
+ },
+ {
+  "variant": "band+nr0.85",
+  "condition": "5 dB",
+  "clip": "b11",
+  "exact": false,
+  "valid": false,
+  "pred": {
+   "member_id": 127,
+   "litres": 4.5,
+   "fat": 3.9
+  },
+  "ms": 628,
+  "wer": 0.6,
+  "text": "நம்பர். 127. நாரரை விட்டேன். ஃபேட் மூன்று பாயின் ஒன்பது. மாற்றினி."
+ },
+ {
+  "variant": "band+nr0.85",
+  "condition": "5 dB",
+  "clip": "b12",
+  "exact": false,
+  "valid": false,
+  "pred": {
+   "member_id": 127,
+   "litres": 3.0
+  },
+  "ms": 723,
+  "wer": 0.4483,
+  "text": "நம்பர். 127. மூன்று லிட்டர் பார். ஃபேட் நானு பாயின் நானு. இவனின் ஷிஃப்ட்."
+ },
+ {
+  "variant": "band+nr0.85",
+  "condition": "5 dB",
+  "clip": "b13",
+  "exact": true,
+  "valid": true,
+  "pred": {
+   "member_id": 132,
+   "litres": 1.5,
+   "fat": 5.8,
+   "shift": "morning"
+  },
+  "ms": 692,
+  "wer": 0.2609,
+  "text": "நம்பர். 132. ஒன்று ரை லிட்டர். ஃபேட் ஐந்து பாயின்ட் எட்டு. காலை."
+ },
+ {
+  "variant": "band+nr0.85",
+  "condition": "5 dB",
+  "clip": "b14",
+  "exact": true,
+  "valid": true,
+  "pred": {
+   "member_id": 132,
+   "litres": 2.0,
+   "fat": 6.2,
+   "shift": "evening"
+  },
+  "ms": 621,
+  "wer": 0.25,
+  "text": "நம்பர். 132. ரெண்டு லிட்டர். ஃபேட் ஆறு பாயின் டூ. சாயங்காலம்."
+ },
+ {
+  "variant": "band+nr0.85",
+  "condition": "5 dB",
+  "clip": "b15",
+  "exact": false,
+  "valid": false,
+  "pred": {
+   "member_id": 137,
+   "litres": 3.5,
+   "fat": 9.0
+  },
+  "ms": 652,
+  "wer": 0.4444,
+  "text": "நம்பர். 137. மூன்றுறை லிட்டர். ஃபேட் நானு பாயின் ஒன்பது. மார்ணினி."
+ },
+ {
+  "variant": "band+nr0.85",
+  "condition": "5 dB",
+  "clip": "b16",
+  "exact": false,
+  "valid": false,
+  "pred": {
+   "member_id": 137,
+   "litres": 5.5,
+   "fat": 3.7
+  },
+  "ms": 755,
+  "wer": 0.2,
+  "text": "நம்பர் 137. ஐந்தரை லிட்டர் பால். ஃபேட் மூன்று பாயின்ட் ஏழு. இவனின் ஷிஃப்ட்."
+ },
+ {
+  "variant": "band+nr0.85",
+  "condition": "5 dB",
+  "clip": "b17",
+  "exact": false,
+  "valid": false,
+  "pred": {
+   "member_id": 143,
+   "litres": 2.0,
+   "fat": 5.3
+  },
+  "ms": 603,
+  "wer": 0.36,
+  "text": "நம்பர் 143. ரெண்டு லிட்டர். ஃபேட் ஐந்து பாயின் மோனு. காலின்."
+ },
+ {
+  "variant": "band+nr0.85",
+  "condition": "5 dB",
+  "clip": "b18",
+  "exact": false,
+  "valid": false,
+  "pred": {
+   "member_id": 143,
+   "fat": 1.0,
+   "shift": "evening"
+  },
+  "ms": 626,
+  "wer": 0.4231,
+  "text": "நம்பர். 143. நான் லிட்டர். ஃபேட். நான் லிட்டர். ஒன்று. சாயங்காலம்."
+ },
+ {
+  "variant": "band+nr0.85",
+  "condition": "5 dB",
+  "clip": "b19",
+  "exact": true,
+  "valid": true,
+  "pred": {
+   "member_id": 146,
+   "litres": 1.5,
+   "fat": 6.5,
+   "shift": "morning"
+  },
+  "ms": 704,
+  "wer": 0.3214,
+  "text": "நம்பர் 146. ஒன்று ரை லிட்டர் பால். ஃபேட் ஆறு பாயின்ட் ஐந்தே. மார்ணிங்"
+ },
+ {
+  "variant": "band+nr0.85",
+  "condition": "5 dB",
+  "clip": "b20",
+  "exact": false,
+  "valid": false,
+  "pred": {},
+  "ms": 434,
+  "wer": 0.7241,
+  "text": "லிட்டர். லிட்டர். லிட்டர். ஷிஃப்ட்."
+ },
+ {
+  "variant": "band+nr0.85",
+  "condition": "5 dB",
+  "clip": "b21",
+  "exact": false,
+  "valid": false,
+  "pred": {
+   "member_id": 151,
+   "litres": 151.0,
+   "fat": 5.6,
+   "shift": "morning"
+  },
+  "ms": 541,
+  "wer": 0.4348,
+  "text": "நம்பர். 151. லிட்டர். ஃபேட். ஐந்து பாயங்கள். ஆறு. காலை."
+ },
+ {
+  "variant": "band+nr0.85",
+  "condition": "5 dB",
+  "clip": "b22",
+  "exact": true,
+  "valid": true,
+  "pred": {
+   "member_id": 151,
+   "litres": 4.5,
+   "fat": 4.2,
+   "shift": "evening"
+  },
+  "ms": 651,
+  "wer": 0.0952,
+  "text": "நம்பர் 151. நானரை லிட்டர். ஃபேட் நாலு பாயின்ட் டூ. சாயங்காலம்."
+ },
+ {
+  "variant": "band+nr0.85",
+  "condition": "5 dB",
+  "clip": "b23",
+  "exact": false,
+  "valid": false,
+  "pred": {
+   "member_id": 156,
+   "fat": 6.9,
+   "shift": "morning"
+  },
+  "ms": 1074,
+  "wer": 0.5926,
+  "text": "நம்பர் 156. ஒரு நிகர் பார். ஷேட் ஆறு பாயின் ஒன்பது. மாற்றின்"
+ },
+ {
+  "variant": "band+nr0.85",
+  "condition": "5 dB",
+  "clip": "b24",
+  "exact": false,
+  "valid": true,
+  "pred": {
+   "member_id": 156,
+   "litres": 2.0,
+   "fat": 3.3,
+   "shift": "evening"
+  },
+  "ms": 899,
+  "wer": 0.4474,
+  "text": "நம்பர் 156. ரெண்டு லிட்டர். இல்லை, இரண்டுரை லிட்டர். ஃபேட் மூன்று பாயின் மூன்று. ஈவ்ணின் ஷிஃப்ட்."
+ },
+ {
+  "variant": "band+nr0.85",
+  "condition": "0 dB",
+  "clip": "b01",
+  "exact": false,
+  "valid": false,
+  "pred": {
+   "member_id": 101,
+   "fat": 4.5,
+   "shift": "morning"
+  },
+  "ms": 727,
+  "wer": 0.4545,
+  "text": "சொசைட்டி நம்பர் 101. ரென்டு விக்ரன் ஃபால். சேக் நாலு பாயின் ஐந்தே. காலை ஷிக்."
+ },
+ {
+  "variant": "band+nr0.85",
+  "condition": "0 dB",
+  "clip": "b02",
+  "exact": false,
+  "valid": false,
+  "pred": {},
+  "ms": 438,
+  "wer": 0.75,
+  "text": "லிட்டர். லிட்டர். ஷிஃப்ட்."
+ },
+ {
+  "variant": "band+nr0.85",
+  "condition": "0 dB",
+  "clip": "b03",
+  "exact": false,
+  "valid": false,
+  "pred": {
+   "fat": 3.0,
+   "shift": "morning"
+  },
+  "ms": 880,
+  "wer": 0.4667,
+  "text": "சொசைட்டி நம்பர். ஒன்று ஜீரோ ஏக்டில். ஒன்று ரை வீட்ஷர்கால். ஃபேட் மூன்று பாயின் ஏக்டில். காலை."
+ },
+ {
+  "variant": "band+nr0.85",
+  "condition": "0 dB",
+  "clip": "b04",
+  "exact": false,
+  "valid": false,
+  "pred": {
+   "fat": 6.0,
+   "shift": "evening"
+  },
+  "ms": 676,
+  "wer": 0.4118,
+  "text": "நம்பர் லூற்சு எட்டு. நான் லிட்டர். ஃபேட் ஆறு. ஈவினின் ஷிஃப்ட்."
+ },
+ {
+  "variant": "band+nr0.85",
+  "condition": "0 dB",
+  "clip": "b05",
+  "exact": false,
+  "valid": false,
+  "pred": {},
+  "ms": 371,
+  "wer": 0.7826,
+  "text": "லிட்டர். லிட்டர். ஷிஃப்ட்."
+ },
+ {
+  "variant": "band+nr0.85",
+  "condition": "0 dB",
+  "clip": "b06",
+  "exact": false,
+  "valid": false,
+  "pred": {},
+  "ms": 451,
+  "wer": 0.7857,
+  "text": "லிட்டர். லிட்டர். ஷிஃப்ட். லிட்டர்."
+ },
+ {
+  "variant": "band+nr0.85",
+  "condition": "0 dB",
+  "clip": "b07",
+  "exact": true,
+  "valid": true,
+  "pred": {
+   "member_id": 119,
+   "litres": 0.5,
+   "fat": 6.8,
+   "shift": "morning"
+  },
+  "ms": 820,
+  "wer": 0.1739,
+  "text": "நம்பர் ஒன் ஒன்னைன். ஆறை லிட்டர். ஃபேட் ஆறு பாயின்ட் ஏட்டு. மார்ணிங்"
+ },
+ {
+  "variant": "band+nr0.85",
+  "condition": "0 dB",
+  "clip": "b08",
+  "exact": false,
+  "valid": false,
+  "pred": {},
+  "ms": 495,
+  "wer": 0.6897,
+  "text": "லிட்டர். லிட்டர். லிட்டர். ஷிஃப்ட்."
+ },
+ {
+  "variant": "band+nr0.85",
+  "condition": "0 dB",
+  "clip": "b09",
+  "exact": false,
+  "valid": false,
+  "pred": {
+   "litres": 3.5,
+   "fat": 4.8,
+   "shift": "morning"
+  },
+  "ms": 989,
+  "wer": 0.3636,
+  "text": "நம்பர் ஒன்றூக்கோர். மூன்று லிட்டர். இல்லை இல்லை மூன்று ஹரை லிட்டர். ஷேட் நாலு பாயின் ஏற்று. காலை."
+ },
+ {
+  "variant": "band+nr0.85",
+  "condition": "0 dB",
+  "clip": "b10",
+  "exact": true,
+  "valid": true,
+  "pred": {
+   "member_id": 124,
+   "litres": 2.0,
+   "fat": 5.1,
+   "shift": "evening"
+  },
+  "ms": 735,
+  "wer": 0.1304,
+  "text": "நம்பர் 124. இரண்டு லிட்டர். ஃபேட் ஐந்து பாயின்ட் ஒன்று. சாயங்காலம்."
+ },
+ {
+  "variant": "band+nr0.85",
+  "condition": "0 dB",
+  "clip": "b11",
+  "exact": false,
+  "valid": false,
+  "pred": {
+   "member_id": 127,
+   "shift": "morning"
+  },
+  "ms": 1279,
+  "wer": 0.68,
+  "text": "நம்பர் 127. நாரை விட்டேன். ஸ்ரீட் ரோலு பாயின் ஒன்பதை மாற்றின்"
+ },
+ {
+  "variant": "band+nr0.85",
+  "condition": "0 dB",
+  "clip": "b12",
+  "exact": false,
+  "valid": false,
+  "pred": {
+   "member_id": 127,
+   "litres": 3.0
+  },
+  "ms": 890,
+  "wer": 0.7241,
+  "text": "நம்பர். 127. மூன்று விட்டர் பார். ஷிஃப்ட்."
+ },
+ {
+  "variant": "band+nr0.85",
+  "condition": "0 dB",
+  "clip": "b13",
+  "exact": true,
+  "valid": true,
+  "pred": {
+   "member_id": 132,
+   "litres": 1.5,
+   "fat": 5.8,
+   "shift": "morning"
+  },
+  "ms": 854,
+  "wer": 0.3043,
+  "text": "நம்பர். 132. ஒன்று ரை லிட்டர். ஃபேட் ஐந்து பாயின்ட் ஏட்டு. காலை."
+ },
+ {
+  "variant": "band+nr0.85",
+  "condition": "0 dB",
+  "clip": "b14",
+  "exact": false,
+  "valid": false,
+  "pred": {
+   "member_id": 132,
+   "fat": 6.2,
+   "shift": "evening"
+  },
+  "ms": 717,
+  "wer": 0.375,
+  "text": "நம்பர். 132. ரெட்டு லிட்டர். ஸ்வேட் ஆறு பாயின் 2. சாயங்காலம்."
+ },
+ {
+  "variant": "band+nr0.85",
+  "condition": "0 dB",
+  "clip": "b15",
+  "exact": false,
+  "valid": false,
+  "pred": {},
+  "ms": 580,
+  "wer": 0.7037,
+  "text": "நம்பர். லிட்டர். ஷிஃப்ட். லிட்டர். ஷிஃப்ட்."
+ },
+ {
+  "variant": "band+nr0.85",
+  "condition": "0 dB",
+  "clip": "b16",
+  "exact": false,
+  "valid": false,
+  "pred": {
+   "member_id": 137,
+   "litres": 5.5,
+   "fat": 3.7
+  },
+  "ms": 826,
+  "wer": 0.24,
+  "text": "நம்பர் 137. ஐந்தரை லிட்டர் பான். ஃபேட் மூன்று பாயின்ட் ஏழு. இவனின் ஷிஃப்ட்."
+ },
+ {
+  "variant": "band+nr0.85",
+  "condition": "0 dB",
+  "clip": "b17",
+  "exact": false,
+  "valid": false,
+  "pred": {
+   "member_id": 143,
+   "fat": 5.3
+  },
+  "ms": 1221,
+  "wer": 0.64,
+  "text": "நம்பர் 143. ரென்டு விஷென். ஸ்ரீக் ஐந்து பாயின் மோனு. காணி."
+ },
+ {
+  "variant": "band+nr0.85",
+  "condition": "0 dB",
+  "clip": "b18",
+  "exact": false,
+  "valid": false,
+  "pred": {},
+  "ms": 592,
+  "wer": 0.7692,
+  "text": "சொசைட்டி நம்பர். லிட்டர். ஷிஃப்ட். லிட்டர்."
+ },
+ {
+  "variant": "band+nr0.85",
+  "condition": "0 dB",
+  "clip": "b19",
+  "exact": false,
+  "valid": false,
+  "pred": {
+   "member_id": 146,
+   "litres": 1.5,
+   "fat": 5.0
+  },
+  "ms": 5021,
+  "wer": 0.5357,
+  "text": "நம்பர் 146. ஒன்று ரை லிட்டர் பால். ஃபேட் ஆர்வு பாய்க்கிறான் ஐந்து மார்ணிக்"
+ },
+ {
+  "variant": "band+nr0.85",
+  "condition": "0 dB",
+  "clip": "b20",
+  "exact": false,
+  "valid": false,
+  "pred": {},
+  "ms": 516,
+  "wer": 0.7241,
+  "text": "லிட்டர். லிட்டர். லிட்டர். ஷிஃப்ட்."
+ },
+ {
+  "variant": "band+nr0.85",
+  "condition": "0 dB",
+  "clip": "b21",
+  "exact": false,
+  "valid": false,
+  "pred": {
+   "member_id": 151,
+   "litres": 151.0
+  },
+  "ms": 615,
+  "wer": 0.6957,
+  "text": "நம்பர். 151. லிட்டர். ஷிஃப்ட். லிட்டர். ஷிஃப்ட்."
+ },
+ {
+  "variant": "band+nr0.85",
+  "condition": "0 dB",
+  "clip": "b22",
+  "exact": true,
+  "valid": true,
+  "pred": {
+   "member_id": 151,
+   "litres": 4.5,
+   "fat": 4.2,
+   "shift": "evening"
+  },
+  "ms": 698,
+  "wer": 0.1429,
+  "text": "நம்பர் 151 நானரை லிட்டர். ஃபேட் நாலு பாயின்ஸ் டூ. சாயங்காலம்."
+ },
+ {
+  "variant": "band+nr0.85",
+  "condition": "0 dB",
+  "clip": "b23",
+  "exact": false,
+  "valid": false,
+  "pred": {
+   "member_id": 156,
+   "fat": 6.9,
+   "shift": "morning"
+  },
+  "ms": 3497,
+  "wer": 0.5926,
+  "text": "நம்பர் 156. உருவிக்கச் செல்பாக. ஷேக் ஆறு வாயின். ஒன்பது. மாற்றின்."
+ },
+ {
+  "variant": "band+nr0.85",
+  "condition": "0 dB",
+  "clip": "b24",
+  "exact": true,
+  "valid": true,
+  "pred": {
+   "member_id": 156,
+   "litres": 2.5,
+   "fat": 3.3,
+   "shift": "evening"
+  },
+  "ms": 963,
+  "wer": 0.4211,
+  "text": "நம்பர் 156. லிட்டர். இல்லை, ரெண்டரை லிட்டர். ஃபேட் மூன்று பாயின் மூன்று. ஈவினின் ஷிஃப்ட்."
+ },
+ {
+  "variant": "nr0.85",
+  "condition": "5 dB",
+  "clip": "b01",
+  "exact": false,
+  "valid": false,
+  "pred": {
+   "member_id": 101,
+   "litres": 2.0,
+   "shift": "morning"
+  },
+  "ms": 706,
+  "wer": 0.4545,
+  "text": "சொசைட்டி நம்பர். 101. ரெண்டு லிட்டர் பால். 1485. காலை ஷிஃப்"
+ },
+ {
+  "variant": "nr0.85",
+  "condition": "5 dB",
+  "clip": "b02",
+  "exact": false,
+  "valid": false,
+  "pred": {},
+  "ms": 462,
+  "wer": 0.75,
+  "text": "லிட்டர். லிட்டர். ஷிஃப்ட்."
+ },
+ {
+  "variant": "nr0.85",
+  "condition": "5 dB",
+  "clip": "b03",
+  "exact": false,
+  "valid": false,
+  "pred": {
+   "member_id": 108,
+   "fat": 3.8,
+   "shift": "morning"
+  },
+  "ms": 947,
+  "wer": 0.3,
+  "text": "சொசைட்டி நம்பர். ஒன்று ஜீரோ எட்டு. ஒன்று ரை டிட்டர் கால். ஃபேட் மூன்று பாயின்ட் ஏட்டு. காலை."
+ },
+ {
+  "variant": "nr0.85",
+  "condition": "5 dB",
+  "clip": "b04",
+  "exact": true,
+  "valid": true,
+  "pred": {
+   "member_id": 108,
+   "litres": 4.0,
+   "fat": 6.0,
+   "shift": "evening"
+  },
+  "ms": 802,
+  "wer": 0.4118,
+  "text": "நம்பர் நூற்று எட்டு. நால் லிட்டர். ஃபேட் ஆறு. ஈவனின் ஷிஃப்ட்."
+ },
+ {
+  "variant": "nr0.85",
+  "condition": "5 dB",
+  "clip": "b05",
+  "exact": false,
+  "valid": true,
+  "pred": {
+   "member_id": 113,
+   "litres": 2.5,
+   "fat": 4.8,
+   "shift": "morning"
+  },
+  "ms": 768,
+  "wer": 0.2609,
+  "text": "நம்பர் ஒன்று ஒன்றி. ரெண்டரை லிட்டர். ஃபேட் நாலு பாயின் ஏறு. காலை."
+ },
+ {
+  "variant": "nr0.85",
+  "condition": "5 dB",
+  "clip": "b06",
+  "exact": false,
+  "valid": false,
+  "pred": {},
+  "ms": 1565,
+  "wer": 0.7143,
+  "text": "நம்பர். லிட்டர். லிட்டர். ஷிஃப்ட். ஷிஃப்ட்."
+ },
+ {
+  "variant": "nr0.85",
+  "condition": "5 dB",
+  "clip": "b07",
+  "exact": true,
+  "valid": true,
+  "pred": {
+   "member_id": 119,
+   "litres": 0.5,
+   "fat": 6.8,
+   "shift": "morning"
+  },
+  "ms": 702,
+  "wer": 0.087,
+  "text": "நம்பர் ஒன் ஒன்னைன். ஆறை லிட்டர். ஃபேட் ஆறு பாயெண்ட் எட்டு. மார்ணிங்"
+ },
+ {
+  "variant": "nr0.85",
+  "condition": "5 dB",
+  "clip": "b08",
+  "exact": false,
+  "valid": false,
+  "pred": {},
+  "ms": 546,
+  "wer": 0.7241,
+  "text": "லிட்டர். லிட்டர். ஷிஃப்ட்."
+ },
+ {
+  "variant": "nr0.85",
+  "condition": "5 dB",
+  "clip": "b09",
+  "exact": false,
+  "valid": true,
+  "pred": {
+   "member_id": 124,
+   "litres": 3.0,
+   "fat": 4.0,
+   "shift": "morning"
+  },
+  "ms": 936,
+  "wer": 0.3636,
+  "text": "நம்பர். 124. மூன்று லிட்டர். இல்லை இல்லை மூன்று ஓரை லிட்டர். டேட் நாலு பாயின் எடு. காலை."
+ },
+ {
+  "variant": "nr0.85",
+  "condition": "5 dB",
+  "clip": "b10",
+  "exact": true,
+  "valid": true,
+  "pred": {
+   "member_id": 124,
+   "litres": 2.0,
+   "fat": 5.1,
+   "shift": "evening"
+  },
+  "ms": 730,
+  "wer": 0.087,
+  "text": "நம்பர் 124. ரெண்டு லிட்டர். ஃபேட் ஐந்து பாயங்ட் ஒன்று. சாயங்காலம்."
+ },
+ {
+  "variant": "nr0.85",
+  "condition": "5 dB",
+  "clip": "b11",
+  "exact": false,
+  "valid": false,
+  "pred": {
+   "member_id": 127,
+   "fat": 3.9
+  },
+  "ms": 713,
+  "wer": 0.48,
+  "text": "நம்பர். 127. நாரறை லிட்டர். ஃபேட் மூன்று பாயின் ஒன்பது. மாற்றினி."
+ },
+ {
+  "variant": "nr0.85",
+  "condition": "5 dB",
+  "clip": "b12",
+  "exact": true,
+  "valid": true,
+  "pred": {
+   "member_id": 127,
+   "litres": 3.0,
+   "fat": 4.4,
+   "shift": "evening"
+  },
+  "ms": 784,
+  "wer": 0.4138,
+  "text": "நம்பர். 127. மூன்று விட்டர் பார். ஃபேட் நாலு பாயன். நாலு. ஈவினின் ஷிஃப்ட்."
+ },
+ {
+  "variant": "nr0.85",
+  "condition": "5 dB",
+  "clip": "b13",
+  "exact": true,
+  "valid": true,
+  "pred": {
+   "member_id": 132,
+   "litres": 1.5,
+   "fat": 5.8,
+   "shift": "morning"
+  },
+  "ms": 772,
+  "wer": 0.2174,
+  "text": "நம்பர் ஒன்றி டூ. ஒன்று ரை லிட்டர். ஃபேட் ஐந்து பாயின்ட் எட்டு. காலை."
+ },
+ {
+  "variant": "nr0.85",
+  "condition": "5 dB",
+  "clip": "b14",
+  "exact": true,
+  "valid": true,
+  "pred": {
+   "member_id": 132,
+   "litres": 2.0,
+   "fat": 6.2,
+   "shift": "evening"
+  },
+  "ms": 695,
+  "wer": 0.3333,
+  "text": "நம்பர். 132. இரண்டு லிட்டர். ஃபேட் ஆறு பாயின்ஸ் டூ. சாயங்காலம்."
+ },
+ {
+  "variant": "nr0.85",
+  "condition": "5 dB",
+  "clip": "b15",
+  "exact": false,
+  "valid": false,
+  "pred": {
+   "member_id": 137,
+   "fat": 9.0
+  },
+  "ms": 1474,
+  "wer": 0.4815,
+  "text": "நம்பர் 137. மூன்று ரெஇட்டர். ஃபேட் நானு பாயின் ஒன்பது. மார்ணினி."
+ },
+ {
+  "variant": "nr0.85",
+  "condition": "5 dB",
+  "clip": "b16",
+  "exact": false,
+  "valid": false,
+  "pred": {
+   "member_id": 137,
+   "litres": 5.5,
+   "fat": 3.7
+  },
+  "ms": 828,
+  "wer": 0.2,
+  "text": "நம்பர் 137. ஐந்தரை லிட்டர் பால். ஃபேட் மூன்று பாயின்ட் ஏழு. இவனின் ஷிஃப்ட்."
+ },
+ {
+  "variant": "nr0.85",
+  "condition": "5 dB",
+  "clip": "b17",
+  "exact": false,
+  "valid": false,
+  "pred": {
+   "member_id": 143,
+   "fat": 5.3,
+   "shift": "morning"
+  },
+  "ms": 622,
+  "wer": 0.44,
+  "text": "நம்பர் 143. ரெட்டு லிட்டர். ஐந்து பாயின் மோனு. காலை."
+ },
+ {
+  "variant": "nr0.85",
+  "condition": "5 dB",
+  "clip": "b18",
+  "exact": true,
+  "valid": true,
+  "pred": {
+   "member_id": 143,
+   "litres": 4.0,
+   "fat": 4.1,
+   "shift": "evening"
+  },
+  "ms": 692,
+  "wer": 0.3462,
+  "text": "நம்பர். 143. நாளு லிட்டர். ஃபேட். நாளு பாயின் ஒன்று. சாயங்காலம்."
+ },
+ {
+  "variant": "nr0.85",
+  "condition": "5 dB",
+  "clip": "b19",
+  "exact": true,
+  "valid": true,
+  "pred": {
+   "member_id": 146,
+   "litres": 1.5,
+   "fat": 6.5,
+   "shift": "morning"
+  },
+  "ms": 898,
+  "wer": 0.2857,
+  "text": "நம்பர் 146. ஒன்று ரை லிட்டர் பால். ஃபேட் ஆறு பாயிண்ட் ஐந்து. மார்ணிங்"
+ },
+ {
+  "variant": "nr0.85",
+  "condition": "5 dB",
+  "clip": "b20",
+  "exact": false,
+  "valid": false,
+  "pred": {},
+  "ms": 463,
+  "wer": 0.7241,
+  "text": "லிட்டர். லிட்டர். லிட்டர். ஷிஃப்ட்."
+ },
+ {
+  "variant": "nr0.85",
+  "condition": "5 dB",
+  "clip": "b21",
+  "exact": true,
+  "valid": true,
+  "pred": {
+   "member_id": 151,
+   "litres": 2.5,
+   "fat": 5.6,
+   "shift": "morning"
+  },
+  "ms": 658,
+  "wer": 0.3043,
+  "text": "நம்பர். 151. ரெண்டரை லிட்டர். ஃபேட் ஐந்து பாயங்கள். ஆறு. காலை."
+ },
+ {
+  "variant": "nr0.85",
+  "condition": "5 dB",
+  "clip": "b22",
+  "exact": true,
+  "valid": true,
+  "pred": {
+   "member_id": 151,
+   "litres": 4.5,
+   "fat": 4.2,
+   "shift": "evening"
+  },
+  "ms": 657,
+  "wer": 0.4286,
+  "text": "நம்பர் 151. 4.5 லிட்டர். ஃபேட் 4.2. சாயங்காலம்."
+ },
+ {
+  "variant": "nr0.85",
+  "condition": "5 dB",
+  "clip": "b23",
+  "exact": false,
+  "valid": false,
+  "pred": {
+   "member_id": 156,
+   "fat": 9.0,
+   "shift": "morning"
+  },
+  "ms": 1321,
+  "wer": 0.6296,
+  "text": "நம்பர் 156. ஒரு நிகர் பார். ஷேட் ஆது பாயின் ஒன்பது. மாற்றின்."
+ },
+ {
+  "variant": "nr0.85",
+  "condition": "5 dB",
+  "clip": "b24",
+  "exact": false,
+  "valid": true,
+  "pred": {
+   "member_id": 156,
+   "litres": 2.0,
+   "fat": 3.3,
+   "shift": "evening"
+  },
+  "ms": 1052,
+  "wer": 0.4211,
+  "text": "நம்பர் 156. ரெண்டு லிட்டர். இல்லை, இரண்டு ரை லிட்டர். ஃபேட் மூன்று பாயின் மூன்று. ஈவினின் ஷிஃப்ட்."
+ },
+ {
+  "variant": "nr0.85",
+  "condition": "0 dB",
+  "clip": "b01",
+  "exact": false,
+  "valid": false,
+  "pred": {
+   "fat": 4.5,
+   "shift": "morning"
+  },
+  "ms": 904,
+  "wer": 0.4545,
+  "text": "சொசைட்டி நம்பர் ஒன்றிரு ஒன்று. ரென்டு நிகர் பார்த்து. சேக் நாலு பாயின் ஐந்தே. காலை ஷிக்ஸ்."
+ },
+ {
+  "variant": "nr0.85",
+  "condition": "0 dB",
+  "clip": "b02",
+  "exact": false,
+  "valid": false,
+  "pred": {},
+  "ms": 460,
+  "wer": 0.75,
+  "text": "லிட்டர். லிட்டர். ஷிஃப்ட்."
+ },
+ {
+  "variant": "nr0.85",
+  "condition": "0 dB",
+  "clip": "b03",
+  "exact": false,
+  "valid": false,
+  "pred": {
+   "fat": 3.0,
+   "shift": "morning"
+  },
+  "ms": 964,
+  "wer": 0.5333,
+  "text": "சொசைட்டி நம்பர். ஒன்று ஜீரோ ஏக்டில். ஒன்றை வீட்ஷர்கால். சேர்த் மூன்று பாயின் ஏக்டில். காலை."
+ },
+ {
+  "variant": "nr0.85",
+  "condition": "0 dB",
+  "clip": "b04",
+  "exact": true,
+  "valid": true,
+  "pred": {
+   "member_id": 108,
+   "litres": 4.0,
+   "fat": 6.0,
+   "shift": "evening"
+  },
+  "ms": 678,
+  "wer": 0.3529,
+  "text": "நம்பர் நூற்று எட்டு. நால் லிட்டர். ஃபேட் ஆறு. ஈவினின் ஷிஃப்ட்."
+ },
+ {
+  "variant": "nr0.85",
+  "condition": "0 dB",
+  "clip": "b05",
+  "exact": false,
+  "valid": false,
+  "pred": {},
+  "ms": 1314,
+  "wer": 0.6957,
+  "text": "நம்பர். லிட்டர். ஷிஃப்ட். லிட்டர். ஷிஃப்ட்."
+ },
+ {
+  "variant": "nr0.85",
+  "condition": "0 dB",
+  "clip": "b06",
+  "exact": false,
+  "valid": false,
+  "pred": {
+   "litres": 3.5,
+   "fat": 5.5
+  },
+  "ms": 3632,
+  "wer": 0.5357,
+  "text": "நம்பர். ஓன்ஓன்ஸ்ரீ. மூன்று ரெய் லிட்டர் பால். ஸெய்க் ஐந்து பாயின் ஐந்தே. காய் ஐந்தாலம்."
+ },
+ {
+  "variant": "nr0.85",
+  "condition": "0 dB",
+  "clip": "b07",
+  "exact": false,
+  "valid": false,
+  "pred": {
+   "member_id": 119,
+   "litres": 0.5,
+   "fat": 6.8
+  },
+  "ms": 749,
+  "wer": 0.1739,
+  "text": "நம்பர் ஒன் ஒன்னைன். ஆறை லிட்டர். ஃபேட் ஆறு பாயின்ட் ஏட்டு. மாறினிங்"
+ },
+ {
+  "variant": "nr0.85",
+  "condition": "0 dB",
+  "clip": "b08",
+  "exact": false,
+  "valid": false,
+  "pred": {},
+  "ms": 566,
+  "wer": 0.7241,
+  "text": "லிட்டர். லிட்டர். ஷிஃப்ட்."
+ },
+ {
+  "variant": "nr0.85",
+  "condition": "0 dB",
+  "clip": "b09",
+  "exact": false,
+  "valid": false,
+  "pred": {
+   "litres": 3.5,
+   "fat": 4.8,
+   "shift": "morning"
+  },
+  "ms": 1000,
+  "wer": 0.3333,
+  "text": "நம்பர் ஒன்றூக்கோர். மூன்று லிட்டர். இல்லை இல்லை மூன்று ஹரை லிட்டர். சேக் நாலு பாயின் எட்டு. காலை."
+ },
+ {
+  "variant": "nr0.85",
+  "condition": "0 dB",
+  "clip": "b10",
+  "exact": true,
+  "valid": true,
+  "pred": {
+   "member_id": 124,
+   "litres": 2.0,
+   "fat": 5.1,
+   "shift": "evening"
+  },
+  "ms": 720,
+  "wer": 0.1304,
+  "text": "நம்பர் 124. ரெண்டு லிட்டர். ஃபேட் ஐந்து பாயங்க ஒன்று. சாயங்காலம்."
+ },
+ {
+  "variant": "nr0.85",
+  "condition": "0 dB",
+  "clip": "b11",
+  "exact": false,
+  "valid": false,
+  "pred": {
+   "member_id": 127
+  },
+  "ms": 692,
+  "wer": 0.64,
+  "text": "நம்பர். 127. நாதரை விட்டேன். ஸ்டேட் லொன்னு பாயின் ஒன்பது. மாரினி."
+ },
+ {
+  "variant": "nr0.85",
+  "condition": "0 dB",
+  "clip": "b12",
+  "exact": false,
+  "valid": false,
+  "pred": {
+   "member_id": 127,
+   "litres": 3.0
+  },
+  "ms": 704,
+  "wer": 0.7241,
+  "text": "நம்பர். 127. மூன்று விட்டர் பார். ஷிஃப்ட்."
+ },
+ {
+  "variant": "nr0.85",
+  "condition": "0 dB",
+  "clip": "b13",
+  "exact": true,
+  "valid": true,
+  "pred": {
+   "member_id": 132,
+   "litres": 1.5,
+   "fat": 5.8,
+   "shift": "morning"
+  },
+  "ms": 883,
+  "wer": 0.2609,
+  "text": "நம்பர் ஒன்றி டூ. ஒன்று ரை லிட்டர். ஃபேட் ஐந்து பாயின்ட் ஏட்டு. காலை."
+ },
+ {
+  "variant": "nr0.85",
+  "condition": "0 dB",
+  "clip": "b14",
+  "exact": false,
+  "valid": false,
+  "pred": {
+   "member_id": 132,
+   "litres": 132.0
+  },
+  "ms": 545,
+  "wer": 0.6667,
+  "text": "நம்பர். 132. லிட்டர். ஃபேட். ஷிஃப்ட்."
+ },
+ {
+  "variant": "nr0.85",
+  "condition": "0 dB",
+  "clip": "b15",
+  "exact": false,
+  "valid": false,
+  "pred": {},
+  "ms": 442,
+  "wer": 0.7407,
+  "text": "நம்பர். லிட்டர். லிட்டர். ஷிஃப்ட்."
+ },
+ {
+  "variant": "nr0.85",
+  "condition": "0 dB",
+  "clip": "b16",
+  "exact": false,
+  "valid": false,
+  "pred": {
+   "member_id": 137,
+   "litres": 5.5,
+   "fat": 3.7
+  },
+  "ms": 915,
+  "wer": 0.36,
+  "text": "நம்பர் 137. ஐந்தரை லிட்டர் பால். ஃபேட் மூன்று பாயின்ட் ஏழு."
+ },
+ {
+  "variant": "nr0.85",
+  "condition": "0 dB",
+  "clip": "b17",
+  "exact": false,
+  "valid": false,
+  "pred": {
+   "fat": 5.3
+  },
+  "ms": 813,
+  "wer": 0.6,
+  "text": "நம்பர் ஒன்றோர்த்திரிந்து. ரென்டு விஷென். ஸ்ரீக் ஐந்து பாயின் மோனு. கானி."
+ },
+ {
+  "variant": "nr0.85",
+  "condition": "0 dB",
+  "clip": "b18",
+  "exact": false,
+  "valid": false,
+  "pred": {
+   "litres": 4.0,
+   "fat": 4.1,
+   "shift": "evening"
+  },
+  "ms": 1305,
+  "wer": 0.2692,
+  "text": "நம்பர் ஓன் போர்த்திரி. நாளு லிட்டர். ஃபேட் நாளு பாயின் ஒன்று. சாயங்காலம்."
+ },
+ {
+  "variant": "nr0.85",
+  "condition": "0 dB",
+  "clip": "b19",
+  "exact": true,
+  "valid": true,
+  "pred": {
+   "member_id": 146,
+   "litres": 1.5,
+   "fat": 6.5,
+   "shift": "morning"
+  },
+  "ms": 855,
+  "wer": 0.2857,
+  "text": "நம்பர் 146. ஒன்று ரை லிட்டர் பால். ஃபேட் ஆறு பாயிண்ட் ஐந்து. மார்ணிங்"
+ },
+ {
+  "variant": "nr0.85",
+  "condition": "0 dB",
+  "clip": "b20",
+  "exact": false,
+  "valid": false,
+  "pred": {},
+  "ms": 524,
+  "wer": 0.7241,
+  "text": "லிட்டர். லிட்டர். லிட்டர். ஷிஃப்ட்."
+ },
+ {
+  "variant": "nr0.85",
+  "condition": "0 dB",
+  "clip": "b21",
+  "exact": false,
+  "valid": false,
+  "pred": {
+   "fat": 5.6,
+   "shift": "morning"
+  },
+  "ms": 1223,
+  "wer": 0.4348,
+  "text": "நம்பர் ஒன்பை ஒன்று. ரெண்டுரை விட்டாது. ஃபேட் ஐந்து பாயின் ஆறு. காலை."
+ },
+ {
+  "variant": "nr0.85",
+  "condition": "0 dB",
+  "clip": "b22",
+  "exact": false,
+  "valid": false,
+  "pred": {
+   "member_id": 151,
+   "litres": 45.0,
+   "fat": 4.2,
+   "shift": "evening"
+  },
+  "ms": 749,
+  "wer": 0.1905,
+  "text": "நம்பர் 151. 45 லிட்டர். ஃபேட் நாலு பாயின்ஸ் டூ. சாயங்காலம்."
+ },
+ {
+  "variant": "nr0.85",
+  "condition": "0 dB",
+  "clip": "b23",
+  "exact": false,
+  "valid": false,
+  "pred": {
+   "member_id": 156,
+   "shift": "morning"
+  },
+  "ms": 1283,
+  "wer": 0.7037,
+  "text": "நம்பர் 156. உருவிக்கச் செய்து பார். ஷேக் ஆதிர் வாய்கின் ஒன்பது மாற்றின்"
+ },
+ {
+  "variant": "nr0.85",
+  "condition": "0 dB",
+  "clip": "b24",
+  "exact": true,
+  "valid": true,
+  "pred": {
+   "member_id": 156,
+   "litres": 2.5,
+   "fat": 3.3,
+   "shift": "evening"
+  },
+  "ms": 1015,
+  "wer": 0.3947,
+  "text": "நம்பர் 156. ரெண்டு லிட்டர். இல்லை, இரண்டு ரெண்டரை லிட்டர். ஃபேட் மூன்று பாயின் மூன்று. ஈவினின் ஷிஃப்ட்."
+ }
+]

@@ -1,0 +1,3554 @@
+{
+  "generated_at": "2026-11-10T14:35:52+05:30",
+  "status": "smoke",
+  "synthetic": true,
+  "n_per_cell": 24,
+  "cells": 96,
+  "elapsed_s": 109.1,
+  "environment": {
+    "asr": {
+      "model": "faster-whisper medium · float16 · CUDA",
+      "compute": "float16",
+      "device": "cuda",
+      "beam_size": 5,
+      "language": "ta",
+      "initial_prompt": "சொசைட்டி நம்பர். லிட்டர். ஃபேட். ஷிஃப்ட்.",
+      "temperature": "0.0 with fallback through 1.0; default compression-ratio and log-prob gates"
+    },
+    "tts": "edge-tts ta-IN-PallaviNeural (not used for scoring)",
+    "chain": "band+gate",
+    "snr_definition": "active-speech RMS / noise RMS, measured per clip before the 8 kHz mu-law roundtrip",
+    "fixtures": {
+      "count": 24,
+      "voice": "ta-IN-ValluvarNeural",
+      "rate": "-18%",
+      "source": "Microsoft Edge TTS, synthetic Tamil/Tanglish scripts",
+      "seeds": 17
+    },
+    "machine": {
+      "platform": "Windows-11-10.0.26200-SP0",
+      "processor": "Intel64 Family 6 Model 183 Stepping 1, GenuineIntel",
+      "python": "3.12.10"
+    }
+  },
+  "summary": {
+    "clips": 24,
+    "cells": [
+      {
+        "condition": "5 dB",
+        "arm": "raw",
+        "n": 24,
+        "exact": 12,
+        "exact_pct": 50.0,
+        "exact_ci95": [
+          31.4,
+          68.6
+        ],
+        "validation_pct": 62.5,
+        "plausible_wrong": 3,
+        "plausible_wrong_pct": 12.5,
+        "reask_pct": 37.5,
+        "wer_pct": 40.1,
+        "asr_ms_avg": 952,
+        "asr_ms_p50": 789,
+        "slot_pct": {
+          "member_id": 79.2,
+          "litres": 66.7,
+          "fat": 75.0,
+          "shift": 75.0
+        }
+      },
+      {
+        "condition": "5 dB",
+        "arm": "mitigated",
+        "n": 24,
+        "exact": 12,
+        "exact_pct": 50.0,
+        "exact_ci95": [
+          31.4,
+          68.6
+        ],
+        "validation_pct": 54.2,
+        "plausible_wrong": 1,
+        "plausible_wrong_pct": 4.2,
+        "reask_pct": 45.8,
+        "wer_pct": 42.4,
+        "asr_ms_avg": 889,
+        "asr_ms_p50": 832,
+        "slot_pct": {
+          "member_id": 75.0,
+          "litres": 70.8,
+          "fat": 70.8,
+          "shift": 66.7
+        }
+      },
+      {
+        "condition": "0 dB",
+        "arm": "raw",
+        "n": 24,
+        "exact": 7,
+        "exact_pct": 29.2,
+        "exact_ci95": [
+          14.9,
+          49.2
+        ],
+        "validation_pct": 37.5,
+        "plausible_wrong": 2,
+        "plausible_wrong_pct": 8.3,
+        "reask_pct": 62.5,
+        "wer_pct": 45.0,
+        "asr_ms_avg": 1093,
+        "asr_ms_p50": 798,
+        "slot_pct": {
+          "member_id": 70.8,
+          "litres": 41.7,
+          "fat": 62.5,
+          "shift": 66.7
+        }
+      },
+      {
+        "condition": "0 dB",
+        "arm": "mitigated",
+        "n": 24,
+        "exact": 4,
+        "exact_pct": 16.7,
+        "exact_ci95": [
+          6.7,
+          35.9
+        ],
+        "validation_pct": 25.0,
+        "plausible_wrong": 2,
+        "plausible_wrong_pct": 8.3,
+        "reask_pct": 75.0,
+        "wer_pct": 55.9,
+        "asr_ms_avg": 1219,
+        "asr_ms_p50": 759,
+        "slot_pct": {
+          "member_id": 45.8,
+          "litres": 45.8,
+          "fat": 29.2,
+          "shift": 41.7
+        }
+      }
+    ],
+    "deltas": {
+      "5 dB": {
+        "exact_delta_pp": 0.0,
+        "wer_delta_pp": 2.3
+      },
+      "0 dB": {
+        "exact_delta_pp": -12.5,
+        "wer_delta_pp": 10.9
+      }
+    }
+  },
+  "claim": "Smoke run: not enough cells for the published claim.",
+  "caveats": [
+    "24 synthetic clips per condition; each cell has n=24, not independent samples.",
+    "All voices are TTS, not real farmers; no field audio was collected.",
+    "The slot compiler's variant lexicon was developed while inspecting ASR output from this fixture set.",
+    "No Gnani API key was provisioned; the run uses faster-whisper medium · float16 · CUDA.",
+    "SNR is measured on active speech and set before the 8 kHz mu-law roundtrip."
+  ],
+  "runs": [
+    {
+      "clip": "b01",
+      "condition": "5 dB",
+      "scene": "society_hall",
+      "arm": "raw",
+      "chain": "raw",
+      "transcript": "சொசைட்டி நம்பர். 101. ரெண்டு லிட்டர் பால். ஃபேட் நாலு பாயம் ஐந்தே. காலை ஷிஃப்ட்.",
+      "slots": {
+        "member_id": 101,
+        "litres": 2.0,
+        "fat": 4.5,
+        "shift": "morning"
+      },
+      "gt": {
+        "member_id": 101,
+        "litres": 2.0,
+        "fat": 4.5,
+        "shift": "morning"
+      },
+      "matches": {
+        "member_id": true,
+        "litres": true,
+        "fat": true,
+        "shift": true
+      },
+      "all_exact": true,
+      "validation_ok": true,
+      "plausible_wrong": false,
+      "reask": false,
+      "flags": [],
+      "wer": 0.2121,
+      "asr_ms": 3478,
+      "wall_ms": 3480.0,
+      "audio_s": 11.35
+    },
+    {
+      "clip": "b01",
+      "condition": "5 dB",
+      "scene": "society_hall",
+      "arm": "mitigated",
+      "chain": "bandlimit 260-3500 Hz + spectral gate",
+      "transcript": "சொசைட்டி நம்பர் 101. ரெண்டு லிட்டர் பால். ஃபேட் நாலு பாயம் ஐந்தே. காலை ஷிஃப்",
+      "slots": {
+        "member_id": 101,
+        "litres": 2.0,
+        "fat": 4.5,
+        "shift": "morning"
+      },
+      "gt": {
+        "member_id": 101,
+        "litres": 2.0,
+        "fat": 4.5,
+        "shift": "morning"
+      },
+      "matches": {
+        "member_id": true,
+        "litres": true,
+        "fat": true,
+        "shift": true
+      },
+      "all_exact": true,
+      "validation_ok": true,
+      "plausible_wrong": false,
+      "reask": false,
+      "flags": [],
+      "wer": 0.2424,
+      "asr_ms": 899,
+      "wall_ms": 900.5,
+      "audio_s": 11.35
+    },
+    {
+      "clip": "b01",
+      "condition": "0 dB",
+      "scene": "society_hall",
+      "arm": "raw",
+      "chain": "raw",
+      "transcript": "சொசைட்டி நம்பர். 101. ரென்டு விக்ரர் பால். சேக் நாலு பாயம் ஐந்தே. காலை ஷிஃப்ட்.",
+      "slots": {
+        "member_id": 101,
+        "fat": 4.5,
+        "shift": "morning"
+      },
+      "gt": {
+        "member_id": 101,
+        "litres": 2.0,
+        "fat": 4.5,
+        "shift": "morning"
+      },
+      "matches": {
+        "member_id": true,
+        "litres": false,
+        "fat": true,
+        "shift": true
+      },
+      "all_exact": false,
+      "validation_ok": false,
+      "plausible_wrong": false,
+      "reask": true,
+      "flags": [
+        "litres_missing"
+      ],
+      "wer": 0.3939,
+      "asr_ms": 898,
+      "wall_ms": 899.3,
+      "audio_s": 11.35
+    },
+    {
+      "clip": "b01",
+      "condition": "0 dB",
+      "scene": "society_hall",
+      "arm": "mitigated",
+      "chain": "bandlimit 260-3500 Hz + spectral gate",
+      "transcript": "சொசைட்டி நம்பர். 101. ரெண்டு விக்ரர் பால்.",
+      "slots": {
+        "member_id": 101
+      },
+      "gt": {
+        "member_id": 101,
+        "litres": 2.0,
+        "fat": 4.5,
+        "shift": "morning"
+      },
+      "matches": {
+        "member_id": true,
+        "litres": false,
+        "fat": false,
+        "shift": false
+      },
+      "all_exact": false,
+      "validation_ok": false,
+      "plausible_wrong": false,
+      "reask": true,
+      "flags": [
+        "litres_missing",
+        "fat_missing",
+        "shift_missing"
+      ],
+      "wer": 0.6667,
+      "asr_ms": 751,
+      "wall_ms": 752.9,
+      "audio_s": 11.35
+    },
+    {
+      "clip": "b02",
+      "condition": "5 dB",
+      "scene": "fan_cans",
+      "arm": "raw",
+      "chain": "raw",
+      "transcript": "லிட்டர். லிட்டர். ஷிஃப்ட்.",
+      "slots": {},
+      "gt": {
+        "member_id": 101,
+        "litres": 3.0,
+        "fat": 5.1,
+        "shift": "evening"
+      },
+      "matches": {
+        "member_id": false,
+        "litres": false,
+        "fat": false,
+        "shift": false
+      },
+      "all_exact": false,
+      "validation_ok": false,
+      "plausible_wrong": false,
+      "reask": true,
+      "flags": [
+        "member_missing",
+        "litres_missing",
+        "fat_missing",
+        "shift_missing"
+      ],
+      "wer": 0.75,
+      "asr_ms": 475,
+      "wall_ms": 476.5,
+      "audio_s": 10.85
+    },
+    {
+      "clip": "b02",
+      "condition": "5 dB",
+      "scene": "fan_cans",
+      "arm": "mitigated",
+      "chain": "bandlimit 260-3500 Hz + spectral gate",
+      "transcript": "லிட்டர். லிட்டர். ஷிஃப்ட்.",
+      "slots": {},
+      "gt": {
+        "member_id": 101,
+        "litres": 3.0,
+        "fat": 5.1,
+        "shift": "evening"
+      },
+      "matches": {
+        "member_id": false,
+        "litres": false,
+        "fat": false,
+        "shift": false
+      },
+      "all_exact": false,
+      "validation_ok": false,
+      "plausible_wrong": false,
+      "reask": true,
+      "flags": [
+        "member_missing",
+        "litres_missing",
+        "fat_missing",
+        "shift_missing"
+      ],
+      "wer": 0.75,
+      "asr_ms": 494,
+      "wall_ms": 495.9,
+      "audio_s": 10.85
+    },
+    {
+      "clip": "b02",
+      "condition": "0 dB",
+      "scene": "fan_cans",
+      "arm": "raw",
+      "chain": "raw",
+      "transcript": "லிட்டர். லிட்டர். ஷிஃப்ட்.",
+      "slots": {},
+      "gt": {
+        "member_id": 101,
+        "litres": 3.0,
+        "fat": 5.1,
+        "shift": "evening"
+      },
+      "matches": {
+        "member_id": false,
+        "litres": false,
+        "fat": false,
+        "shift": false
+      },
+      "all_exact": false,
+      "validation_ok": false,
+      "plausible_wrong": false,
+      "reask": true,
+      "flags": [
+        "member_missing",
+        "litres_missing",
+        "fat_missing",
+        "shift_missing"
+      ],
+      "wer": 0.75,
+      "asr_ms": 483,
+      "wall_ms": 484.3,
+      "audio_s": 10.85
+    },
+    {
+      "clip": "b02",
+      "condition": "0 dB",
+      "scene": "fan_cans",
+      "arm": "mitigated",
+      "chain": "bandlimit 260-3500 Hz + spectral gate",
+      "transcript": "லிட்டர். லிட்டர். ஷிஃப்ட்.",
+      "slots": {},
+      "gt": {
+        "member_id": 101,
+        "litres": 3.0,
+        "fat": 5.1,
+        "shift": "evening"
+      },
+      "matches": {
+        "member_id": false,
+        "litres": false,
+        "fat": false,
+        "shift": false
+      },
+      "all_exact": false,
+      "validation_ok": false,
+      "plausible_wrong": false,
+      "reask": true,
+      "flags": [
+        "member_missing",
+        "litres_missing",
+        "fat_missing",
+        "shift_missing"
+      ],
+      "wer": 0.75,
+      "asr_ms": 402,
+      "wall_ms": 404.1,
+      "audio_s": 10.85
+    },
+    {
+      "clip": "b03",
+      "condition": "5 dB",
+      "scene": "society_hall",
+      "arm": "raw",
+      "chain": "raw",
+      "transcript": "சொசைட்டி நம்பர். 108. 105 லிட்டர் பால். ஃபேட் மூன்று பாயின்ட். 8. காலை.",
+      "slots": {
+        "member_id": 108,
+        "litres": 105.0,
+        "fat": 3.8,
+        "shift": "morning"
+      },
+      "gt": {
+        "member_id": 108,
+        "litres": 1.5,
+        "fat": 3.8,
+        "shift": "morning"
+      },
+      "matches": {
+        "member_id": true,
+        "litres": false,
+        "fat": true,
+        "shift": true
+      },
+      "all_exact": false,
+      "validation_ok": false,
+      "plausible_wrong": false,
+      "reask": true,
+      "flags": [
+        "litres_range"
+      ],
+      "wer": 0.4,
+      "asr_ms": 787,
+      "wall_ms": 788.7,
+      "audio_s": 11.38
+    },
+    {
+      "clip": "b03",
+      "condition": "5 dB",
+      "scene": "society_hall",
+      "arm": "mitigated",
+      "chain": "bandlimit 260-3500 Hz + spectral gate",
+      "transcript": "சொசைட்டி நம்பர். ஒன்ஜீரோ எட்டு. ஒன்றரை வீட்டர் பால். ஃபேட் மூன்று பாயின்ட் எட்டு. காலை.",
+      "slots": {
+        "fat": 3.8,
+        "shift": "morning"
+      },
+      "gt": {
+        "member_id": 108,
+        "litres": 1.5,
+        "fat": 3.8,
+        "shift": "morning"
+      },
+      "matches": {
+        "member_id": false,
+        "litres": false,
+        "fat": true,
+        "shift": true
+      },
+      "all_exact": false,
+      "validation_ok": false,
+      "plausible_wrong": false,
+      "reask": true,
+      "flags": [
+        "member_missing",
+        "litres_missing"
+      ],
+      "wer": 0.1333,
+      "asr_ms": 971,
+      "wall_ms": 972.9,
+      "audio_s": 11.38
+    },
+    {
+      "clip": "b03",
+      "condition": "0 dB",
+      "scene": "society_hall",
+      "arm": "raw",
+      "chain": "raw",
+      "transcript": "சொசைட்டி நம்பர். லிட்டர். லிட்டர். ஷிஃப்ட். லிட்டர்.",
+      "slots": {},
+      "gt": {
+        "member_id": 108,
+        "litres": 1.5,
+        "fat": 3.8,
+        "shift": "morning"
+      },
+      "matches": {
+        "member_id": false,
+        "litres": false,
+        "fat": false,
+        "shift": false
+      },
+      "all_exact": false,
+      "validation_ok": false,
+      "plausible_wrong": false,
+      "reask": true,
+      "flags": [
+        "member_missing",
+        "litres_missing",
+        "fat_missing",
+        "shift_missing"
+      ],
+      "wer": 0.5667,
+      "asr_ms": 666,
+      "wall_ms": 667.9,
+      "audio_s": 11.38
+    },
+    {
+      "clip": "b03",
+      "condition": "0 dB",
+      "scene": "society_hall",
+      "arm": "mitigated",
+      "chain": "bandlimit 260-3500 Hz + spectral gate",
+      "transcript": "சொசைட்டி நம்பர். லிட்டர். லிட்டர். லிட்டர். ஷிஃப்ட்.",
+      "slots": {},
+      "gt": {
+        "member_id": 108,
+        "litres": 1.5,
+        "fat": 3.8,
+        "shift": "morning"
+      },
+      "matches": {
+        "member_id": false,
+        "litres": false,
+        "fat": false,
+        "shift": false
+      },
+      "all_exact": false,
+      "validation_ok": false,
+      "plausible_wrong": false,
+      "reask": true,
+      "flags": [
+        "member_missing",
+        "litres_missing",
+        "fat_missing",
+        "shift_missing"
+      ],
+      "wer": 0.5667,
+      "asr_ms": 687,
+      "wall_ms": 689.2,
+      "audio_s": 11.38
+    },
+    {
+      "clip": "b04",
+      "condition": "5 dB",
+      "scene": "generator",
+      "arm": "raw",
+      "chain": "raw",
+      "transcript": "நம்பர் நூற்று எட்டு. நாலு லிட்டர். ஃபேட் ஆறு. ஈவினின் ஷிஃப்ட்.",
+      "slots": {
+        "member_id": 108,
+        "litres": 4.0,
+        "fat": 6.0,
+        "shift": "evening"
+      },
+      "gt": {
+        "member_id": 108,
+        "litres": 4.0,
+        "fat": 6.0,
+        "shift": "evening"
+      },
+      "matches": {
+        "member_id": true,
+        "litres": true,
+        "fat": true,
+        "shift": true
+      },
+      "all_exact": true,
+      "validation_ok": true,
+      "plausible_wrong": false,
+      "reask": false,
+      "flags": [],
+      "wer": 0.3529,
+      "asr_ms": 728,
+      "wall_ms": 729.3,
+      "audio_s": 8.52
+    },
+    {
+      "clip": "b04",
+      "condition": "5 dB",
+      "scene": "generator",
+      "arm": "mitigated",
+      "chain": "bandlimit 260-3500 Hz + spectral gate",
+      "transcript": "நம்பர் நூற்று எட்டு. நாலு லிட்டர். ஃபேட் ஆறு. ஈவனின் ஷிஃப்ட்.",
+      "slots": {
+        "member_id": 108,
+        "litres": 4.0,
+        "fat": 6.0,
+        "shift": "evening"
+      },
+      "gt": {
+        "member_id": 108,
+        "litres": 4.0,
+        "fat": 6.0,
+        "shift": "evening"
+      },
+      "matches": {
+        "member_id": true,
+        "litres": true,
+        "fat": true,
+        "shift": true
+      },
+      "all_exact": true,
+      "validation_ok": true,
+      "plausible_wrong": false,
+      "reask": false,
+      "flags": [],
+      "wer": 0.4118,
+      "asr_ms": 739,
+      "wall_ms": 740.8,
+      "audio_s": 8.52
+    },
+    {
+      "clip": "b04",
+      "condition": "0 dB",
+      "scene": "generator",
+      "arm": "raw",
+      "chain": "raw",
+      "transcript": "நம்பர் நூற்று எட்டு. நாலு லிட்டர். ஃபேட் ஆறு. ஈவினின் ஷிஃப்ட்.",
+      "slots": {
+        "member_id": 108,
+        "litres": 4.0,
+        "fat": 6.0,
+        "shift": "evening"
+      },
+      "gt": {
+        "member_id": 108,
+        "litres": 4.0,
+        "fat": 6.0,
+        "shift": "evening"
+      },
+      "matches": {
+        "member_id": true,
+        "litres": true,
+        "fat": true,
+        "shift": true
+      },
+      "all_exact": true,
+      "validation_ok": true,
+      "plausible_wrong": false,
+      "reask": false,
+      "flags": [],
+      "wer": 0.3529,
+      "asr_ms": 761,
+      "wall_ms": 763.0,
+      "audio_s": 8.52
+    },
+    {
+      "clip": "b04",
+      "condition": "0 dB",
+      "scene": "generator",
+      "arm": "mitigated",
+      "chain": "bandlimit 260-3500 Hz + spectral gate",
+      "transcript": "நம்பர் லூற்று எட்டு. நால் லிட்டர். ஃபேட் ஆறு. ஈவினின் ஷிஃப்ட்.",
+      "slots": {
+        "litres": 4.0,
+        "fat": 6.0,
+        "shift": "evening"
+      },
+      "gt": {
+        "member_id": 108,
+        "litres": 4.0,
+        "fat": 6.0,
+        "shift": "evening"
+      },
+      "matches": {
+        "member_id": false,
+        "litres": true,
+        "fat": true,
+        "shift": true
+      },
+      "all_exact": false,
+      "validation_ok": false,
+      "plausible_wrong": false,
+      "reask": true,
+      "flags": [
+        "member_missing"
+      ],
+      "wer": 0.3529,
+      "asr_ms": 828,
+      "wall_ms": 829.4,
+      "audio_s": 8.52
+    },
+    {
+      "clip": "b05",
+      "condition": "5 dB",
+      "scene": "fan_cans",
+      "arm": "raw",
+      "chain": "raw",
+      "transcript": "நம்பர் ஒன் ஒன்றி. ரெண்டரை லிட்டர். ஃபேட் நாலு பாயின் ஏழு. காலை.",
+      "slots": {
+        "member_id": 113,
+        "litres": 2.5,
+        "fat": 4.7,
+        "shift": "morning"
+      },
+      "gt": {
+        "member_id": 113,
+        "litres": 2.5,
+        "fat": 4.7,
+        "shift": "morning"
+      },
+      "matches": {
+        "member_id": true,
+        "litres": true,
+        "fat": true,
+        "shift": true
+      },
+      "all_exact": true,
+      "validation_ok": true,
+      "plausible_wrong": false,
+      "reask": false,
+      "flags": [],
+      "wer": 0.1739,
+      "asr_ms": 789,
+      "wall_ms": 790.7,
+      "audio_s": 9.74
+    },
+    {
+      "clip": "b05",
+      "condition": "5 dB",
+      "scene": "fan_cans",
+      "arm": "mitigated",
+      "chain": "bandlimit 260-3500 Hz + spectral gate",
+      "transcript": "லிட்டர். ரெண்டரை லிட்டர். ஃபேட். லிட்டர். ஷிஃப்ட்.",
+      "slots": {
+        "litres": 2.5
+      },
+      "gt": {
+        "member_id": 113,
+        "litres": 2.5,
+        "fat": 4.7,
+        "shift": "morning"
+      },
+      "matches": {
+        "member_id": false,
+        "litres": true,
+        "fat": false,
+        "shift": false
+      },
+      "all_exact": false,
+      "validation_ok": false,
+      "plausible_wrong": false,
+      "reask": true,
+      "flags": [
+        "member_missing",
+        "fat_missing",
+        "shift_missing"
+      ],
+      "wer": 0.6087,
+      "asr_ms": 721,
+      "wall_ms": 723.3,
+      "audio_s": 9.74
+    },
+    {
+      "clip": "b05",
+      "condition": "0 dB",
+      "scene": "fan_cans",
+      "arm": "raw",
+      "chain": "raw",
+      "transcript": "லிட்டர். லிட்டர். ஷிஃப்ட். லிட்டர்.",
+      "slots": {},
+      "gt": {
+        "member_id": 113,
+        "litres": 2.5,
+        "fat": 4.7,
+        "shift": "morning"
+      },
+      "matches": {
+        "member_id": false,
+        "litres": false,
+        "fat": false,
+        "shift": false
+      },
+      "all_exact": false,
+      "validation_ok": false,
+      "plausible_wrong": false,
+      "reask": true,
+      "flags": [
+        "member_missing",
+        "litres_missing",
+        "fat_missing",
+        "shift_missing"
+      ],
+      "wer": 0.6957,
+      "asr_ms": 491,
+      "wall_ms": 492.2,
+      "audio_s": 9.74
+    },
+    {
+      "clip": "b05",
+      "condition": "0 dB",
+      "scene": "fan_cans",
+      "arm": "mitigated",
+      "chain": "bandlimit 260-3500 Hz + spectral gate",
+      "transcript": "லிட்டர். லிட்டர். ஷிஃப்ட்.",
+      "slots": {},
+      "gt": {
+        "member_id": 113,
+        "litres": 2.5,
+        "fat": 4.7,
+        "shift": "morning"
+      },
+      "matches": {
+        "member_id": false,
+        "litres": false,
+        "fat": false,
+        "shift": false
+      },
+      "all_exact": false,
+      "validation_ok": false,
+      "plausible_wrong": false,
+      "reask": true,
+      "flags": [
+        "member_missing",
+        "litres_missing",
+        "fat_missing",
+        "shift_missing"
+      ],
+      "wer": 0.7826,
+      "asr_ms": 402,
+      "wall_ms": 404.2,
+      "audio_s": 9.74
+    },
+    {
+      "clip": "b06",
+      "condition": "5 dB",
+      "scene": "society_hall",
+      "arm": "raw",
+      "chain": "raw",
+      "transcript": "நம்பர் லிட்டர் ஃபேட். லிட்டர் ஃபேட். ஷிஃப்ட்.",
+      "slots": {},
+      "gt": {
+        "member_id": 113,
+        "litres": 3.5,
+        "fat": 5.5,
+        "shift": "evening"
+      },
+      "matches": {
+        "member_id": false,
+        "litres": false,
+        "fat": false,
+        "shift": false
+      },
+      "all_exact": false,
+      "validation_ok": false,
+      "plausible_wrong": false,
+      "reask": true,
+      "flags": [
+        "member_missing",
+        "litres_missing",
+        "fat_missing",
+        "shift_missing"
+      ],
+      "wer": 0.7143,
+      "asr_ms": 1508,
+      "wall_ms": 1510.0,
+      "audio_s": 10.82
+    },
+    {
+      "clip": "b06",
+      "condition": "5 dB",
+      "scene": "society_hall",
+      "arm": "mitigated",
+      "chain": "bandlimit 260-3500 Hz + spectral gate",
+      "transcript": "லிட்டர். லிட்டர். ஷிஃப்ட். லிட்டர்.",
+      "slots": {},
+      "gt": {
+        "member_id": 113,
+        "litres": 3.5,
+        "fat": 5.5,
+        "shift": "evening"
+      },
+      "matches": {
+        "member_id": false,
+        "litres": false,
+        "fat": false,
+        "shift": false
+      },
+      "all_exact": false,
+      "validation_ok": false,
+      "plausible_wrong": false,
+      "reask": true,
+      "flags": [
+        "member_missing",
+        "litres_missing",
+        "fat_missing",
+        "shift_missing"
+      ],
+      "wer": 0.7857,
+      "asr_ms": 555,
+      "wall_ms": 556.9,
+      "audio_s": 10.82
+    },
+    {
+      "clip": "b06",
+      "condition": "0 dB",
+      "scene": "society_hall",
+      "arm": "raw",
+      "chain": "raw",
+      "transcript": "நம்பர். 113. மூன்றுறை லிக்டர் பால். ஷேர் ஐந்து பாயின் ஐந்தே. சாய்யாந்தாலம்.",
+      "slots": {
+        "member_id": 113,
+        "fat": 5.5
+      },
+      "gt": {
+        "member_id": 113,
+        "litres": 3.5,
+        "fat": 5.5,
+        "shift": "evening"
+      },
+      "matches": {
+        "member_id": true,
+        "litres": false,
+        "fat": true,
+        "shift": false
+      },
+      "all_exact": false,
+      "validation_ok": false,
+      "plausible_wrong": false,
+      "reask": true,
+      "flags": [
+        "litres_missing",
+        "shift_missing"
+      ],
+      "wer": 0.5357,
+      "asr_ms": 6206,
+      "wall_ms": 6207.2,
+      "audio_s": 10.82
+    },
+    {
+      "clip": "b06",
+      "condition": "0 dB",
+      "scene": "society_hall",
+      "arm": "mitigated",
+      "chain": "bandlimit 260-3500 Hz + spectral gate",
+      "transcript": "லிட்டர். லிட்டர். ஷிஃப்ட். லிட்டர்.",
+      "slots": {},
+      "gt": {
+        "member_id": 113,
+        "litres": 3.5,
+        "fat": 5.5,
+        "shift": "evening"
+      },
+      "matches": {
+        "member_id": false,
+        "litres": false,
+        "fat": false,
+        "shift": false
+      },
+      "all_exact": false,
+      "validation_ok": false,
+      "plausible_wrong": false,
+      "reask": true,
+      "flags": [
+        "member_missing",
+        "litres_missing",
+        "fat_missing",
+        "shift_missing"
+      ],
+      "wer": 0.7857,
+      "asr_ms": 528,
+      "wall_ms": 529.7,
+      "audio_s": 10.82
+    },
+    {
+      "clip": "b07",
+      "condition": "5 dB",
+      "scene": "generator",
+      "arm": "raw",
+      "chain": "raw",
+      "transcript": "நம்பர் ஒன் ஒன்னைன் அரை லிட்டர் ஃபேட் ஆறு பாயெண்ட் எட்டு மார்ணிங்",
+      "slots": {
+        "member_id": 119,
+        "litres": 0.5,
+        "fat": 6.8,
+        "shift": "morning"
+      },
+      "gt": {
+        "member_id": 119,
+        "litres": 0.5,
+        "fat": 6.8,
+        "shift": "morning"
+      },
+      "matches": {
+        "member_id": true,
+        "litres": true,
+        "fat": true,
+        "shift": true
+      },
+      "all_exact": true,
+      "validation_ok": true,
+      "plausible_wrong": false,
+      "reask": false,
+      "flags": [],
+      "wer": 0.0435,
+      "asr_ms": 789,
+      "wall_ms": 790.7,
+      "audio_s": 9.58
+    },
+    {
+      "clip": "b07",
+      "condition": "5 dB",
+      "scene": "generator",
+      "arm": "mitigated",
+      "chain": "bandlimit 260-3500 Hz + spectral gate",
+      "transcript": "நம்பர் ஒன் ஒன் நெய்ன். ஹரை லிட்டர். ஃபேட் ஆறு பாயெண்டு எட்டு. மார்ணிங்",
+      "slots": {
+        "member_id": 119,
+        "litres": 0.5,
+        "fat": 6.8,
+        "shift": "morning"
+      },
+      "gt": {
+        "member_id": 119,
+        "litres": 0.5,
+        "fat": 6.8,
+        "shift": "morning"
+      },
+      "matches": {
+        "member_id": true,
+        "litres": true,
+        "fat": true,
+        "shift": true
+      },
+      "all_exact": true,
+      "validation_ok": true,
+      "plausible_wrong": false,
+      "reask": false,
+      "flags": [],
+      "wer": 0.1739,
+      "asr_ms": 879,
+      "wall_ms": 881.1,
+      "audio_s": 9.58
+    },
+    {
+      "clip": "b07",
+      "condition": "0 dB",
+      "scene": "generator",
+      "arm": "raw",
+      "chain": "raw",
+      "transcript": "நம்பர் ஒன் ஒன் நெய்ன். ஹரை லிட்டர். ஃபேட் ஆறு பாயின்ட் ஏட்டு. மார்ணிங்",
+      "slots": {
+        "member_id": 119,
+        "litres": 0.5,
+        "fat": 6.8,
+        "shift": "morning"
+      },
+      "gt": {
+        "member_id": 119,
+        "litres": 0.5,
+        "fat": 6.8,
+        "shift": "morning"
+      },
+      "matches": {
+        "member_id": true,
+        "litres": true,
+        "fat": true,
+        "shift": true
+      },
+      "all_exact": true,
+      "validation_ok": true,
+      "plausible_wrong": false,
+      "reask": false,
+      "flags": [],
+      "wer": 0.2609,
+      "asr_ms": 868,
+      "wall_ms": 869.7,
+      "audio_s": 9.58
+    },
+    {
+      "clip": "b07",
+      "condition": "0 dB",
+      "scene": "generator",
+      "arm": "mitigated",
+      "chain": "bandlimit 260-3500 Hz + spectral gate",
+      "transcript": "நம்பர் ஒன் ஒன்னைன் அரை லிட்டர் ஃபேட் ஆறு பாயெண்டு எட்டு மார்ணிங்",
+      "slots": {
+        "member_id": 119,
+        "litres": 0.5,
+        "fat": 6.8,
+        "shift": "morning"
+      },
+      "gt": {
+        "member_id": 119,
+        "litres": 0.5,
+        "fat": 6.8,
+        "shift": "morning"
+      },
+      "matches": {
+        "member_id": true,
+        "litres": true,
+        "fat": true,
+        "shift": true
+      },
+      "all_exact": true,
+      "validation_ok": true,
+      "plausible_wrong": false,
+      "reask": false,
+      "flags": [],
+      "wer": 0.0435,
+      "asr_ms": 767,
+      "wall_ms": 768.7,
+      "audio_s": 9.58
+    },
+    {
+      "clip": "b08",
+      "condition": "5 dB",
+      "scene": "fan_cans",
+      "arm": "raw",
+      "chain": "raw",
+      "transcript": "லிட்டர். லிட்டர். ஷிஃப்ட்.",
+      "slots": {},
+      "gt": {
+        "member_id": 119,
+        "litres": 5.0,
+        "fat": 3.5,
+        "shift": "evening"
+      },
+      "matches": {
+        "member_id": false,
+        "litres": false,
+        "fat": false,
+        "shift": false
+      },
+      "all_exact": false,
+      "validation_ok": false,
+      "plausible_wrong": false,
+      "reask": true,
+      "flags": [
+        "member_missing",
+        "litres_missing",
+        "fat_missing",
+        "shift_missing"
+      ],
+      "wer": 0.7241,
+      "asr_ms": 529,
+      "wall_ms": 530.6,
+      "audio_s": 10.39
+    },
+    {
+      "clip": "b08",
+      "condition": "5 dB",
+      "scene": "fan_cans",
+      "arm": "mitigated",
+      "chain": "bandlimit 260-3500 Hz + spectral gate",
+      "transcript": "லிட்டர். லிட்டர். ஷிஃப்ட்.",
+      "slots": {},
+      "gt": {
+        "member_id": 119,
+        "litres": 5.0,
+        "fat": 3.5,
+        "shift": "evening"
+      },
+      "matches": {
+        "member_id": false,
+        "litres": false,
+        "fat": false,
+        "shift": false
+      },
+      "all_exact": false,
+      "validation_ok": false,
+      "plausible_wrong": false,
+      "reask": true,
+      "flags": [
+        "member_missing",
+        "litres_missing",
+        "fat_missing",
+        "shift_missing"
+      ],
+      "wer": 0.7241,
+      "asr_ms": 428,
+      "wall_ms": 429.8,
+      "audio_s": 10.39
+    },
+    {
+      "clip": "b08",
+      "condition": "0 dB",
+      "scene": "fan_cans",
+      "arm": "raw",
+      "chain": "raw",
+      "transcript": "நம்பர் ஒன்றொன்னாய் ஐந்தி லிட்டர் பார் ஃபேட் மூன்று பாயின் ஐந்தே. ஈவினின் ஷிக்",
+      "slots": {
+        "fat": 3.5,
+        "shift": "evening"
+      },
+      "gt": {
+        "member_id": 119,
+        "litres": 5.0,
+        "fat": 3.5,
+        "shift": "evening"
+      },
+      "matches": {
+        "member_id": false,
+        "litres": false,
+        "fat": true,
+        "shift": true
+      },
+      "all_exact": false,
+      "validation_ok": false,
+      "plausible_wrong": false,
+      "reask": true,
+      "flags": [
+        "member_missing",
+        "litres_missing"
+      ],
+      "wer": 0.3448,
+      "asr_ms": 1560,
+      "wall_ms": 1562.3,
+      "audio_s": 10.39
+    },
+    {
+      "clip": "b08",
+      "condition": "0 dB",
+      "scene": "fan_cans",
+      "arm": "mitigated",
+      "chain": "bandlimit 260-3500 Hz + spectral gate",
+      "transcript": "நம்பர் ஒன்னொன்னாய் ஐந்தி விக்கர்பாள். ஃபேட் மூன்று பாயின் ஐந்தே. ஷிஃப்ட்.",
+      "slots": {
+        "fat": 3.5
+      },
+      "gt": {
+        "member_id": 119,
+        "litres": 5.0,
+        "fat": 3.5,
+        "shift": "evening"
+      },
+      "matches": {
+        "member_id": false,
+        "litres": false,
+        "fat": true,
+        "shift": false
+      },
+      "all_exact": false,
+      "validation_ok": false,
+      "plausible_wrong": false,
+      "reask": true,
+      "flags": [
+        "member_missing",
+        "litres_missing",
+        "shift_missing"
+      ],
+      "wer": 0.4483,
+      "asr_ms": 1698,
+      "wall_ms": 1699.4,
+      "audio_s": 10.39
+    },
+    {
+      "clip": "b09",
+      "condition": "5 dB",
+      "scene": "society_hall",
+      "arm": "raw",
+      "chain": "raw",
+      "transcript": "நம்பர். 124. மூன்று லிட்டர். இல்லை இல்லை மூன்று ஓரை லிட்டர். ஸேட் நாலு பாயின் ஏற்று. காலை.",
+      "slots": {
+        "member_id": 124,
+        "litres": 3.0,
+        "fat": 4.8,
+        "shift": "morning"
+      },
+      "gt": {
+        "member_id": 124,
+        "litres": 3.5,
+        "fat": 4.8,
+        "shift": "morning"
+      },
+      "matches": {
+        "member_id": true,
+        "litres": false,
+        "fat": true,
+        "shift": true
+      },
+      "all_exact": false,
+      "validation_ok": true,
+      "plausible_wrong": true,
+      "reask": false,
+      "flags": [],
+      "wer": 0.3939,
+      "asr_ms": 945,
+      "wall_ms": 946.8,
+      "audio_s": 13.1
+    },
+    {
+      "clip": "b09",
+      "condition": "5 dB",
+      "scene": "society_hall",
+      "arm": "mitigated",
+      "chain": "bandlimit 260-3500 Hz + spectral gate",
+      "transcript": "நம்பர். 124. மூன்று லிட்டர். இல்லை இல்லை மூன்று ரெய் லிட்டர். டேட் நாலு பாயின் எட்டு காலை.",
+      "slots": {
+        "member_id": 124,
+        "litres": 3.5,
+        "fat": 4.8,
+        "shift": "morning"
+      },
+      "gt": {
+        "member_id": 124,
+        "litres": 3.5,
+        "fat": 4.8,
+        "shift": "morning"
+      },
+      "matches": {
+        "member_id": true,
+        "litres": true,
+        "fat": true,
+        "shift": true
+      },
+      "all_exact": true,
+      "validation_ok": true,
+      "plausible_wrong": false,
+      "reask": false,
+      "flags": [],
+      "wer": 0.3636,
+      "asr_ms": 984,
+      "wall_ms": 985.7,
+      "audio_s": 13.1
+    },
+    {
+      "clip": "b09",
+      "condition": "0 dB",
+      "scene": "society_hall",
+      "arm": "raw",
+      "chain": "raw",
+      "transcript": "நம்பர். 124. மூன்று லிட்டர். இல்லை இல்லை மூன்று ஹரை லிட்டர். ஷேட் நாலு பாயின் ஏற்றே. காலை.",
+      "slots": {
+        "member_id": 124,
+        "litres": 3.5,
+        "fat": 4.0,
+        "shift": "morning"
+      },
+      "gt": {
+        "member_id": 124,
+        "litres": 3.5,
+        "fat": 4.8,
+        "shift": "morning"
+      },
+      "matches": {
+        "member_id": true,
+        "litres": true,
+        "fat": false,
+        "shift": true
+      },
+      "all_exact": false,
+      "validation_ok": true,
+      "plausible_wrong": true,
+      "reask": false,
+      "flags": [],
+      "wer": 0.3939,
+      "asr_ms": 1001,
+      "wall_ms": 1003.2,
+      "audio_s": 13.1
+    },
+    {
+      "clip": "b09",
+      "condition": "0 dB",
+      "scene": "society_hall",
+      "arm": "mitigated",
+      "chain": "bandlimit 260-3500 Hz + spectral gate",
+      "transcript": "நம்பர். 124. லூனு லிட்டர். இல்லை இல்லை. மூன்று ரெய் லிட்டர். டேக் நானு பாயின் ஏற்றே. காலை.",
+      "slots": {
+        "member_id": 124,
+        "litres": 3.5,
+        "shift": "morning"
+      },
+      "gt": {
+        "member_id": 124,
+        "litres": 3.5,
+        "fat": 4.8,
+        "shift": "morning"
+      },
+      "matches": {
+        "member_id": true,
+        "litres": true,
+        "fat": false,
+        "shift": true
+      },
+      "all_exact": false,
+      "validation_ok": false,
+      "plausible_wrong": false,
+      "reask": true,
+      "flags": [
+        "fat_missing"
+      ],
+      "wer": 0.4848,
+      "asr_ms": 1734,
+      "wall_ms": 1735.3,
+      "audio_s": 13.1
+    },
+    {
+      "clip": "b10",
+      "condition": "5 dB",
+      "scene": "generator",
+      "arm": "raw",
+      "chain": "raw",
+      "transcript": "நம்பர் 124. ரெண்டு லிட்டர். ஃபேட் ஐந்து பாயங்ட் ஒன்று. சாயங்காலம்.",
+      "slots": {
+        "member_id": 124,
+        "litres": 2.0,
+        "fat": 5.1,
+        "shift": "evening"
+      },
+      "gt": {
+        "member_id": 124,
+        "litres": 2.0,
+        "fat": 5.1,
+        "shift": "evening"
+      },
+      "matches": {
+        "member_id": true,
+        "litres": true,
+        "fat": true,
+        "shift": true
+      },
+      "all_exact": true,
+      "validation_ok": true,
+      "plausible_wrong": false,
+      "reask": false,
+      "flags": [],
+      "wer": 0.087,
+      "asr_ms": 816,
+      "wall_ms": 816.9,
+      "audio_s": 10.46
+    },
+    {
+      "clip": "b10",
+      "condition": "5 dB",
+      "scene": "generator",
+      "arm": "mitigated",
+      "chain": "bandlimit 260-3500 Hz + spectral gate",
+      "transcript": "நம்பர் 124. இரண்டு லிட்டர். ஃபேட் ஐந்து பையன்ட் ஒன்று. சாயங்காலம்.",
+      "slots": {
+        "member_id": 124,
+        "litres": 2.0,
+        "fat": 5.1,
+        "shift": "evening"
+      },
+      "gt": {
+        "member_id": 124,
+        "litres": 2.0,
+        "fat": 5.1,
+        "shift": "evening"
+      },
+      "matches": {
+        "member_id": true,
+        "litres": true,
+        "fat": true,
+        "shift": true
+      },
+      "all_exact": true,
+      "validation_ok": true,
+      "plausible_wrong": false,
+      "reask": false,
+      "flags": [],
+      "wer": 0.1739,
+      "asr_ms": 1002,
+      "wall_ms": 1004.1,
+      "audio_s": 10.46
+    },
+    {
+      "clip": "b10",
+      "condition": "0 dB",
+      "scene": "generator",
+      "arm": "raw",
+      "chain": "raw",
+      "transcript": "நம்பர் 124. இரண்டு லிட்டர். ஃபேட் ஐந்து பாயின்ட் ஒன்று. சாயங்காலம்.",
+      "slots": {
+        "member_id": 124,
+        "litres": 2.0,
+        "fat": 5.1,
+        "shift": "evening"
+      },
+      "gt": {
+        "member_id": 124,
+        "litres": 2.0,
+        "fat": 5.1,
+        "shift": "evening"
+      },
+      "matches": {
+        "member_id": true,
+        "litres": true,
+        "fat": true,
+        "shift": true
+      },
+      "all_exact": true,
+      "validation_ok": true,
+      "plausible_wrong": false,
+      "reask": false,
+      "flags": [],
+      "wer": 0.1304,
+      "asr_ms": 793,
+      "wall_ms": 794.6,
+      "audio_s": 10.46
+    },
+    {
+      "clip": "b10",
+      "condition": "0 dB",
+      "scene": "generator",
+      "arm": "mitigated",
+      "chain": "bandlimit 260-3500 Hz + spectral gate",
+      "transcript": "நம்பர் 124. இரண்டு லிட்டர். ஃபேட் ஐந்து பையன்ட் ஒன்று. சாயங்காலம்.",
+      "slots": {
+        "member_id": 124,
+        "litres": 2.0,
+        "fat": 5.1,
+        "shift": "evening"
+      },
+      "gt": {
+        "member_id": 124,
+        "litres": 2.0,
+        "fat": 5.1,
+        "shift": "evening"
+      },
+      "matches": {
+        "member_id": true,
+        "litres": true,
+        "fat": true,
+        "shift": true
+      },
+      "all_exact": true,
+      "validation_ok": true,
+      "plausible_wrong": false,
+      "reask": false,
+      "flags": [],
+      "wer": 0.1739,
+      "asr_ms": 807,
+      "wall_ms": 808.5,
+      "audio_s": 10.46
+    },
+    {
+      "clip": "b11",
+      "condition": "5 dB",
+      "scene": "fan_cans",
+      "arm": "raw",
+      "chain": "raw",
+      "transcript": "நம்பர். 127. நாரரை லிகேட். ஸ்டேட் மூன்று பாயின் ஒன்பது. மாற்றினி.",
+      "slots": {
+        "member_id": 127,
+        "fat": 3.9
+      },
+      "gt": {
+        "member_id": 127,
+        "litres": 4.5,
+        "fat": 3.9,
+        "shift": "morning"
+      },
+      "matches": {
+        "member_id": true,
+        "litres": false,
+        "fat": true,
+        "shift": false
+      },
+      "all_exact": false,
+      "validation_ok": false,
+      "plausible_wrong": false,
+      "reask": true,
+      "flags": [
+        "litres_missing",
+        "shift_missing"
+      ],
+      "wer": 0.6,
+      "asr_ms": 708,
+      "wall_ms": 710.0,
+      "audio_s": 10.39
+    },
+    {
+      "clip": "b11",
+      "condition": "5 dB",
+      "scene": "fan_cans",
+      "arm": "mitigated",
+      "chain": "bandlimit 260-3500 Hz + spectral gate",
+      "transcript": "நம்பர். 127. நாரரை விக்கர். ஃபேட் மூன்று பாயின் ஒன்பது. மாற்றின்",
+      "slots": {
+        "member_id": 127,
+        "litres": 4.5,
+        "fat": 3.9,
+        "shift": "morning"
+      },
+      "gt": {
+        "member_id": 127,
+        "litres": 4.5,
+        "fat": 3.9,
+        "shift": "morning"
+      },
+      "matches": {
+        "member_id": true,
+        "litres": true,
+        "fat": true,
+        "shift": true
+      },
+      "all_exact": true,
+      "validation_ok": true,
+      "plausible_wrong": false,
+      "reask": false,
+      "flags": [],
+      "wer": 0.6,
+      "asr_ms": 743,
+      "wall_ms": 744.9,
+      "audio_s": 10.39
+    },
+    {
+      "clip": "b11",
+      "condition": "0 dB",
+      "scene": "fan_cans",
+      "arm": "raw",
+      "chain": "raw",
+      "transcript": "நம்பர். 127. நாறரை விகெஞ்சு. ஸ்டீட் லூனு பாயின் ஒன்பதே. மாறினி.",
+      "slots": {
+        "member_id": 127
+      },
+      "gt": {
+        "member_id": 127,
+        "litres": 4.5,
+        "fat": 3.9,
+        "shift": "morning"
+      },
+      "matches": {
+        "member_id": true,
+        "litres": false,
+        "fat": false,
+        "shift": false
+      },
+      "all_exact": false,
+      "validation_ok": false,
+      "plausible_wrong": false,
+      "reask": true,
+      "flags": [
+        "litres_missing",
+        "fat_missing",
+        "shift_missing"
+      ],
+      "wer": 0.64,
+      "asr_ms": 808,
+      "wall_ms": 809.8,
+      "audio_s": 10.39
+    },
+    {
+      "clip": "b11",
+      "condition": "0 dB",
+      "scene": "fan_cans",
+      "arm": "mitigated",
+      "chain": "bandlimit 260-3500 Hz + spectral gate",
+      "transcript": "லிட்டர். லிட்டர். ஷிஃப்ட்.",
+      "slots": {},
+      "gt": {
+        "member_id": 127,
+        "litres": 4.5,
+        "fat": 3.9,
+        "shift": "morning"
+      },
+      "matches": {
+        "member_id": false,
+        "litres": false,
+        "fat": false,
+        "shift": false
+      },
+      "all_exact": false,
+      "validation_ok": false,
+      "plausible_wrong": false,
+      "reask": true,
+      "flags": [
+        "member_missing",
+        "litres_missing",
+        "fat_missing",
+        "shift_missing"
+      ],
+      "wer": 0.8,
+      "asr_ms": 497,
+      "wall_ms": 499.1,
+      "audio_s": 10.39
+    },
+    {
+      "clip": "b12",
+      "condition": "5 dB",
+      "scene": "society_hall",
+      "arm": "raw",
+      "chain": "raw",
+      "transcript": "நம்பர். 127. மூனு விட்டர் பார். ஃபேட் நாலு பாயன். நாலு. ஈவினின் ஷிஃப்ட்.",
+      "slots": {
+        "member_id": 127,
+        "litres": 3.0,
+        "fat": 4.4,
+        "shift": "evening"
+      },
+      "gt": {
+        "member_id": 127,
+        "litres": 3.0,
+        "fat": 4.4,
+        "shift": "evening"
+      },
+      "matches": {
+        "member_id": true,
+        "litres": true,
+        "fat": true,
+        "shift": true
+      },
+      "all_exact": true,
+      "validation_ok": true,
+      "plausible_wrong": false,
+      "reask": false,
+      "flags": [],
+      "wer": 0.3793,
+      "asr_ms": 774,
+      "wall_ms": 775.3,
+      "audio_s": 10.78
+    },
+    {
+      "clip": "b12",
+      "condition": "5 dB",
+      "scene": "society_hall",
+      "arm": "mitigated",
+      "chain": "bandlimit 260-3500 Hz + spectral gate",
+      "transcript": "நம்பர். 127. மூன்று விட்டர் பார். ஃபேட் நாலு பாயன் நாலு. ஈவினின் ஷிஃப்",
+      "slots": {
+        "member_id": 127,
+        "litres": 3.0,
+        "fat": 4.4,
+        "shift": "evening"
+      },
+      "gt": {
+        "member_id": 127,
+        "litres": 3.0,
+        "fat": 4.4,
+        "shift": "evening"
+      },
+      "matches": {
+        "member_id": true,
+        "litres": true,
+        "fat": true,
+        "shift": true
+      },
+      "all_exact": true,
+      "validation_ok": true,
+      "plausible_wrong": false,
+      "reask": false,
+      "flags": [],
+      "wer": 0.4483,
+      "asr_ms": 759,
+      "wall_ms": 760.6,
+      "audio_s": 10.78
+    },
+    {
+      "clip": "b12",
+      "condition": "0 dB",
+      "scene": "society_hall",
+      "arm": "raw",
+      "chain": "raw",
+      "transcript": "நம்பர். 127. மூன்று விட்டர் பார். ஃபேட் நான்கு பாயன். நான்கு. ஈவினின் ஷிஃப்ட்.",
+      "slots": {
+        "member_id": 127,
+        "litres": 3.0,
+        "fat": 4.4,
+        "shift": "evening"
+      },
+      "gt": {
+        "member_id": 127,
+        "litres": 3.0,
+        "fat": 4.4,
+        "shift": "evening"
+      },
+      "matches": {
+        "member_id": true,
+        "litres": true,
+        "fat": true,
+        "shift": true
+      },
+      "all_exact": true,
+      "validation_ok": true,
+      "plausible_wrong": false,
+      "reask": false,
+      "flags": [],
+      "wer": 0.5517,
+      "asr_ms": 735,
+      "wall_ms": 736.8,
+      "audio_s": 10.78
+    },
+    {
+      "clip": "b12",
+      "condition": "0 dB",
+      "scene": "society_hall",
+      "arm": "mitigated",
+      "chain": "bandlimit 260-3500 Hz + spectral gate",
+      "transcript": "நம்பர். 127. மூன்று விட்டர் பார்.",
+      "slots": {
+        "member_id": 127,
+        "litres": 3.0
+      },
+      "gt": {
+        "member_id": 127,
+        "litres": 3.0,
+        "fat": 4.4,
+        "shift": "evening"
+      },
+      "matches": {
+        "member_id": true,
+        "litres": true,
+        "fat": false,
+        "shift": false
+      },
+      "all_exact": false,
+      "validation_ok": false,
+      "plausible_wrong": false,
+      "reask": true,
+      "flags": [
+        "fat_missing",
+        "shift_missing"
+      ],
+      "wer": 0.8276,
+      "asr_ms": 679,
+      "wall_ms": 680.8,
+      "audio_s": 10.78
+    },
+    {
+      "clip": "b13",
+      "condition": "5 dB",
+      "scene": "generator",
+      "arm": "raw",
+      "chain": "raw",
+      "transcript": "நம்பர் ஒன்றி டூ. ஒன்று ரை லிட்டர். ஃபேட் ஐந்து பாயின்ட் ஏட்டு காலை.",
+      "slots": {
+        "member_id": 132,
+        "litres": 1.5,
+        "fat": 5.8,
+        "shift": "morning"
+      },
+      "gt": {
+        "member_id": 132,
+        "litres": 1.5,
+        "fat": 5.8,
+        "shift": "morning"
+      },
+      "matches": {
+        "member_id": true,
+        "litres": true,
+        "fat": true,
+        "shift": true
+      },
+      "all_exact": true,
+      "validation_ok": true,
+      "plausible_wrong": false,
+      "reask": false,
+      "flags": [],
+      "wer": 0.2609,
+      "asr_ms": 718,
+      "wall_ms": 719.9,
+      "audio_s": 9.67
+    },
+    {
+      "clip": "b13",
+      "condition": "5 dB",
+      "scene": "generator",
+      "arm": "mitigated",
+      "chain": "bandlimit 260-3500 Hz + spectral gate",
+      "transcript": "நம்பர் ஒன்றி டூ. ஒன்று ரை லிட்டர். ஃபேட் ஐந்து பாயங்ட் எட்டு காலை.",
+      "slots": {
+        "member_id": 132,
+        "litres": 1.5,
+        "fat": 5.8,
+        "shift": "morning"
+      },
+      "gt": {
+        "member_id": 132,
+        "litres": 1.5,
+        "fat": 5.8,
+        "shift": "morning"
+      },
+      "matches": {
+        "member_id": true,
+        "litres": true,
+        "fat": true,
+        "shift": true
+      },
+      "all_exact": true,
+      "validation_ok": true,
+      "plausible_wrong": false,
+      "reask": false,
+      "flags": [],
+      "wer": 0.2609,
+      "asr_ms": 710,
+      "wall_ms": 711.9,
+      "audio_s": 9.67
+    },
+    {
+      "clip": "b13",
+      "condition": "0 dB",
+      "scene": "generator",
+      "arm": "raw",
+      "chain": "raw",
+      "transcript": "நம்பர் ஒன்றி டூ. ஒன்று ரை லிட்டர். ஃபேட் ஐந்து பாயின்ட் ஏட்டு. காலை.",
+      "slots": {
+        "member_id": 132,
+        "litres": 1.5,
+        "fat": 5.8,
+        "shift": "morning"
+      },
+      "gt": {
+        "member_id": 132,
+        "litres": 1.5,
+        "fat": 5.8,
+        "shift": "morning"
+      },
+      "matches": {
+        "member_id": true,
+        "litres": true,
+        "fat": true,
+        "shift": true
+      },
+      "all_exact": true,
+      "validation_ok": true,
+      "plausible_wrong": false,
+      "reask": false,
+      "flags": [],
+      "wer": 0.2609,
+      "asr_ms": 719,
+      "wall_ms": 720.9,
+      "audio_s": 9.67
+    },
+    {
+      "clip": "b13",
+      "condition": "0 dB",
+      "scene": "generator",
+      "arm": "mitigated",
+      "chain": "bandlimit 260-3500 Hz + spectral gate",
+      "transcript": "நம்பர் ஒன்றி டூ. ஒன்று ரை லிட்டர். ஃபேட் ஐந்து பாயின்ட் எட்டு. காலை.",
+      "slots": {
+        "member_id": 132,
+        "litres": 1.5,
+        "fat": 5.8,
+        "shift": "morning"
+      },
+      "gt": {
+        "member_id": 132,
+        "litres": 1.5,
+        "fat": 5.8,
+        "shift": "morning"
+      },
+      "matches": {
+        "member_id": true,
+        "litres": true,
+        "fat": true,
+        "shift": true
+      },
+      "all_exact": true,
+      "validation_ok": true,
+      "plausible_wrong": false,
+      "reask": false,
+      "flags": [],
+      "wer": 0.2174,
+      "asr_ms": 683,
+      "wall_ms": 684.1,
+      "audio_s": 9.67
+    },
+    {
+      "clip": "b14",
+      "condition": "5 dB",
+      "scene": "fan_cans",
+      "arm": "raw",
+      "chain": "raw",
+      "transcript": "நம்பர். 132. ரெண்டு லிட்டர். ஃபேட் ஆறு பாயின்ஸ் டூ. சாயங்காலம்.",
+      "slots": {
+        "member_id": 132,
+        "litres": 2.0,
+        "fat": 6.2,
+        "shift": "evening"
+      },
+      "gt": {
+        "member_id": 132,
+        "litres": 2.0,
+        "fat": 6.2,
+        "shift": "evening"
+      },
+      "matches": {
+        "member_id": true,
+        "litres": true,
+        "fat": true,
+        "shift": true
+      },
+      "all_exact": true,
+      "validation_ok": true,
+      "plausible_wrong": false,
+      "reask": false,
+      "flags": [],
+      "wer": 0.25,
+      "asr_ms": 638,
+      "wall_ms": 639.0,
+      "audio_s": 9.82
+    },
+    {
+      "clip": "b14",
+      "condition": "5 dB",
+      "scene": "fan_cans",
+      "arm": "mitigated",
+      "chain": "bandlimit 260-3500 Hz + spectral gate",
+      "transcript": "நம்பர். 132. ரெண்டு லிட்டர். ஃபேட் ஆறு பாயங்க் டூ. சாயங்காலம்.",
+      "slots": {
+        "member_id": 132,
+        "litres": 2.0,
+        "fat": 6.2,
+        "shift": "evening"
+      },
+      "gt": {
+        "member_id": 132,
+        "litres": 2.0,
+        "fat": 6.2,
+        "shift": "evening"
+      },
+      "matches": {
+        "member_id": true,
+        "litres": true,
+        "fat": true,
+        "shift": true
+      },
+      "all_exact": true,
+      "validation_ok": true,
+      "plausible_wrong": false,
+      "reask": false,
+      "flags": [],
+      "wer": 0.2917,
+      "asr_ms": 642,
+      "wall_ms": 643.4,
+      "audio_s": 9.82
+    },
+    {
+      "clip": "b14",
+      "condition": "0 dB",
+      "scene": "fan_cans",
+      "arm": "raw",
+      "chain": "raw",
+      "transcript": "நம்பர். 132. ரென்டு லிட்டர். ஃபேட் ஆறு பாயன். ஸூ. சாயங்காலம்.",
+      "slots": {
+        "member_id": 132,
+        "fat": 6.0,
+        "shift": "evening"
+      },
+      "gt": {
+        "member_id": 132,
+        "litres": 2.0,
+        "fat": 6.2,
+        "shift": "evening"
+      },
+      "matches": {
+        "member_id": true,
+        "litres": false,
+        "fat": false,
+        "shift": true
+      },
+      "all_exact": false,
+      "validation_ok": false,
+      "plausible_wrong": false,
+      "reask": true,
+      "flags": [
+        "litres_missing"
+      ],
+      "wer": 0.375,
+      "asr_ms": 652,
+      "wall_ms": 653.8,
+      "audio_s": 9.82
+    },
+    {
+      "clip": "b14",
+      "condition": "0 dB",
+      "scene": "fan_cans",
+      "arm": "mitigated",
+      "chain": "bandlimit 260-3500 Hz + spectral gate",
+      "transcript": "லிட்டர். லிட்டர். ஷிஃப்ட். லிட்டர்.",
+      "slots": {},
+      "gt": {
+        "member_id": 132,
+        "litres": 2.0,
+        "fat": 6.2,
+        "shift": "evening"
+      },
+      "matches": {
+        "member_id": false,
+        "litres": false,
+        "fat": false,
+        "shift": false
+      },
+      "all_exact": false,
+      "validation_ok": false,
+      "plausible_wrong": false,
+      "reask": true,
+      "flags": [
+        "member_missing",
+        "litres_missing",
+        "fat_missing",
+        "shift_missing"
+      ],
+      "wer": 0.75,
+      "asr_ms": 458,
+      "wall_ms": 459.6,
+      "audio_s": 9.82
+    },
+    {
+      "clip": "b15",
+      "condition": "5 dB",
+      "scene": "society_hall",
+      "arm": "raw",
+      "chain": "raw",
+      "transcript": "நம்பர். 137. மூன்றுறை லிட்டர். ஃபேட் நாலு பாயின் ஒன்பது. மாற்றினி.",
+      "slots": {
+        "member_id": 137,
+        "litres": 3.5,
+        "fat": 4.9
+      },
+      "gt": {
+        "member_id": 137,
+        "litres": 3.5,
+        "fat": 4.9,
+        "shift": "morning"
+      },
+      "matches": {
+        "member_id": true,
+        "litres": true,
+        "fat": true,
+        "shift": false
+      },
+      "all_exact": false,
+      "validation_ok": false,
+      "plausible_wrong": false,
+      "reask": true,
+      "flags": [
+        "shift_missing"
+      ],
+      "wer": 0.4444,
+      "asr_ms": 657,
+      "wall_ms": 658.7,
+      "audio_s": 10.34
+    },
+    {
+      "clip": "b15",
+      "condition": "5 dB",
+      "scene": "society_hall",
+      "arm": "mitigated",
+      "chain": "bandlimit 260-3500 Hz + spectral gate",
+      "transcript": "நம்பர் 137. மூன்று ரெஜிட்டர். ஃபேட் நாலு பாயின் ஒன்பது. மார்ணின்.",
+      "slots": {
+        "member_id": 137,
+        "fat": 4.9
+      },
+      "gt": {
+        "member_id": 137,
+        "litres": 3.5,
+        "fat": 4.9,
+        "shift": "morning"
+      },
+      "matches": {
+        "member_id": true,
+        "litres": false,
+        "fat": true,
+        "shift": false
+      },
+      "all_exact": false,
+      "validation_ok": false,
+      "plausible_wrong": false,
+      "reask": true,
+      "flags": [
+        "litres_missing",
+        "shift_missing"
+      ],
+      "wer": 0.4444,
+      "asr_ms": 1390,
+      "wall_ms": 1392.2,
+      "audio_s": 10.34
+    },
+    {
+      "clip": "b15",
+      "condition": "0 dB",
+      "scene": "society_hall",
+      "arm": "raw",
+      "chain": "raw",
+      "transcript": "நம்பர். 137. லிட்டர். ஷேக்ட் நாலு பாயின் ஒன்பது. மாற்றின்.",
+      "slots": {
+        "member_id": 137,
+        "litres": 137.0,
+        "fat": 4.9,
+        "shift": "morning"
+      },
+      "gt": {
+        "member_id": 137,
+        "litres": 3.5,
+        "fat": 4.9,
+        "shift": "morning"
+      },
+      "matches": {
+        "member_id": true,
+        "litres": false,
+        "fat": true,
+        "shift": true
+      },
+      "all_exact": false,
+      "validation_ok": false,
+      "plausible_wrong": false,
+      "reask": true,
+      "flags": [
+        "litres_range"
+      ],
+      "wer": 0.5556,
+      "asr_ms": 593,
+      "wall_ms": 595.5,
+      "audio_s": 10.34
+    },
+    {
+      "clip": "b15",
+      "condition": "0 dB",
+      "scene": "society_hall",
+      "arm": "mitigated",
+      "chain": "bandlimit 260-3500 Hz + spectral gate",
+      "transcript": "நம்பர் 137. லூன்வரி லிட்டர். ஷேக் நாலு பாயின் 108. மாற்றின்",
+      "slots": {
+        "member_id": 137,
+        "fat": 4.11,
+        "shift": "morning"
+      },
+      "gt": {
+        "member_id": 137,
+        "litres": 3.5,
+        "fat": 4.9,
+        "shift": "morning"
+      },
+      "matches": {
+        "member_id": true,
+        "litres": false,
+        "fat": false,
+        "shift": true
+      },
+      "all_exact": false,
+      "validation_ok": false,
+      "plausible_wrong": false,
+      "reask": true,
+      "flags": [
+        "litres_missing"
+      ],
+      "wer": 0.5926,
+      "asr_ms": 1924,
+      "wall_ms": 1926.1,
+      "audio_s": 10.34
+    },
+    {
+      "clip": "b16",
+      "condition": "5 dB",
+      "scene": "generator",
+      "arm": "raw",
+      "chain": "raw",
+      "transcript": "நம்பர் 137. ஐந்தரை லிட்டர் பால். ஃபேட் மூன்று பாயின்ட் ஏகு.",
+      "slots": {
+        "member_id": 137,
+        "litres": 5.5,
+        "fat": 3.7
+      },
+      "gt": {
+        "member_id": 137,
+        "litres": 5.5,
+        "fat": 3.7,
+        "shift": "evening"
+      },
+      "matches": {
+        "member_id": true,
+        "litres": true,
+        "fat": true,
+        "shift": false
+      },
+      "all_exact": false,
+      "validation_ok": false,
+      "plausible_wrong": false,
+      "reask": true,
+      "flags": [
+        "shift_missing"
+      ],
+      "wer": 0.4,
+      "asr_ms": 633,
+      "wall_ms": 634.9,
+      "audio_s": 10.7
+    },
+    {
+      "clip": "b16",
+      "condition": "5 dB",
+      "scene": "generator",
+      "arm": "mitigated",
+      "chain": "bandlimit 260-3500 Hz + spectral gate",
+      "transcript": "நம்பர் 137. ஐந்தரை லிட்டர் பால். ஃபேட் மூன்று பாயின்ட் ஏழு. இவனின் ஷிஃப்ட்.",
+      "slots": {
+        "member_id": 137,
+        "litres": 5.5,
+        "fat": 3.7
+      },
+      "gt": {
+        "member_id": 137,
+        "litres": 5.5,
+        "fat": 3.7,
+        "shift": "evening"
+      },
+      "matches": {
+        "member_id": true,
+        "litres": true,
+        "fat": true,
+        "shift": false
+      },
+      "all_exact": false,
+      "validation_ok": false,
+      "plausible_wrong": false,
+      "reask": true,
+      "flags": [
+        "shift_missing"
+      ],
+      "wer": 0.2,
+      "asr_ms": 760,
+      "wall_ms": 761.9,
+      "audio_s": 10.7
+    },
+    {
+      "clip": "b16",
+      "condition": "0 dB",
+      "scene": "generator",
+      "arm": "raw",
+      "chain": "raw",
+      "transcript": "நம்பர் 137. ஐந்தரை லிட்டர் பால். ஃபேட் மூன்று பாயின்ட் ஏழு. இவ்ணின் ஷிஃப்ட்.",
+      "slots": {
+        "member_id": 137,
+        "litres": 5.5,
+        "fat": 3.7
+      },
+      "gt": {
+        "member_id": 137,
+        "litres": 5.5,
+        "fat": 3.7,
+        "shift": "evening"
+      },
+      "matches": {
+        "member_id": true,
+        "litres": true,
+        "fat": true,
+        "shift": false
+      },
+      "all_exact": false,
+      "validation_ok": false,
+      "plausible_wrong": false,
+      "reask": true,
+      "flags": [
+        "shift_missing"
+      ],
+      "wer": 0.24,
+      "asr_ms": 947,
+      "wall_ms": 950.0,
+      "audio_s": 10.7
+    },
+    {
+      "clip": "b16",
+      "condition": "0 dB",
+      "scene": "generator",
+      "arm": "mitigated",
+      "chain": "bandlimit 260-3500 Hz + spectral gate",
+      "transcript": "நம்பர் 137. ஐந்தரை லிட்டர் பால். ஃபேட் மூன்று பாயின்ட் ஏழு. இவனின் ஷிஃப்ட்.",
+      "slots": {
+        "member_id": 137,
+        "litres": 5.5,
+        "fat": 3.7
+      },
+      "gt": {
+        "member_id": 137,
+        "litres": 5.5,
+        "fat": 3.7,
+        "shift": "evening"
+      },
+      "matches": {
+        "member_id": true,
+        "litres": true,
+        "fat": true,
+        "shift": false
+      },
+      "all_exact": false,
+      "validation_ok": false,
+      "plausible_wrong": false,
+      "reask": true,
+      "flags": [
+        "shift_missing"
+      ],
+      "wer": 0.2,
+      "asr_ms": 921,
+      "wall_ms": 922.6,
+      "audio_s": 10.7
+    },
+    {
+      "clip": "b17",
+      "condition": "5 dB",
+      "scene": "fan_cans",
+      "arm": "raw",
+      "chain": "raw",
+      "transcript": "நம்பர் 143. ரெண்டு லிட்டர். ஃபேட் ஐந்து பாயின் மோனு. காலை.",
+      "slots": {
+        "member_id": 143,
+        "litres": 2.0,
+        "fat": 5.3,
+        "shift": "morning"
+      },
+      "gt": {
+        "member_id": 143,
+        "litres": 2.0,
+        "fat": 5.3,
+        "shift": "morning"
+      },
+      "matches": {
+        "member_id": true,
+        "litres": true,
+        "fat": true,
+        "shift": true
+      },
+      "all_exact": true,
+      "validation_ok": true,
+      "plausible_wrong": false,
+      "reask": false,
+      "flags": [],
+      "wer": 0.32,
+      "asr_ms": 884,
+      "wall_ms": 885.3,
+      "audio_s": 9.55
+    },
+    {
+      "clip": "b17",
+      "condition": "5 dB",
+      "scene": "fan_cans",
+      "arm": "mitigated",
+      "chain": "bandlimit 260-3500 Hz + spectral gate",
+      "transcript": "நம்பர் 143. ரெண்டு லிட்டர். ஃபேட் ஐந்து பாயின் மோனு. கானை.",
+      "slots": {
+        "member_id": 143,
+        "litres": 2.0,
+        "fat": 5.3
+      },
+      "gt": {
+        "member_id": 143,
+        "litres": 2.0,
+        "fat": 5.3,
+        "shift": "morning"
+      },
+      "matches": {
+        "member_id": true,
+        "litres": true,
+        "fat": true,
+        "shift": false
+      },
+      "all_exact": false,
+      "validation_ok": false,
+      "plausible_wrong": false,
+      "reask": true,
+      "flags": [
+        "shift_missing"
+      ],
+      "wer": 0.36,
+      "asr_ms": 850,
+      "wall_ms": 851.2,
+      "audio_s": 9.55
+    },
+    {
+      "clip": "b17",
+      "condition": "0 dB",
+      "scene": "fan_cans",
+      "arm": "raw",
+      "chain": "raw",
+      "transcript": "நம்பர் 143. ரெண்டு விஷன். ஸ்டேட் ஐந்து பாயின் மோனு. சானி.",
+      "slots": {
+        "member_id": 143,
+        "fat": 5.3
+      },
+      "gt": {
+        "member_id": 143,
+        "litres": 2.0,
+        "fat": 5.3,
+        "shift": "morning"
+      },
+      "matches": {
+        "member_id": true,
+        "litres": false,
+        "fat": true,
+        "shift": false
+      },
+      "all_exact": false,
+      "validation_ok": false,
+      "plausible_wrong": false,
+      "reask": true,
+      "flags": [
+        "litres_missing",
+        "shift_missing"
+      ],
+      "wer": 0.56,
+      "asr_ms": 1488,
+      "wall_ms": 1490.6,
+      "audio_s": 9.55
+    },
+    {
+      "clip": "b17",
+      "condition": "0 dB",
+      "scene": "fan_cans",
+      "arm": "mitigated",
+      "chain": "bandlimit 260-3500 Hz + spectral gate",
+      "transcript": "லிட்டர். லிட்டர். ஷிஃப்ட். லிட்டர்.",
+      "slots": {},
+      "gt": {
+        "member_id": 143,
+        "litres": 2.0,
+        "fat": 5.3,
+        "shift": "morning"
+      },
+      "matches": {
+        "member_id": false,
+        "litres": false,
+        "fat": false,
+        "shift": false
+      },
+      "all_exact": false,
+      "validation_ok": false,
+      "plausible_wrong": false,
+      "reask": true,
+      "flags": [
+        "member_missing",
+        "litres_missing",
+        "fat_missing",
+        "shift_missing"
+      ],
+      "wer": 0.8,
+      "asr_ms": 652,
+      "wall_ms": 653.3,
+      "audio_s": 9.55
+    },
+    {
+      "clip": "b18",
+      "condition": "5 dB",
+      "scene": "society_hall",
+      "arm": "raw",
+      "chain": "raw",
+      "transcript": "நம்பர் 143. நாளு லிட்டர். ஃபேட் நாளு பாயின் ஒன்று. சாயங்காலம்.",
+      "slots": {
+        "member_id": 143,
+        "litres": 4.0,
+        "fat": 4.1,
+        "shift": "evening"
+      },
+      "gt": {
+        "member_id": 143,
+        "litres": 4.0,
+        "fat": 4.1,
+        "shift": "evening"
+      },
+      "matches": {
+        "member_id": true,
+        "litres": true,
+        "fat": true,
+        "shift": true
+      },
+      "all_exact": true,
+      "validation_ok": true,
+      "plausible_wrong": false,
+      "reask": false,
+      "flags": [],
+      "wer": 0.3462,
+      "asr_ms": 762,
+      "wall_ms": 763.2,
+      "audio_s": 10.39
+    },
+    {
+      "clip": "b18",
+      "condition": "5 dB",
+      "scene": "society_hall",
+      "arm": "mitigated",
+      "chain": "bandlimit 260-3500 Hz + spectral gate",
+      "transcript": "நம்பர் 143. நாளு லிட்டர். ஃபேட் நாளு பாயின் ஒன்று. சாயங்காலம்.",
+      "slots": {
+        "member_id": 143,
+        "litres": 4.0,
+        "fat": 4.1,
+        "shift": "evening"
+      },
+      "gt": {
+        "member_id": 143,
+        "litres": 4.0,
+        "fat": 4.1,
+        "shift": "evening"
+      },
+      "matches": {
+        "member_id": true,
+        "litres": true,
+        "fat": true,
+        "shift": true
+      },
+      "all_exact": true,
+      "validation_ok": true,
+      "plausible_wrong": false,
+      "reask": false,
+      "flags": [],
+      "wer": 0.3462,
+      "asr_ms": 699,
+      "wall_ms": 700.8,
+      "audio_s": 10.39
+    },
+    {
+      "clip": "b18",
+      "condition": "0 dB",
+      "scene": "society_hall",
+      "arm": "raw",
+      "chain": "raw",
+      "transcript": "நம்பர். 143. நாளு லிட்டர். ஷேக். நாளு வாயின். ஒன்று. சாயங்காலம்.",
+      "slots": {
+        "member_id": 143,
+        "litres": 4.0,
+        "fat": 4.1,
+        "shift": "evening"
+      },
+      "gt": {
+        "member_id": 143,
+        "litres": 4.0,
+        "fat": 4.1,
+        "shift": "evening"
+      },
+      "matches": {
+        "member_id": true,
+        "litres": true,
+        "fat": true,
+        "shift": true
+      },
+      "all_exact": true,
+      "validation_ok": true,
+      "plausible_wrong": false,
+      "reask": false,
+      "flags": [],
+      "wer": 0.4615,
+      "asr_ms": 679,
+      "wall_ms": 680.5,
+      "audio_s": 10.39
+    },
+    {
+      "clip": "b18",
+      "condition": "0 dB",
+      "scene": "society_hall",
+      "arm": "mitigated",
+      "chain": "bandlimit 260-3500 Hz + spectral gate",
+      "transcript": "நம்பர் 143. நாலு லிட்டர். ஷேக் நாலு பாயின் ஒள்ளே. சாயங்காலம்.",
+      "slots": {
+        "member_id": 143,
+        "litres": 4.0,
+        "fat": 4.0,
+        "shift": "evening"
+      },
+      "gt": {
+        "member_id": 143,
+        "litres": 4.0,
+        "fat": 4.1,
+        "shift": "evening"
+      },
+      "matches": {
+        "member_id": true,
+        "litres": true,
+        "fat": false,
+        "shift": true
+      },
+      "all_exact": false,
+      "validation_ok": true,
+      "plausible_wrong": true,
+      "reask": false,
+      "flags": [],
+      "wer": 0.4231,
+      "asr_ms": 1280,
+      "wall_ms": 1281.7,
+      "audio_s": 10.39
+    },
+    {
+      "clip": "b19",
+      "condition": "5 dB",
+      "scene": "generator",
+      "arm": "raw",
+      "chain": "raw",
+      "transcript": "நம்பர் 146. ஒன்று ரை லிட்டர் பால். ஃபேட் ஆறு பாயிண்ட் ஐந்து. மார்ணிங்",
+      "slots": {
+        "member_id": 146,
+        "litres": 1.5,
+        "fat": 6.5,
+        "shift": "morning"
+      },
+      "gt": {
+        "member_id": 146,
+        "litres": 1.5,
+        "fat": 6.5,
+        "shift": "morning"
+      },
+      "matches": {
+        "member_id": true,
+        "litres": true,
+        "fat": true,
+        "shift": true
+      },
+      "all_exact": true,
+      "validation_ok": true,
+      "plausible_wrong": false,
+      "reask": false,
+      "flags": [],
+      "wer": 0.2857,
+      "asr_ms": 834,
+      "wall_ms": 835.6,
+      "audio_s": 10.42
+    },
+    {
+      "clip": "b19",
+      "condition": "5 dB",
+      "scene": "generator",
+      "arm": "mitigated",
+      "chain": "bandlimit 260-3500 Hz + spectral gate",
+      "transcript": "நம்பர் 146. ஒன்று ரை லிட்டர் பால். ஃபேட் ஆறுஸ் பாயின்ட் ஐந்து. மார்ணிங்",
+      "slots": {
+        "member_id": 146,
+        "litres": 1.5,
+        "fat": 5.0,
+        "shift": "morning"
+      },
+      "gt": {
+        "member_id": 146,
+        "litres": 1.5,
+        "fat": 6.5,
+        "shift": "morning"
+      },
+      "matches": {
+        "member_id": true,
+        "litres": true,
+        "fat": false,
+        "shift": true
+      },
+      "all_exact": false,
+      "validation_ok": true,
+      "plausible_wrong": true,
+      "reask": false,
+      "flags": [],
+      "wer": 0.3571,
+      "asr_ms": 813,
+      "wall_ms": 815.3,
+      "audio_s": 10.42
+    },
+    {
+      "clip": "b19",
+      "condition": "0 dB",
+      "scene": "generator",
+      "arm": "raw",
+      "chain": "raw",
+      "transcript": "நம்பர் 146. ஒன்று ரை லிட்டர் பால். ஃபேட் ஆறு பையன்ட் ஐந்து. மார்ணிங்",
+      "slots": {
+        "member_id": 146,
+        "litres": 1.5,
+        "fat": 6.5,
+        "shift": "morning"
+      },
+      "gt": {
+        "member_id": 146,
+        "litres": 1.5,
+        "fat": 6.5,
+        "shift": "morning"
+      },
+      "matches": {
+        "member_id": true,
+        "litres": true,
+        "fat": true,
+        "shift": true
+      },
+      "all_exact": true,
+      "validation_ok": true,
+      "plausible_wrong": false,
+      "reask": false,
+      "flags": [],
+      "wer": 0.3571,
+      "asr_ms": 804,
+      "wall_ms": 805.8,
+      "audio_s": 10.42
+    },
+    {
+      "clip": "b19",
+      "condition": "0 dB",
+      "scene": "generator",
+      "arm": "mitigated",
+      "chain": "bandlimit 260-3500 Hz + spectral gate",
+      "transcript": "நம்பர் 146. ஒன்று ரை லிட்டர் பால். ஃபேட் ஆர்வு பாய்க்கின்ற ஐந்தே. மார்ணிங்",
+      "slots": {
+        "member_id": 146,
+        "litres": 1.5,
+        "fat": 5.0,
+        "shift": "morning"
+      },
+      "gt": {
+        "member_id": 146,
+        "litres": 1.5,
+        "fat": 6.5,
+        "shift": "morning"
+      },
+      "matches": {
+        "member_id": true,
+        "litres": true,
+        "fat": false,
+        "shift": true
+      },
+      "all_exact": false,
+      "validation_ok": true,
+      "plausible_wrong": true,
+      "reask": false,
+      "flags": [],
+      "wer": 0.5,
+      "asr_ms": 1417,
+      "wall_ms": 1418.4,
+      "audio_s": 10.42
+    },
+    {
+      "clip": "b20",
+      "condition": "5 dB",
+      "scene": "fan_cans",
+      "arm": "raw",
+      "chain": "raw",
+      "transcript": "நம்பர் ஓன் ஓர் ஸிக். மூன்று டிகேர். ஃபேட் மூன்று பாய்கென்று நாதே. ஈவினின் ஷிஃப்ட்.",
+      "slots": {
+        "fat": 3.0,
+        "shift": "evening"
+      },
+      "gt": {
+        "member_id": 146,
+        "litres": 3.0,
+        "fat": 3.4,
+        "shift": "evening"
+      },
+      "matches": {
+        "member_id": false,
+        "litres": false,
+        "fat": false,
+        "shift": true
+      },
+      "all_exact": false,
+      "validation_ok": false,
+      "plausible_wrong": false,
+      "reask": true,
+      "flags": [
+        "member_missing",
+        "litres_missing"
+      ],
+      "wer": 0.5517,
+      "asr_ms": 1409,
+      "wall_ms": 1410.5,
+      "audio_s": 10.44
+    },
+    {
+      "clip": "b20",
+      "condition": "5 dB",
+      "scene": "fan_cans",
+      "arm": "mitigated",
+      "chain": "bandlimit 260-3500 Hz + spectral gate",
+      "transcript": "நம்பர் 146. மூன்று லிட்டர். ஃபேட் மூன்று பாய்கின்று நாதே.",
+      "slots": {
+        "member_id": 146,
+        "litres": 3.0,
+        "fat": 3.0
+      },
+      "gt": {
+        "member_id": 146,
+        "litres": 3.0,
+        "fat": 3.4,
+        "shift": "evening"
+      },
+      "matches": {
+        "member_id": true,
+        "litres": true,
+        "fat": false,
+        "shift": false
+      },
+      "all_exact": false,
+      "validation_ok": false,
+      "plausible_wrong": false,
+      "reask": true,
+      "flags": [
+        "shift_missing"
+      ],
+      "wer": 0.6552,
+      "asr_ms": 1415,
+      "wall_ms": 1417.0,
+      "audio_s": 10.44
+    },
+    {
+      "clip": "b20",
+      "condition": "0 dB",
+      "scene": "fan_cans",
+      "arm": "raw",
+      "chain": "raw",
+      "transcript": "நம்பர் ஒன்றோர் ஷிஃப். மூன்று ரிக்ஹேட். ஷேர் மூன்று பாய்கின் நாதே. ஈவினின் ஷிஃப்.",
+      "slots": {
+        "fat": 3.0,
+        "shift": "evening"
+      },
+      "gt": {
+        "member_id": 146,
+        "litres": 3.0,
+        "fat": 3.4,
+        "shift": "evening"
+      },
+      "matches": {
+        "member_id": false,
+        "litres": false,
+        "fat": false,
+        "shift": true
+      },
+      "all_exact": false,
+      "validation_ok": false,
+      "plausible_wrong": false,
+      "reask": true,
+      "flags": [
+        "member_missing",
+        "litres_missing"
+      ],
+      "wer": 0.6207,
+      "asr_ms": 1472,
+      "wall_ms": 1473.7,
+      "audio_s": 10.44
+    },
+    {
+      "clip": "b20",
+      "condition": "0 dB",
+      "scene": "fan_cans",
+      "arm": "mitigated",
+      "chain": "bandlimit 260-3500 Hz + spectral gate",
+      "transcript": "லிட்டர். லிட்டர். ஷிஃப்ட்.",
+      "slots": {},
+      "gt": {
+        "member_id": 146,
+        "litres": 3.0,
+        "fat": 3.4,
+        "shift": "evening"
+      },
+      "matches": {
+        "member_id": false,
+        "litres": false,
+        "fat": false,
+        "shift": false
+      },
+      "all_exact": false,
+      "validation_ok": false,
+      "plausible_wrong": false,
+      "reask": true,
+      "flags": [
+        "member_missing",
+        "litres_missing",
+        "fat_missing",
+        "shift_missing"
+      ],
+      "wer": 0.7586,
+      "asr_ms": 448,
+      "wall_ms": 450.0,
+      "audio_s": 10.44
+    },
+    {
+      "clip": "b21",
+      "condition": "5 dB",
+      "scene": "society_hall",
+      "arm": "raw",
+      "chain": "raw",
+      "transcript": "நம்பர். 151. ரெண்டரை லிட்டர். ஃபேட் ஐந்து பாயங்கள். ஆறு. காலை.",
+      "slots": {
+        "member_id": 151,
+        "litres": 2.5,
+        "fat": 5.6,
+        "shift": "morning"
+      },
+      "gt": {
+        "member_id": 151,
+        "litres": 2.5,
+        "fat": 5.6,
+        "shift": "morning"
+      },
+      "matches": {
+        "member_id": true,
+        "litres": true,
+        "fat": true,
+        "shift": true
+      },
+      "all_exact": true,
+      "validation_ok": true,
+      "plausible_wrong": false,
+      "reask": false,
+      "flags": [],
+      "wer": 0.3043,
+      "asr_ms": 789,
+      "wall_ms": 791.1,
+      "audio_s": 9.79
+    },
+    {
+      "clip": "b21",
+      "condition": "5 dB",
+      "scene": "society_hall",
+      "arm": "mitigated",
+      "chain": "bandlimit 260-3500 Hz + spectral gate",
+      "transcript": "நம்பர். 151. ரெண்டரை லிட்டர். ஃபேட் ஐந்து பாயங்கள். ஆறு. காலை.",
+      "slots": {
+        "member_id": 151,
+        "litres": 2.5,
+        "fat": 5.6,
+        "shift": "morning"
+      },
+      "gt": {
+        "member_id": 151,
+        "litres": 2.5,
+        "fat": 5.6,
+        "shift": "morning"
+      },
+      "matches": {
+        "member_id": true,
+        "litres": true,
+        "fat": true,
+        "shift": true
+      },
+      "all_exact": true,
+      "validation_ok": true,
+      "plausible_wrong": false,
+      "reask": false,
+      "flags": [],
+      "wer": 0.3043,
+      "asr_ms": 1452,
+      "wall_ms": 1453.5,
+      "audio_s": 9.79
+    },
+    {
+      "clip": "b21",
+      "condition": "0 dB",
+      "scene": "society_hall",
+      "arm": "raw",
+      "chain": "raw",
+      "transcript": "நம்பர் ஒன்பை ஒன்று. ரெண்டரை விட்டர். ஃபேட் ஐந்து பாயின் ஆறு. காலை.",
+      "slots": {
+        "litres": 2.5,
+        "fat": 5.6,
+        "shift": "morning"
+      },
+      "gt": {
+        "member_id": 151,
+        "litres": 2.5,
+        "fat": 5.6,
+        "shift": "morning"
+      },
+      "matches": {
+        "member_id": false,
+        "litres": true,
+        "fat": true,
+        "shift": true
+      },
+      "all_exact": false,
+      "validation_ok": false,
+      "plausible_wrong": false,
+      "reask": true,
+      "flags": [
+        "member_missing"
+      ],
+      "wer": 0.2609,
+      "asr_ms": 1445,
+      "wall_ms": 1446.7,
+      "audio_s": 9.79
+    },
+    {
+      "clip": "b21",
+      "condition": "0 dB",
+      "scene": "society_hall",
+      "arm": "mitigated",
+      "chain": "bandlimit 260-3500 Hz + spectral gate",
+      "transcript": "லிட்டர். லிட்டர். ஷிஃப்ட். லிட்டர்.",
+      "slots": {},
+      "gt": {
+        "member_id": 151,
+        "litres": 2.5,
+        "fat": 5.6,
+        "shift": "morning"
+      },
+      "matches": {
+        "member_id": false,
+        "litres": false,
+        "fat": false,
+        "shift": false
+      },
+      "all_exact": false,
+      "validation_ok": false,
+      "plausible_wrong": false,
+      "reask": true,
+      "flags": [
+        "member_missing",
+        "litres_missing",
+        "fat_missing",
+        "shift_missing"
+      ],
+      "wer": 0.7391,
+      "asr_ms": 507,
+      "wall_ms": 509.8,
+      "audio_s": 9.79
+    },
+    {
+      "clip": "b22",
+      "condition": "5 dB",
+      "scene": "generator",
+      "arm": "raw",
+      "chain": "raw",
+      "transcript": "நம்பர் நூற்று ஐம்பத்து ஒன்று நானரை லிட்டர். ஃபேட் நாலு பாயின்த் தூ. சாயங்காலம்.",
+      "slots": {
+        "member_id": 100,
+        "litres": 4.5,
+        "fat": 4.0,
+        "shift": "evening"
+      },
+      "gt": {
+        "member_id": 151,
+        "litres": 4.5,
+        "fat": 4.2,
+        "shift": "evening"
+      },
+      "matches": {
+        "member_id": false,
+        "litres": true,
+        "fat": false,
+        "shift": true
+      },
+      "all_exact": false,
+      "validation_ok": false,
+      "plausible_wrong": false,
+      "reask": true,
+      "flags": [
+        "member_unknown"
+      ],
+      "wer": 0.5714,
+      "asr_ms": 852,
+      "wall_ms": 853.7,
+      "audio_s": 10.51
+    },
+    {
+      "clip": "b22",
+      "condition": "5 dB",
+      "scene": "generator",
+      "arm": "mitigated",
+      "chain": "bandlimit 260-3500 Hz + spectral gate",
+      "transcript": "நம்பர் லூற்று ஐம்பத்து ஒன்று. நான் அரை லிட்டர். ஃபேட் நாலுஸ் பாயின்ட் டூ. சாயங்காலம்.",
+      "slots": {
+        "litres": 0.5,
+        "fat": 2.0,
+        "shift": "evening"
+      },
+      "gt": {
+        "member_id": 151,
+        "litres": 4.5,
+        "fat": 4.2,
+        "shift": "evening"
+      },
+      "matches": {
+        "member_id": false,
+        "litres": false,
+        "fat": false,
+        "shift": true
+      },
+      "all_exact": false,
+      "validation_ok": false,
+      "plausible_wrong": false,
+      "reask": true,
+      "flags": [
+        "member_missing",
+        "fat_range"
+      ],
+      "wer": 0.5714,
+      "asr_ms": 970,
+      "wall_ms": 971.8,
+      "audio_s": 10.51
+    },
+    {
+      "clip": "b22",
+      "condition": "0 dB",
+      "scene": "generator",
+      "arm": "raw",
+      "chain": "raw",
+      "transcript": "நம்பர் 151. 45 லிட்டர். ஃபேட் நாலு பாயின்ஸ்2. சாயங்காலம்.",
+      "slots": {
+        "member_id": 151,
+        "litres": 45.0,
+        "fat": 4.0,
+        "shift": "evening"
+      },
+      "gt": {
+        "member_id": 151,
+        "litres": 4.5,
+        "fat": 4.2,
+        "shift": "evening"
+      },
+      "matches": {
+        "member_id": true,
+        "litres": false,
+        "fat": false,
+        "shift": true
+      },
+      "all_exact": false,
+      "validation_ok": false,
+      "plausible_wrong": false,
+      "reask": true,
+      "flags": [
+        "litres_range"
+      ],
+      "wer": 0.2381,
+      "asr_ms": 658,
+      "wall_ms": 659.9,
+      "audio_s": 10.51
+    },
+    {
+      "clip": "b22",
+      "condition": "0 dB",
+      "scene": "generator",
+      "arm": "mitigated",
+      "chain": "bandlimit 260-3500 Hz + spectral gate",
+      "transcript": "நம்பர் லூற்று ஐம்பத்து ஒன்று. நானரை லிட்டர். ஃபேட் நாலுஸ் பாயின்ஸ் டூ. சாயங்காலம்.",
+      "slots": {
+        "litres": 4.5,
+        "fat": 2.0,
+        "shift": "evening"
+      },
+      "gt": {
+        "member_id": 151,
+        "litres": 4.5,
+        "fat": 4.2,
+        "shift": "evening"
+      },
+      "matches": {
+        "member_id": false,
+        "litres": true,
+        "fat": false,
+        "shift": true
+      },
+      "all_exact": false,
+      "validation_ok": false,
+      "plausible_wrong": false,
+      "reask": true,
+      "flags": [
+        "member_missing",
+        "fat_range"
+      ],
+      "wer": 0.5714,
+      "asr_ms": 986,
+      "wall_ms": 987.3,
+      "audio_s": 10.51
+    },
+    {
+      "clip": "b23",
+      "condition": "5 dB",
+      "scene": "fan_cans",
+      "arm": "raw",
+      "chain": "raw",
+      "transcript": "நம்பர் 156. ஒரு நிக்கர் பார். ஷேட் ஆது பாயின் ஒன்பது. மாற்றின்",
+      "slots": {
+        "member_id": 156,
+        "litres": 1.0,
+        "fat": 9.0,
+        "shift": "morning"
+      },
+      "gt": {
+        "member_id": 156,
+        "litres": 1.0,
+        "fat": 6.9,
+        "shift": "morning"
+      },
+      "matches": {
+        "member_id": true,
+        "litres": true,
+        "fat": false,
+        "shift": true
+      },
+      "all_exact": false,
+      "validation_ok": true,
+      "plausible_wrong": true,
+      "reask": false,
+      "flags": [],
+      "wer": 0.6296,
+      "asr_ms": 1259,
+      "wall_ms": 1260.5,
+      "audio_s": 10.25
+    },
+    {
+      "clip": "b23",
+      "condition": "5 dB",
+      "scene": "fan_cans",
+      "arm": "mitigated",
+      "chain": "bandlimit 260-3500 Hz + spectral gate",
+      "transcript": "நம்பர் 156. ஒரு நிகர்பாக. ஷேட் ஆறு வாயின் ஒன்பது. மாற்றின்",
+      "slots": {
+        "member_id": 156,
+        "fat": 6.9,
+        "shift": "morning"
+      },
+      "gt": {
+        "member_id": 156,
+        "litres": 1.0,
+        "fat": 6.9,
+        "shift": "morning"
+      },
+      "matches": {
+        "member_id": true,
+        "litres": false,
+        "fat": true,
+        "shift": true
+      },
+      "all_exact": false,
+      "validation_ok": false,
+      "plausible_wrong": false,
+      "reask": true,
+      "flags": [
+        "litres_missing"
+      ],
+      "wer": 0.6296,
+      "asr_ms": 1427,
+      "wall_ms": 1428.4,
+      "audio_s": 10.25
+    },
+    {
+      "clip": "b23",
+      "condition": "0 dB",
+      "scene": "fan_cans",
+      "arm": "raw",
+      "chain": "raw",
+      "transcript": "லிட்டர். லிட்டர். ஷிஃப்ட்.",
+      "slots": {},
+      "gt": {
+        "member_id": 156,
+        "litres": 1.0,
+        "fat": 6.9,
+        "shift": "morning"
+      },
+      "matches": {
+        "member_id": false,
+        "litres": false,
+        "fat": false,
+        "shift": false
+      },
+      "all_exact": false,
+      "validation_ok": false,
+      "plausible_wrong": false,
+      "reask": true,
+      "flags": [
+        "member_missing",
+        "litres_missing",
+        "fat_missing",
+        "shift_missing"
+      ],
+      "wer": 0.7778,
+      "asr_ms": 470,
+      "wall_ms": 471.9,
+      "audio_s": 10.25
+    },
+    {
+      "clip": "b23",
+      "condition": "0 dB",
+      "scene": "fan_cans",
+      "arm": "mitigated",
+      "chain": "bandlimit 260-3500 Hz + spectral gate",
+      "transcript": "வணக்கம், லிட்டர் .விடுயிற்றி spotted",
+      "slots": {},
+      "gt": {
+        "member_id": 156,
+        "litres": 1.0,
+        "fat": 6.9,
+        "shift": "morning"
+      },
+      "matches": {
+        "member_id": false,
+        "litres": false,
+        "fat": false,
+        "shift": false
+      },
+      "all_exact": false,
+      "validation_ok": false,
+      "plausible_wrong": false,
+      "reask": true,
+      "flags": [
+        "member_missing",
+        "litres_missing",
+        "fat_missing",
+        "shift_missing"
+      ],
+      "wer": 0.8148,
+      "asr_ms": 9103,
+      "wall_ms": 9104.9,
+      "audio_s": 10.25
+    },
+    {
+      "clip": "b24",
+      "condition": "5 dB",
+      "scene": "society_hall",
+      "arm": "raw",
+      "chain": "raw",
+      "transcript": "நம்பர் 156. ரெண்டு லிட்டர். இல்லை, இரண்டு ரை லிட்டர். ஃபேட் மூன்று பாயின் மூன்று. ஈவினின் ஷிஃப்ட்.",
+      "slots": {
+        "member_id": 156,
+        "litres": 2.0,
+        "fat": 3.3,
+        "shift": "evening"
+      },
+      "gt": {
+        "member_id": 156,
+        "litres": 2.5,
+        "fat": 3.3,
+        "shift": "evening"
+      },
+      "matches": {
+        "member_id": true,
+        "litres": false,
+        "fat": true,
+        "shift": true
+      },
+      "all_exact": false,
+      "validation_ok": true,
+      "plausible_wrong": true,
+      "reask": false,
+      "flags": [],
+      "wer": 0.4211,
+      "asr_ms": 1084,
+      "wall_ms": 1085.3,
+      "audio_s": 13.3
+    },
+    {
+      "clip": "b24",
+      "condition": "5 dB",
+      "scene": "society_hall",
+      "arm": "mitigated",
+      "chain": "bandlimit 260-3500 Hz + spectral gate",
+      "transcript": "நம்பர் 156. ரெண்டு லிட்டர். இல்லை, ரெண்டரை லிட்டர். ஃபேட் மூன்று பாயின் மூன்று. ஈவினின் ஷிஃப்ட்.",
+      "slots": {
+        "member_id": 156,
+        "litres": 2.5,
+        "fat": 3.3,
+        "shift": "evening"
+      },
+      "gt": {
+        "member_id": 156,
+        "litres": 2.5,
+        "fat": 3.3,
+        "shift": "evening"
+      },
+      "matches": {
+        "member_id": true,
+        "litres": true,
+        "fat": true,
+        "shift": true
+      },
+      "all_exact": true,
+      "validation_ok": true,
+      "plausible_wrong": false,
+      "reask": false,
+      "flags": [],
+      "wer": 0.3421,
+      "asr_ms": 1028,
+      "wall_ms": 1029.7,
+      "audio_s": 13.3
+    },
+    {
+      "clip": "b24",
+      "condition": "0 dB",
+      "scene": "society_hall",
+      "arm": "raw",
+      "chain": "raw",
+      "transcript": "நம்பர் 156. ரெண்டு லிட்டர். இல்லை, இரண்டுரை லிட்டர். ஸேக் மூன்று பாயின் மூன்று. ஈவினின் ஷிஃப்ட்.",
+      "slots": {
+        "member_id": 156,
+        "litres": 2.0,
+        "fat": 3.3,
+        "shift": "evening"
+      },
+      "gt": {
+        "member_id": 156,
+        "litres": 2.5,
+        "fat": 3.3,
+        "shift": "evening"
+      },
+      "matches": {
+        "member_id": true,
+        "litres": false,
+        "fat": true,
+        "shift": true
+      },
+      "all_exact": false,
+      "validation_ok": true,
+      "plausible_wrong": true,
+      "reask": false,
+      "flags": [],
+      "wer": 0.4737,
+      "asr_ms": 1038,
+      "wall_ms": 1039.5,
+      "audio_s": 13.3
+    },
+    {
+      "clip": "b24",
+      "condition": "0 dB",
+      "scene": "society_hall",
+      "arm": "mitigated",
+      "chain": "bandlimit 260-3500 Hz + spectral gate",
+      "transcript": "நம்பர் 156. ரெண்டு லிட்டர். இல்லை, ரெண்டரை லிட்டர். ஃபேட் மூன்று பாயின் மூன்று. ஈவினின் ஷிக்ட்.",
+      "slots": {
+        "member_id": 156,
+        "litres": 2.5,
+        "fat": 3.3,
+        "shift": "evening"
+      },
+      "gt": {
+        "member_id": 156,
+        "litres": 2.5,
+        "fat": 3.3,
+        "shift": "evening"
+      },
+      "matches": {
+        "member_id": true,
+        "litres": true,
+        "fat": true,
+        "shift": true
+      },
+      "all_exact": true,
+      "validation_ok": true,
+      "plausible_wrong": false,
+      "reask": false,
+      "flags": [],
+      "wer": 0.3684,
+      "asr_ms": 1107,
+      "wall_ms": 1108.3,
+      "audio_s": 13.3
+    }
+  ]
+}

@@ -1,0 +1,404 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>PaalKural · line console</title>
+<meta name="description" content="A noise-first Tamil voice ledger for a milk collection society. Synthetic demo.">
+<link rel="stylesheet" href="/static/fonts.css">
+<link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+<a class="skip" href="#main">Skip to the console</a>
+
+<header class="society-strip">
+  <div class="brand">
+    <span class="brand-ta">பால்குரல்</span>
+    <span class="brand-en">PAALKURAL</span>
+    <span class="brand-rule"></span>
+    <span class="brand-sub">line ledger</span>
+  </div>
+  <div class="society">
+    <strong>Kizhakku Colony Milk Society</strong>
+    <span id="shift-line">Morning shift · 10 Nov 2026</span>
+  </div>
+  <div class="status-cluster">
+    <span class="tag tag-ink" id="provider-chip">local demo</span>
+    <span class="tag tag-quiet">synthetic</span>
+    <span class="status-dot" id="health-dot" aria-hidden="true"></span>
+    <span class="status-text" id="health-text">checking engine</span>
+  </div>
+</header>
+
+<nav class="tabs" role="tablist" aria-label="Sections">
+  <button role="tab" aria-selected="true" aria-controls="panel-line" id="tab-line" class="tab is-on">
+    <span class="tab-kicker">01</span> Line
+  </button>
+  <button role="tab" aria-selected="false" aria-controls="panel-ledger" id="tab-ledger" class="tab">
+    <span class="tab-kicker">02</span> Ledger <span class="tab-count" id="ledger-count">3</span>
+  </button>
+  <button role="tab" aria-selected="false" aria-controls="panel-evidence" id="tab-evidence" class="tab">
+    <span class="tab-kicker">03</span> Evidence
+  </button>
+</nav>
+
+<main id="main">
+  <!-- ══════════════ LINE ══════════════ -->
+  <section id="panel-line" class="panel" role="tabpanel" aria-labelledby="tab-line">
+    <div class="line-intro">
+      <p class="eyebrow">Line console / கேட்பது</p>
+      <h1>Hear the pour. Read it back. Log it once.</h1>
+      <p class="dek">Tamil and Tanglish on a noisy society line. The operator confirms every entry; nothing lands in the ledger on the machine's word alone.</p>
+    </div>
+
+    <div class="line-grid">
+      <div class="line-col">
+        <div class="stage" id="stage">
+          <div class="stage-top">
+            <div>
+              <p class="stage-label">The line</p>
+              <p class="stage-condition" id="stage-condition">Society hall · 5 dB · synthetic clip</p>
+            </div>
+            <div class="stage-badge" id="stage-badge">idle</div>
+          </div>
+
+          <div class="wave-wrap">
+            <canvas id="wave" width="1200" height="240" aria-label="Audio waveform: raw line and processed audio"></canvas>
+            <div class="wave-legend">
+              <span><i class="key key-raw"></i> raw line</span>
+              <span><i class="key key-mit"></i> processed</span>
+              <span class="wave-time" id="wave-time"></span>
+            </div>
+            <div class="scan" id="scan" aria-hidden="true"></div>
+          </div>
+
+          <div class="stage-foot">
+            <div class="source-tabs" role="tablist" aria-label="Input source">
+              <button class="src is-on" data-src="clip" role="tab" aria-selected="true">Line clip</button>
+              <button class="src" data-src="mic" role="tab" aria-selected="false">Microphone</button>
+              <button class="src" data-src="typed" role="tab" aria-selected="false">Type</button>
+            </div>
+            <div class="latency-strip" id="latency-strip">
+              <span>ASR —</span><span>DSP —</span><span>readback —</span>
+            </div>
+          </div>
+
+          <div class="source-panel" id="src-clip">
+            <div class="clip-row">
+              <label class="field">
+                <span class="field-label">Synthetic line</span>
+                <select id="clip-select" class="control"></select>
+              </label>
+              <label class="field">
+                <span class="field-label">Scene</span>
+                <select id="scene-select" class="control">
+                  <option value="society_hall">Society hall — babble + cans</option>
+                  <option value="fan_cans">Fan + cans — hum + clatter</option>
+                  <option value="generator">Generator — 50 Hz harmonics</option>
+                </select>
+              </label>
+              <label class="field field-snr">
+                <span class="field-label">Line level</span>
+                <select id="snr-select" class="control">
+                  <option value="clean">Clean studio</option>
+                  <option value="15">15 dB</option>
+                  <option value="5" selected>5 dB</option>
+                  <option value="0">0 dB</option>
+                </select>
+              </label>
+            </div>
+            <div class="clip-action">
+              <button class="btn btn-primary" id="run-clip">
+                <span class="btn-dot"></span> Read this line
+              </button>
+              <p class="clip-scenario" id="clip-scenario">Speaker corrects the litres mid-sentence.</p>
+            </div>
+          </div>
+
+          <div class="source-panel" id="src-mic" hidden>
+            <div class="mic-row">
+              <button class="mic-btn" id="mic-btn" aria-pressed="false">
+                <span class="mic-glyph" aria-hidden="true"></span>
+                <span id="mic-label">Start listening</span>
+              </button>
+              <div class="mic-copy">
+                <p>Speak the society number, litres, fat and shift.</p>
+                <p class="muted">The browser sends 16 kHz PCM. Nothing is uploaded off this machine.</p>
+              </div>
+              <span class="mic-timer" id="mic-timer">0.0 s</span>
+            </div>
+          </div>
+
+          <div class="source-panel" id="src-typed" hidden>
+            <label class="field">
+              <span class="field-label">Type what the member said, in Tamil or Tanglish</span>
+              <textarea id="typed-text" class="control" rows="3" placeholder="உதா: நம்பர் 124. மூன்றரை லிட்டர். ஃபேட் நாலு பாயிண்ட் எட்டு. காலை."></textarea>
+            </label>
+            <div class="clip-action">
+              <button class="btn btn-primary" id="run-typed">Read typed entry</button>
+              <button class="btn btn-ghost" id="fill-typed">Use a sample</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="thread" aria-hidden="true">
+          <span class="thread-line"></span>
+          <span class="thread-node">hear</span>
+          <span class="thread-node">read back</span>
+          <span class="thread-node">log</span>
+        </div>
+
+        <div class="xray" id="xray">
+          <div class="xray-head">
+            <p class="eyebrow">Line x-ray</p>
+            <button class="link-btn" id="play-raw" disabled>Play raw</button>
+            <button class="link-btn" id="play-mit" disabled>Play processed</button>
+          </div>
+          <p class="xray-copy" id="xray-copy">A clip or recording will show the raw line against the processed signal here.</p>
+          <div class="xray-stages" id="xray-stages">
+            <span class="stage-chip">bandlimit 260–3500 Hz</span>
+            <span class="stage-chip">spectral gate</span>
+            <span class="stage-chip stage-chip-off">VAD trim — off</span>
+          </div>
+        </div>
+      </div>
+
+      <aside class="sheet-col" aria-label="Pour sheet">
+        <div class="sheet" id="sheet">
+          <div class="sheet-head">
+            <div>
+              <p class="eyebrow">Pour sheet / பால் சீட்டு</p>
+              <h2 id="sheet-title">No pour on the line</h2>
+            </div>
+            <span class="sheet-stamp" id="sheet-stamp">OPEN</span>
+          </div>
+
+          <div class="sheet-empty" id="sheet-empty">
+            <p>Play a synthetic clip, start the microphone, or type an entry.</p>
+            <p class="muted">The sheet fills with what the line heard. You decide whether it is true.</p>
+          </div>
+
+          <div class="sheet-body" id="sheet-body" hidden>
+            <div class="transcript-block">
+              <p class="field-label">Transcript</p>
+              <p class="transcript" id="transcript" lang="ta">—</p>
+              <p class="transcript-meta" id="transcript-meta"></p>
+            </div>
+
+            <dl class="slots" id="slots"></dl>
+
+            <div class="second-listen" id="second-listen" hidden>
+              <div class="second-head">
+                <p class="field-label">Second listen</p>
+                <span class="second-status" id="second-status">—</span>
+              </div>
+              <p class="second-copy" id="second-copy"></p>
+              <div class="second-slots" id="second-slots"></div>
+            </div>
+
+            <div class="readback">
+              <div class="readback-head">
+                <p class="field-label">Read back in Tamil</p>
+                <button class="link-btn" id="play-readback">Play</button>
+              </div>
+              <p class="readback-ta" id="readback-ta" lang="ta">—</p>
+              <p class="readback-en" id="readback-en">—</p>
+            </div>
+
+            <div class="flags" id="flags" hidden></div>
+
+            <div class="member-strip" id="member-strip" hidden>
+              <div class="member-id" id="member-id">—</div>
+              <div class="member-history" id="member-history"></div>
+            </div>
+
+            <div class="preview" id="preview" hidden>
+              <div><span class="field-label">Rate</span><strong id="preview-rate">—</strong></div>
+              <div><span class="field-label">Amount</span><strong id="preview-amount">—</strong></div>
+              <p class="preview-note">Illustrative chart: ₹24 + ₹4 per fat point.</p>
+            </div>
+
+            <div class="sheet-actions" id="sheet-actions">
+              <button class="btn btn-primary" id="confirm-btn">Confirm &amp; log</button>
+              <button class="btn btn-ghost" id="edit-btn">Edit values</button>
+              <button class="btn btn-quiet" id="reask-btn">Re-ask</button>
+            </div>
+            <p class="sheet-note" id="sheet-note">Confirming writes one entry with an audit hash.</p>
+          </div>
+
+          <div class="receipt" id="receipt" hidden>
+            <p class="eyebrow">Logged</p>
+            <h2 id="receipt-title">Pour logged</h2>
+            <div class="receipt-lines" id="receipt-lines"></div>
+            <div class="sheet-actions">
+              <a class="btn btn-primary" id="receipt-link" href="#" target="_blank" rel="noopener">Open receipt</a>
+              <button class="btn btn-ghost" id="next-pour">Next pour</button>
+            </div>
+          </div>
+
+          <p class="sheet-error" id="sheet-error" role="alert" hidden></p>
+        </div>
+      </aside>
+    </div>
+  </section>
+
+  <!-- ══════════════ LEDGER ══════════════ -->
+  <section id="panel-ledger" class="panel" role="tabpanel" aria-labelledby="tab-ledger" hidden>
+    <div class="ledger-head">
+      <div>
+        <p class="eyebrow">Day book / பால் பேரேடு</p>
+        <h1>The society's pour ledger.</h1>
+        <p class="dek">Every row is a confirmed readback. Seed rows are marked synthetic; open a receipt for the voice transcript and audit hash. <a class="ledger-export" href="/api/ledger.csv" download>Export the day book (CSV)</a></p>
+      </div>
+      <div class="daybook-totals" id="daybook-totals"></div>
+    </div>
+    <div class="ledger-wrap">
+      <table class="ledger-table">
+        <thead>
+          <tr><th>Receipt</th><th>Time</th><th>Member</th><th>Shift</th><th class="num">Litres</th><th class="num">Fat</th><th class="num">Rate</th><th class="num">Amount</th><th>Source</th></tr>
+        </thead>
+        <tbody id="ledger-body"></tbody>
+      </table>
+    </div>
+    <p class="ledger-note" id="ledger-note">All members, pours and prices are synthetic. Illustrative rate chart only.</p>
+  </section>
+
+  <!-- ══════════════ EVIDENCE ══════════════ -->
+  <section id="panel-evidence" class="panel" role="tabpanel" aria-labelledby="tab-evidence" hidden>
+    <div class="evidence-head">
+      <p class="eyebrow">Evidence lab / ஆய்வு</p>
+      <h1>What the line does, and what it does not.</h1>
+      <p class="dek">The frozen benchmark holds the ASR fixed and changes only the front-end. The live provider check reruns the same matrix through Gnani Prisma. Every number comes from this machine, not a slide.</p>
+    </div>
+
+    <div id="evidence-empty" class="evidence-empty" hidden>
+      <p class="old-note">No evidence run found.</p>
+      <p>Run <code>python tools/benchmark.py</code> to produce <code>data/benchmark.json</code>. The console works without it.</p>
+    </div>
+
+    <div id="evidence-run" hidden>
+      <blockquote class="claim" id="claim"></blockquote>
+
+      <div class="provider-card" id="provider-card" hidden>
+        <div class="provider-head">
+          <div>
+            <p class="eyebrow">Second book · live provider check</p>
+            <p class="provider-copy" id="provider-copy"></p>
+          </div>
+          <span class="tag tag-live" id="provider-tag">Gnani Prisma v3.0</span>
+        </div>
+        <div class="provider-rows" id="provider-rows"></div>
+        <p class="provider-note" id="provider-note"></p>
+      </div>
+
+      <div class="evidence-grid">
+        <div class="chart-card">
+          <div class="chart-head">
+            <p class="eyebrow">All four slots exact</p>
+            <p class="chart-legend"><span><i class="key key-raw"></i> raw</span><span><i class="key key-mit"></i> processed</span></p>
+          </div>
+          <svg id="chart" viewBox="0 0 560 260" role="img" aria-label="Bar chart comparing exact slot match for raw and processed audio"></svg>
+          <p class="chart-note" id="chart-note"></p>
+        </div>
+        <div class="cells-card">
+          <p class="eyebrow">Cells</p>
+          <div id="cells"></div>
+        </div>
+      </div>
+
+      <div class="policy-card" id="policy-card" hidden>
+        <div class="policy-head">
+          <div>
+            <p class="eyebrow">The shipped line listens twice</p>
+            <p class="policy-copy" id="policy-copy"></p>
+          </div>
+          <span class="tag tag-ink">two-path gate</span>
+        </div>
+        <div class="policy-rows" id="policy-rows"></div>
+      </div>
+
+      <div class="evidence-table-wrap">
+        <table class="evidence-table">
+          <thead><tr><th>Condition</th><th>Arm</th><th class="num">Exact</th><th class="num">95% CI</th><th class="num">WER</th><th class="num">Gate pass</th><th class="num">Would auto-log wrong</th><th class="num">ASR p50</th></tr></thead>
+          <tbody id="evidence-body"></tbody>
+        </table>
+      </div>
+
+      <p class="caveats" id="caveats"></p>
+    </div>
+
+    <div class="replay">
+      <div class="replay-head">
+        <div>
+          <p class="eyebrow">Replay one line</p>
+          <h2>Put a clip on the stand.</h2>
+        </div>
+        <p class="muted">This runs the configured ASR live. It does not touch the ledger.</p>
+      </div>
+      <div class="replay-controls">
+        <label class="field"><span class="field-label">Clip</span><select id="replay-clip" class="control"></select></label>
+        <label class="field"><span class="field-label">Line level</span>
+          <select id="replay-snr" class="control">
+            <option value="clean">Clean studio</option><option value="15">15 dB</option><option value="5" selected>5 dB</option><option value="0">0 dB</option>
+          </select>
+        </label>
+        <label class="field"><span class="field-label">Arm</span>
+          <select id="replay-arm" class="control"><option value="mitigated" selected>Processed</option><option value="raw">Raw</option></select>
+        </label>
+        <button class="btn btn-primary" id="run-replay">Run replay</button>
+      </div>
+      <div class="replay-result" id="replay-result" hidden>
+        <div class="replay-transcript">
+          <p class="field-label">Transcript</p>
+          <p id="replay-text" lang="ta">—</p>
+          <p class="transcript-meta" id="replay-meta"></p>
+        </div>
+        <div class="replay-diff" id="replay-diff"></div>
+      </div>
+    </div>
+
+    <div class="method">
+      <p class="eyebrow">Method</p>
+      <p>SNR is active-speech RMS divided by noise RMS, set before an 8 kHz μ-law roundtrip. Noise is synthesized per scene and seeded once, so both arms hear the identical line. The conditioned arm applies a 260–3500 Hz bandlimit and a spectral gate; the raw arm is untouched. Slot exact means member, litres, fat and shift all match the authored script. “Would auto-log wrong” is a parse that passes every deterministic gate but is still wrong — the reason the readback exists.</p>
+      <p>The shipped line does not choose one arm. It decodes both, pre-fills only when the two parses agree on all four values (or exactly one validates), and sends every other turn to readback or re-ask. The two-path table is scored from the same runs; it adds no third decode, and every entry still needs an operator confirmation.</p>
+      <p>The live provider check is a separate run of the same 24 × 4 × 2 matrix through Gnani Prisma v3.0. It is not merged into the frozen benchmark or its claim. Prisma returns Tanglish, so WER against the Tamil scripts is not comparable; slot exactness and the gate are the metrics reported.</p>
+      <p id="environment-line" class="muted"></p>
+    </div>
+  </section>
+</main>
+
+<footer class="integrity">
+  <div class="integrity-inner">
+    <p class="integrity-title">Integrity strip</p>
+    <ul>
+      <li><strong>Synthetic voices and names.</strong> No real farmers, phone numbers, Aadhaar, PAN or account numbers.</li>
+      <li id="integrity-provider"><strong>Provider mode comes from the running server.</strong> The frozen benchmark is a local faster-whisper run; a live Gnani provider check is reported separately in Evidence.</li>
+      <li><strong>Our clips, our benchmark.</strong> Every number is from 24 authored clips; no field data, no bought engagement.</li>
+    </ul>
+    <p class="integrity-sign">PaalKural · built for the Great Indian AI Internship Challenge · 2026</p>
+  </div>
+</footer>
+
+<dialog id="edit-dialog" class="edit-dialog">
+  <form method="dialog" id="edit-form">
+    <p class="eyebrow">Correct the sheet</p>
+    <h2>Edit the four slots</h2>
+    <label class="field"><span class="field-label">Member</span><select id="edit-member" class="control"></select></label>
+    <div class="edit-grid">
+      <label class="field"><span class="field-label">Litres</span><input id="edit-litres" class="control" type="number" step="0.1" min="0.2" max="20"></label>
+      <label class="field"><span class="field-label">Fat %</span><input id="edit-fat" class="control" type="number" step="0.1" min="2.5" max="9"></label>
+    </div>
+    <label class="field"><span class="field-label">Shift</span>
+      <select id="edit-shift" class="control"><option value="morning">Morning</option><option value="evening">Evening</option></select>
+    </label>
+    <p class="edit-note">Corrections are stored with the entry and change the audit hash.</p>
+    <div class="sheet-actions">
+      <button class="btn btn-primary" id="edit-save" type="button">Save &amp; log</button>
+      <button class="btn btn-ghost" id="edit-cancel" type="button">Cancel</button>
+    </div>
+  </form>
+</dialog>
+
+<script src="/static/app.js"></script>
+</body>
+</html>

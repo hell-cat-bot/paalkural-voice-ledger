@@ -1,0 +1,310 @@
+[
+ {
+  "model": "large-v3-turbo",
+  "condition": "clean",
+  "chain": "raw",
+  "clip": "b02",
+  "exact": false,
+  "pred": {
+   "fat": 5.1,
+   "shift": "evening"
+  },
+  "ms": 669,
+  "text": "நம்பர் லிட்டர் ஐந்து பாயங்ட் ஒன்றே சாயங்காலம்"
+ },
+ {
+  "model": "large-v3-turbo",
+  "condition": "clean",
+  "chain": "raw",
+  "clip": "b04",
+  "exact": false,
+  "pred": {
+   "member_id": 108,
+   "litres": 4.0,
+   "shift": "evening"
+  },
+  "ms": 379,
+  "text": "நம்பர் நூற்று எட்டு நாலு லிட்டர். கேட்டார். ஈவனின் ஶிப்ட்"
+ },
+ {
+  "model": "large-v3-turbo",
+  "condition": "clean",
+  "chain": "raw",
+  "clip": "b06",
+  "exact": false,
+  "pred": {
+   "fat": 5.5
+  },
+  "ms": 355,
+  "text": "மூன்றை லிட்டர் பால். ஐந்து பாயண்ட் ஐந்து சாயங்தாலம்."
+ },
+ {
+  "model": "large-v3-turbo",
+  "condition": "clean",
+  "chain": "raw",
+  "clip": "b07",
+  "exact": false,
+  "pred": {},
+  "ms": 2880,
+  "text": "நம்பர், ஒன் ஒன் ந designation 거죠"
+ },
+ {
+  "model": "large-v3-turbo",
+  "condition": "clean",
+  "chain": "raw",
+  "clip": "b09",
+  "exact": false,
+  "pred": {
+   "member_id": 124,
+   "litres": 3.0,
+   "fat": 4.8,
+   "shift": "morning"
+  },
+  "ms": 419,
+  "text": "நம்பர். 124. மூனு லிட்டர். எல்லையில் மூன்றை லிட்டர். வேட்ட நாலு பாய்யண்ட் எட்டு. காலை."
+ },
+ {
+  "model": "large-v3-turbo",
+  "condition": "clean",
+  "chain": "raw",
+  "clip": "b11",
+  "exact": false,
+  "pred": {
+   "member_id": 127,
+   "fat": 3.9,
+   "shift": "morning"
+  },
+  "ms": 363,
+  "text": "நம்பர். 127. நானரை லிட்டர். பேட் மோனு பாய்யண்ட் ஒன்பது. மார்னிங்"
+ },
+ {
+  "model": "large-v3-turbo",
+  "condition": "clean",
+  "chain": "raw",
+  "clip": "b16",
+  "exact": false,
+  "pred": {
+   "member_id": 137,
+   "litres": 5.0
+  },
+  "ms": 354,
+  "text": "நம்பர் 137. 5 லிட்டர் பால். ஫ேட் மோனுப் பாயண்ட் ஏகு இவனிங்"
+ },
+ {
+  "model": "large-v3-turbo",
+  "condition": "clean",
+  "chain": "raw",
+  "clip": "b23",
+  "exact": false,
+  "pred": {
+   "member_id": 156,
+   "litres": 1.0,
+   "fat": 9.0,
+   "shift": "morning"
+  },
+  "ms": 366,
+  "text": "நம்பர். 156. ஒரு லிட்டர் பால். டேட் ஆரு பாய்ன்ட் ஒன்பது. மார்னிங்"
+ },
+ {
+  "model": "large-v3-turbo",
+  "condition": "5 dB",
+  "chain": "raw",
+  "clip": "b02",
+  "exact": false,
+  "pred": {
+   "member_id": 101
+  },
+  "ms": 1621,
+  "text": "நம்பர் 101 முனுதிர் பேட்டையின் தயம்காலம்"
+ },
+ {
+  "model": "large-v3-turbo",
+  "condition": "5 dB",
+  "chain": "raw",
+  "clip": "b04",
+  "exact": false,
+  "pred": {
+   "member_id": 108,
+   "litres": 4.0,
+   "shift": "evening"
+  },
+  "ms": 373,
+  "text": "நம்பர் நூற்று எட்டு நால் லிட்டர். ட்ரேட் தார். ஈவனின் ஶிப்ட்"
+ },
+ {
+  "model": "large-v3-turbo",
+  "condition": "5 dB",
+  "chain": "raw",
+  "clip": "b06",
+  "exact": false,
+  "pred": {},
+  "ms": 3035,
+  "text": "நம்பர், ஓன் ஓன் ஊன் ஓன் லைட்டர் பார் கேட்டங்க ஓன் யன் டை நிம் டைம் ஜாக்காலம்"
+ },
+ {
+  "model": "large-v3-turbo",
+  "condition": "5 dB",
+  "chain": "raw",
+  "clip": "b07",
+  "exact": false,
+  "pred": {
+   "litres": 0.5,
+   "shift": "morning"
+  },
+  "ms": 381,
+  "text": "நம்பர் ஓன் ஓன் நேன் அரை லிட்டர். ஐட் ஆரு பாயன் ஏட்டு மார்னிங்"
+ },
+ {
+  "model": "large-v3-turbo",
+  "condition": "5 dB",
+  "chain": "raw",
+  "clip": "b09",
+  "exact": false,
+  "pred": {
+   "member_id": 124,
+   "fat": 4.8,
+   "shift": "morning"
+  },
+  "ms": 403,
+  "text": "நம்பர். 1, 2, 4. மூனு திட்டர். இல்லை இல்லை மூன் தரை திட்டர். தேட் நாலு பாயன் எட்டு காலை"
+ },
+ {
+  "model": "large-v3-turbo",
+  "condition": "5 dB",
+  "chain": "raw",
+  "clip": "b11",
+  "exact": false,
+  "pred": {
+   "fat": 3.9
+  },
+  "ms": 329,
+  "text": "நாதரை லிகர் பேட் மோனு பாயன் ஒன்பது. மார்னி"
+ },
+ {
+  "model": "large-v3-turbo",
+  "condition": "5 dB",
+  "chain": "raw",
+  "clip": "b16",
+  "exact": false,
+  "pred": {
+   "member_id": 100,
+   "litres": 5.5,
+   "fat": 3.7
+  },
+  "ms": 437,
+  "text": "நம்பர் நூற்று முப்பத்திர்கு. ஐந்தரை லிட்டர் பால். வேட் மூனு பாய்ன் ஏகு. ஈவனிங்"
+ },
+ {
+  "model": "large-v3-turbo",
+  "condition": "5 dB",
+  "chain": "raw",
+  "clip": "b23",
+  "exact": false,
+  "pred": {
+   "member_id": 156
+  },
+  "ms": 383,
+  "text": "நம்பர் 156. ஊடலிக்கர்பார். கேட்டாரு பாகின் ஒன்பது. மார்னின்"
+ },
+ {
+  "model": "large-v3-turbo",
+  "condition": "5 dB",
+  "chain": "band+gate",
+  "clip": "b02",
+  "exact": false,
+  "pred": {
+   "member_id": 101
+  },
+  "ms": 2674,
+  "text": "நம்பர் 101 முன்திறேன் பேட்டைந்த பாயன் உன்னின் தேர்ப்பாய்ன் புதித்துவிட்டும் பேட்டும் காய்ங்கள் காலம் சிவுவிட்டும்."
+ },
+ {
+  "model": "large-v3-turbo",
+  "condition": "5 dB",
+  "chain": "band+gate",
+  "clip": "b04",
+  "exact": true,
+  "pred": {
+   "member_id": 108,
+   "litres": 4.0,
+   "fat": 6.0,
+   "shift": "evening"
+  },
+  "ms": 361,
+  "text": "நம்பர் நூற்று எட்டு நாலு லிட்டர் டேட் ஆறு ஈவனின் ஶிப்ட்"
+ },
+ {
+  "model": "large-v3-turbo",
+  "condition": "5 dB",
+  "chain": "band+gate",
+  "clip": "b06",
+  "exact": false,
+  "pred": {
+   "fat": 5.0
+  },
+  "ms": 2528,
+  "text": "நம்பர் ஓன் ஓன் ரிரி லிட்டர் பால். சேர்க்கிறேன். ஐந்து பாய்கிறேன். ஐந்தேன்."
+ },
+ {
+  "model": "large-v3-turbo",
+  "condition": "5 dB",
+  "chain": "band+gate",
+  "clip": "b07",
+  "exact": false,
+  "pred": {
+   "litres": 0.5,
+   "fat": 8.0,
+   "shift": "morning"
+  },
+  "ms": 394,
+  "text": "நம்பர் ஓன் ஓன் நேன் அரை லிட்டர் பேட் ஆரு பாயன் எட்டு மார்னிங்"
+ },
+ {
+  "model": "large-v3-turbo",
+  "condition": "5 dB",
+  "chain": "band+gate",
+  "clip": "b09",
+  "exact": false,
+  "pred": {
+   "fat": 4.8,
+   "shift": "morning"
+  },
+  "ms": 395,
+  "text": "மூனு திட்டர். இல்லை இல்லை மூன்றை திட்டர். தேர் நாலு பாயன் எட்டு காலை"
+ },
+ {
+  "model": "large-v3-turbo",
+  "condition": "5 dB",
+  "chain": "band+gate",
+  "clip": "b11",
+  "exact": false,
+  "pred": {},
+  "ms": 358,
+  "text": "நம்பர். நாதரை லிகர் பேட் முனுப்பாயன் உன்பது மார்னி"
+ },
+ {
+  "model": "large-v3-turbo",
+  "condition": "5 dB",
+  "chain": "band+gate",
+  "clip": "b16",
+  "exact": false,
+  "pred": {
+   "member_id": 100,
+   "litres": 5.5
+  },
+  "ms": 430,
+  "text": "நம்பர் நூற்று முப்பத்திற்கு ஐந்தரை லிட்டர் பால் ஐய்வினின்"
+ },
+ {
+  "model": "large-v3-turbo",
+  "condition": "5 dB",
+  "chain": "band+gate",
+  "clip": "b23",
+  "exact": false,
+  "pred": {
+   "member_id": 156
+  },
+  "ms": 385,
+  "text": "நம்பர். 156. ஓடலிக்கர்பார். கேட்டாருபாயின் ஒன்பது. மார்நின்"
+ }
+]

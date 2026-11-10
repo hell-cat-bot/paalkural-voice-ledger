@@ -1,0 +1,707 @@
+[
+ {
+  "clip": "b01",
+  "cond": "clean",
+  "arm": "raw",
+  "score": "4/4",
+  "valid": true,
+  "lat": 5220,
+  "slots": {
+   "member_id": 101,
+   "litres": 2.0,
+   "fat": 4.5,
+   "shift": "morning"
+  },
+  "text": "சொசைட்டி நம்பர் 101. இரண்டி லிட்டர் பால். ஹேட் நாளு பாய்ந்த ஐந்தே. காலை ஷிஃப்ட்."
+ },
+ {
+  "clip": "b01",
+  "cond": "clean",
+  "arm": "band",
+  "score": "4/4",
+  "valid": true,
+  "lat": 3469,
+  "slots": {
+   "member_id": 101,
+   "litres": 2.0,
+   "fat": 4.5,
+   "shift": "morning"
+  },
+  "text": "சொசைட்டி நம்பர் 101. இரண்டி லிட்டர் பால். பெயர் நாளு பாய்ந்த ஐந்தே. காலை ஷிஃப்ட்."
+ },
+ {
+  "clip": "b01",
+  "cond": "clean",
+  "arm": "band+gate",
+  "score": "4/4",
+  "valid": true,
+  "lat": 3592,
+  "slots": {
+   "member_id": 101,
+   "litres": 2.0,
+   "fat": 4.5,
+   "shift": "morning"
+  },
+  "text": "சொசைட்டி நம்பர் 101. இரண்டி லிட்டர் பால். பெயர் நாளு பாய்ந்த ஐந்தே. காலை ஷிஃப்ட்."
+ },
+ {
+  "clip": "b01",
+  "cond": "clean",
+  "arm": "band+vad",
+  "score": "2/4",
+  "valid": false,
+  "lat": 3642,
+  "slots": {
+   "member_id": 101,
+   "litres": 2.0
+  },
+  "text": "சொசைட்டி நம்பர் 101. இரண்டி லிட்டர் பால்."
+ },
+ {
+  "clip": "b01",
+  "cond": "clean",
+  "arm": "full",
+  "score": "2/4",
+  "valid": false,
+  "lat": 3574,
+  "slots": {
+   "member_id": 101,
+   "litres": 2.0
+  },
+  "text": "சொசைட்டி நம்பர் 101. இரண்டி லிட்டர் பால்."
+ },
+ {
+  "clip": "b01",
+  "cond": "5dB",
+  "arm": "raw",
+  "score": "4/4",
+  "valid": true,
+  "lat": 3598,
+  "slots": {
+   "member_id": 101,
+   "litres": 2.0,
+   "fat": 4.5,
+   "shift": "morning"
+  },
+  "text": "சொசைட்டி நம்பர் 101. ரெந்திலிக்கர் பால். பேட் நாளு பாய்யின் ஐந்தே. காலை ஷிஃப்ட்."
+ },
+ {
+  "clip": "b01",
+  "cond": "5dB",
+  "arm": "band",
+  "score": "4/4",
+  "valid": true,
+  "lat": 3574,
+  "slots": {
+   "member_id": 101,
+   "litres": 2.0,
+   "fat": 4.5,
+   "shift": "morning"
+  },
+  "text": "சொசைட்டி நம்பர் 101. ரெண்டி நிக்கர் பால். பேட் நாளு பாய்யின் ஐந்தே. காலை ஷிஃப்ட்."
+ },
+ {
+  "clip": "b01",
+  "cond": "5dB",
+  "arm": "band+gate",
+  "score": "4/4",
+  "valid": true,
+  "lat": 3651,
+  "slots": {
+   "member_id": 101,
+   "litres": 2.0,
+   "fat": 4.5,
+   "shift": "morning"
+  },
+  "text": "சொசைட்டி நம்பர் 101. ரெந்திலிக்கர் பால். பேட் நாளு பாய்யும் ஐந்தே. காலை ஊஷிர்."
+ },
+ {
+  "clip": "b01",
+  "cond": "5dB",
+  "arm": "band+vad",
+  "score": "1/4",
+  "valid": false,
+  "lat": 3687,
+  "slots": {
+   "member_id": 101
+  },
+  "text": "சொசைட்டி நம்பர் 101."
+ },
+ {
+  "clip": "b01",
+  "cond": "5dB",
+  "arm": "full",
+  "score": "4/4",
+  "valid": true,
+  "lat": 3414,
+  "slots": {
+   "member_id": 101,
+   "litres": 2.0,
+   "fat": 4.5,
+   "shift": "morning"
+  },
+  "text": "சொசைட்டி நம்பர் 101. ரெந்திலிக்கர் பால். பேட் நாளு பாய்யும் ஐந்தே. காலை ஊஷிர்."
+ },
+ {
+  "clip": "b01",
+  "cond": "0dB",
+  "arm": "raw",
+  "score": "3/4",
+  "valid": false,
+  "lat": 4049,
+  "slots": {
+   "member_id": 101,
+   "fat": 4.5,
+   "shift": "morning"
+  },
+  "text": "சொசைட்டி நம்பர் 101. ரெந்து நிக்சர் பார். செய்த்த நாளு பாய்யின் அய்ந்தே. காலை ஷிஃப்ட்."
+ },
+ {
+  "clip": "b01",
+  "cond": "0dB",
+  "arm": "band",
+  "score": "3/4",
+  "valid": false,
+  "lat": 3734,
+  "slots": {
+   "member_id": 101,
+   "fat": 4.5,
+   "shift": "morning"
+  },
+  "text": "சொசைட்டி நம்பர் 101. ரெந்து நிக்சர் பார். செய்து நாளு பாய்யின் அய்ந்தே. காலை ஷிஃப்ட்."
+ },
+ {
+  "clip": "b01",
+  "cond": "0dB",
+  "arm": "band+gate",
+  "score": "3/4",
+  "valid": false,
+  "lat": 3780,
+  "slots": {
+   "member_id": 101,
+   "fat": 4.5,
+   "shift": "morning"
+  },
+  "text": "சொசைட்டி நம்பர் 101. ரெந்து நிக்சர் பார். செய்து நாளு பாய்யின் ஐந்தே. காலை சித்தி."
+ },
+ {
+  "clip": "b01",
+  "cond": "0dB",
+  "arm": "band+vad",
+  "score": "1/4",
+  "valid": false,
+  "lat": 3704,
+  "slots": {
+   "member_id": 101
+  },
+  "text": "சொசைட்டி நம்பர் 101."
+ },
+ {
+  "clip": "b01",
+  "cond": "0dB",
+  "arm": "full",
+  "score": "3/4",
+  "valid": false,
+  "lat": 3484,
+  "slots": {
+   "member_id": 101,
+   "fat": 4.5,
+   "shift": "morning"
+  },
+  "text": "சொசைட்டி நம்பர் 101. ரெந்து நிக்சர் பார். செய்து நாளு பாய்யின் ஐந்தே. காலை சித்தி."
+ },
+ {
+  "clip": "b09",
+  "cond": "clean",
+  "arm": "raw",
+  "score": "1/4",
+  "valid": false,
+  "lat": 3742,
+  "slots": {
+   "litres": 3.0,
+   "shift": "morning"
+  },
+  "text": "நம்பர். மூன்று லிட்டர். இல்லை இல்லை மூன்று லிட்டர். காலை."
+ },
+ {
+  "clip": "b09",
+  "cond": "clean",
+  "arm": "band",
+  "score": "3/4",
+  "valid": false,
+  "lat": 3881,
+  "slots": {
+   "member_id": 124,
+   "litres": 3.5,
+   "shift": "morning"
+  },
+  "text": "நம்பர். 1, 2, 4. மூன்று லிட்டர். இல்லை இல்லை மூன்றுறை லிட்டர். காலை."
+ },
+ {
+  "clip": "b09",
+  "cond": "clean",
+  "arm": "band+gate",
+  "score": "3/4",
+  "valid": true,
+  "lat": 3766,
+  "slots": {
+   "member_id": 124,
+   "litres": 3.5,
+   "fat": 4.0,
+   "shift": "morning"
+  },
+  "text": "நம்பர். 1, 2, 4. மூன்று லிட்டர். இல்லை இல்லை மூன்றுறை லிட்டர். ஏற்று நாளு பாயன்ட் ஏட்டு. காலை."
+ },
+ {
+  "clip": "b09",
+  "cond": "clean",
+  "arm": "band+vad",
+  "score": "3/4",
+  "valid": false,
+  "lat": 3500,
+  "slots": {
+   "member_id": 124,
+   "litres": 3.5,
+   "shift": "morning"
+  },
+  "text": "நம்பர். 1, 2, 4. மூன்று லிட்டர். இல்லை இல்லை மூன்றுறை லிட்டர். காலை."
+ },
+ {
+  "clip": "b09",
+  "cond": "clean",
+  "arm": "full",
+  "score": "1/4",
+  "valid": false,
+  "lat": 2575,
+  "slots": {
+   "litres": 3.0,
+   "shift": "morning"
+  },
+  "text": "நம்பர். மூன்று லிட்டர். இல்லை இல்லை மூன்று லிட்டர். காலை."
+ },
+ {
+  "clip": "b09",
+  "cond": "5dB",
+  "arm": "raw",
+  "score": "2/4",
+  "valid": false,
+  "lat": 2886,
+  "slots": {
+   "litres": 3.0,
+   "fat": 4.8,
+   "shift": "morning"
+  },
+  "text": "நம்பர். ஒன்று கோல். மூன்று லிட்டர். இல்லை இல்லை மூன்று லிட்டர். தேட் நாலு பாயின் ஏட்டே. காலை."
+ },
+ {
+  "clip": "b09",
+  "cond": "5dB",
+  "arm": "band",
+  "score": "2/4",
+  "valid": false,
+  "lat": 2356,
+  "slots": {
+   "litres": 3.0,
+   "fat": 4.8,
+   "shift": "morning"
+  },
+  "text": "மூன்று விட்டர். இல்லை இல்லை மூன்று விட்டர். தேட் நாளு பாயின் ஏட்டே. காலை."
+ },
+ {
+  "clip": "b09",
+  "cond": "5dB",
+  "arm": "band+gate",
+  "score": "2/4",
+  "valid": false,
+  "lat": 2290,
+  "slots": {
+   "litres": 3.5,
+   "fat": 4.0,
+   "shift": "morning"
+  },
+  "text": "நம்பர் 1, 2, 4, 3 விட்டர். இல்லை இல்லை மூன்றுறை விட்டர். தேட் 4, 5, 8, காலை."
+ },
+ {
+  "clip": "b09",
+  "cond": "5dB",
+  "arm": "band+vad",
+  "score": "2/4",
+  "valid": false,
+  "lat": 2434,
+  "slots": {
+   "litres": 3.0,
+   "fat": 4.8,
+   "shift": "morning"
+  },
+  "text": "மூன்று விட்டர். இல்லை இல்லை மூன்று விட்டர். தேட் நாளு பாயன் ஏட்டே. காலை."
+ },
+ {
+  "clip": "b09",
+  "cond": "5dB",
+  "arm": "full",
+  "score": "2/4",
+  "valid": false,
+  "lat": 2364,
+  "slots": {
+   "litres": 3.5,
+   "fat": 4.0,
+   "shift": "morning"
+  },
+  "text": "நம்பர் 1, 2, 4, 3 விட்டர். இல்லை இல்லை மூன்றுறை விட்டர். தேட் 4, 5, 8, காலை."
+ },
+ {
+  "clip": "b09",
+  "cond": "0dB",
+  "arm": "raw",
+  "score": "1/4",
+  "valid": false,
+  "lat": 3772,
+  "slots": {
+   "litres": 3.0,
+   "fat": 4.0,
+   "shift": "morning"
+  },
+  "text": "நம்பர். ஒன்று கோல். மூன்று லிட்டர். இல்லை இல்லை. மூன்று லிட்டர். தேட் நாளு பாயின் லிட்டர். காலை."
+ },
+ {
+  "clip": "b09",
+  "cond": "0dB",
+  "arm": "band",
+  "score": "1/4",
+  "valid": false,
+  "lat": 3924,
+  "slots": {
+   "litres": 3.0,
+   "fat": 4.0,
+   "shift": "morning"
+  },
+  "text": "நம்பர் ஒன்று கோர். மூன்று விட்டர். இல்லை இல்லை மூன்று விட்டர். சேர் நாலும் பாயின் விட்டேன். காலை."
+ },
+ {
+  "clip": "b09",
+  "cond": "0dB",
+  "arm": "band+gate",
+  "score": "1/4",
+  "valid": false,
+  "lat": 3753,
+  "slots": {
+   "litres": 3.0,
+   "fat": 4.0,
+   "shift": "morning"
+  },
+  "text": "நம்பர் ஒன்றுக்கும் மூன்று விட்டர் இல்லை இல்லை மூன்று லிட்டர் தேட் நாலும் பாய்யின் நிற்றே காலை"
+ },
+ {
+  "clip": "b09",
+  "cond": "0dB",
+  "arm": "band+vad",
+  "score": "1/4",
+  "valid": false,
+  "lat": 3902,
+  "slots": {
+   "litres": 3.0,
+   "shift": "morning"
+  },
+  "text": "நம்பர். ஒன்று கோர். மூன்று விட்டேன். இல்லை இல்லை. மூன்று விட்டேன். சேர்நாலும் பாய்யின் நிற்றேன். காலை."
+ },
+ {
+  "clip": "b09",
+  "cond": "0dB",
+  "arm": "full",
+  "score": "1/4",
+  "valid": false,
+  "lat": 3873,
+  "slots": {
+   "litres": 3.0,
+   "fat": 4.0,
+   "shift": "morning"
+  },
+  "text": "நம்பர் ஒன்றுக்கும் மூன்று விட்டர் இல்லை இல்லை மூன்று லிட்டர் தேட் நாலும் பாய்யின் நிற்றே காலை"
+ },
+ {
+  "clip": "b24",
+  "cond": "clean",
+  "arm": "raw",
+  "score": "4/4",
+  "valid": true,
+  "lat": 3646,
+  "slots": {
+   "member_id": 156,
+   "litres": 2.5,
+   "fat": 3.3,
+   "shift": "evening"
+  },
+  "text": "நம்பர் 156. ரெண்டு லிட்டர். இல்லை, ரெண்டரை லிட்டர். ஷெய்ட் மோனோ, பாய்யன்ட் மோனோ. ஏவனின்..."
+ },
+ {
+  "clip": "b24",
+  "cond": "clean",
+  "arm": "band",
+  "score": "4/4",
+  "valid": true,
+  "lat": 3637,
+  "slots": {
+   "member_id": 156,
+   "litres": 2.5,
+   "fat": 3.3,
+   "shift": "evening"
+  },
+  "text": "நம்பர் 156. ரெண்டு லிட்டர். இல்லை, இரண்டரை லிட்டர். செய்ட் மூன்னு, பாய்யன்ட் மூன்னு. ஏவனின்..."
+ },
+ {
+  "clip": "b24",
+  "cond": "clean",
+  "arm": "band+gate",
+  "score": "3/4",
+  "valid": false,
+  "lat": 3948,
+  "slots": {
+   "member_id": 156,
+   "fat": 3.3,
+   "shift": "evening"
+  },
+  "text": "நம்பர் 156. ரெண்டிலிட்டர. இல்லை, ரெண்டரை லிட்டர. செய்ட் மூன்னு, பாய்யன்ட் மூன்னு. ஏவனின்..."
+ },
+ {
+  "clip": "b24",
+  "cond": "clean",
+  "arm": "band+vad",
+  "score": "4/4",
+  "valid": true,
+  "lat": 3541,
+  "slots": {
+   "member_id": 156,
+   "litres": 2.5,
+   "fat": 3.3,
+   "shift": "evening"
+  },
+  "text": "நம்பர் 156. ரெண்டு லிட்டர். இல்லை, ரெண்டரை லிட்டர். ஹேட் மோனோ, பாயன்ட் மோனோ. ஏவனின்..."
+ },
+ {
+  "clip": "b24",
+  "cond": "clean",
+  "arm": "full",
+  "score": "4/4",
+  "valid": true,
+  "lat": 3790,
+  "slots": {
+   "member_id": 156,
+   "litres": 2.5,
+   "fat": 3.3,
+   "shift": "evening"
+  },
+  "text": "நம்பர் 156. இரண்டு லிட்டர். இல்லை, இரண்டரை லிட்டர். ஷெய்ட் மோனோ, பாயன்ட் மோனோ. ஏவனின்..."
+ },
+ {
+  "clip": "b24",
+  "cond": "5dB",
+  "arm": "raw",
+  "score": "4/4",
+  "valid": true,
+  "lat": 3716,
+  "slots": {
+   "member_id": 156,
+   "litres": 2.5,
+   "fat": 3.3,
+   "shift": "evening"
+  },
+  "text": "நம்பர் 156. இரண்டிலிட்டார். இல்லை, இரண்டிரை லிட்டார். பேட் மூன்று, பாயன் மூன்று. இவனி."
+ },
+ {
+  "clip": "b24",
+  "cond": "5dB",
+  "arm": "band",
+  "score": "4/4",
+  "valid": true,
+  "lat": 3409,
+  "slots": {
+   "member_id": 156,
+   "litres": 2.5,
+   "fat": 3.3,
+   "shift": "evening"
+  },
+  "text": "நம்பர் 156. இரண்டு லிட்டர். இல்லை, இரண்டரை லிட்டர். பேட் மோனு, பாயன் மோனு, இவனி."
+ },
+ {
+  "clip": "b24",
+  "cond": "5dB",
+  "arm": "band+gate",
+  "score": "4/4",
+  "valid": true,
+  "lat": 3573,
+  "slots": {
+   "member_id": 156,
+   "litres": 2.5,
+   "fat": 3.3,
+   "shift": "evening"
+  },
+  "text": "நம்பர் 156. இரண்டு லிட்டர். இல்லை, இரண்டரை லிட்டர். பேட் மோனோ, பாயன் மோனோ. இவனி."
+ },
+ {
+  "clip": "b24",
+  "cond": "5dB",
+  "arm": "band+vad",
+  "score": "4/4",
+  "valid": true,
+  "lat": 3570,
+  "slots": {
+   "member_id": 156,
+   "litres": 2.5,
+   "fat": 3.3,
+   "shift": "evening"
+  },
+  "text": "நம்பர் 156. இரண்டிலிட்டார். இல்லை, இரண்டிரை லிட்டார். பேட் மூன்னு, பாயன் மூன்னு, இவனி."
+ },
+ {
+  "clip": "b24",
+  "cond": "5dB",
+  "arm": "full",
+  "score": "4/4",
+  "valid": true,
+  "lat": 3462,
+  "slots": {
+   "member_id": 156,
+   "litres": 2.5,
+   "fat": 3.3,
+   "shift": "evening"
+  },
+  "text": "நம்பர் 156. இரண்டு லிட்டர். இல்லை, இரண்டரை லிட்டர். பேட் மோனோ, பாயன் மோனோ. இவனி."
+ },
+ {
+  "clip": "b24",
+  "cond": "0dB",
+  "arm": "raw",
+  "score": "2/4",
+  "valid": false,
+  "lat": 3689,
+  "slots": {
+   "litres": 2.0,
+   "fat": 3.3,
+   "shift": "evening"
+  },
+  "text": "நம்பர் ஒன்பாயிற்கு. இரண்டிலிக்கார். இல்லை, இரண்டிலிக்கார். பேச் மோனு, வாயின் மோனு. இவனி."
+ },
+ {
+  "clip": "b24",
+  "cond": "0dB",
+  "arm": "band",
+  "score": "3/4",
+  "valid": false,
+  "lat": 4164,
+  "slots": {
+   "litres": 2.5,
+   "fat": 3.3,
+   "shift": "evening"
+  },
+  "text": "நம்பர் ஒன்பாயில் சிறித்தி. இரண்டு நிக்கிறேன். இல்லை, இரண்டரை நிக்கிறேன். பேச் மூன்று வாயின் மூன்று. இவனி."
+ },
+ {
+  "clip": "b24",
+  "cond": "0dB",
+  "arm": "band+gate",
+  "score": "3/4",
+  "valid": false,
+  "lat": 3617,
+  "slots": {
+   "member_id": 156,
+   "litres": 2.5,
+   "fat": 1.1,
+   "shift": "evening"
+  },
+  "text": "நம்பர் 156. இரண்டு லிக்கர். இல்லை, இரண்டரை லிக்கர். பேட் ஓனு, பாயின் ஓனு. இவனி."
+ },
+ {
+  "clip": "b24",
+  "cond": "0dB",
+  "arm": "band+vad",
+  "score": "3/4",
+  "valid": false,
+  "lat": 3797,
+  "slots": {
+   "member_id": 156,
+   "litres": 2.5,
+   "fat": 3.3
+  },
+  "text": "நம்பர் 156. ரெண்டு லிக்கார். இல்லை, ரெண்டரை லிக்கார். பேச் மூன்று வாயின் மூன்று."
+ },
+ {
+  "clip": "b24",
+  "cond": "0dB",
+  "arm": "full",
+  "score": "3/4",
+  "valid": false,
+  "lat": 3443,
+  "slots": {
+   "member_id": 156,
+   "litres": 2.5,
+   "fat": 1.1,
+   "shift": "evening"
+  },
+  "text": "நம்பர் 156. இரண்டு லிக்கர். இல்லை, இரண்டரை லிக்கர். பேட் ஓனு, பாயின் ஓனு. இவனி."
+ },
+ {
+  "clip": "d03",
+  "cond": "clean",
+  "arm": "raw",
+  "score": "3/4",
+  "valid": false,
+  "lat": 2463,
+  "slots": {
+   "member_id": 124,
+   "shift": "morning"
+  },
+  "text": "நம்பர். 1, 2, 4. ஒன்றை லிட்டர். காலை ஷிஃப்ட்."
+ },
+ {
+  "clip": "d03",
+  "cond": "clean",
+  "arm": "band",
+  "score": "3/4",
+  "valid": false,
+  "lat": 2534,
+  "slots": {
+   "member_id": 124,
+   "shift": "morning"
+  },
+  "text": "நம்பர். 1, 2, 4. ஒன்றை லிட்டர். காலை ஷிஃப்ட்."
+ },
+ {
+  "clip": "d03",
+  "cond": "clean",
+  "arm": "band+gate",
+  "score": "3/4",
+  "valid": false,
+  "lat": 2576,
+  "slots": {
+   "member_id": 124,
+   "shift": "morning"
+  },
+  "text": "நம்பர். 1, 2, 4. ஒன்றை லிட்டர். காலை ஷிஃப்ட்."
+ },
+ {
+  "clip": "d03",
+  "cond": "clean",
+  "arm": "band+vad",
+  "score": "3/4",
+  "valid": false,
+  "lat": 2640,
+  "slots": {
+   "member_id": 124,
+   "shift": "morning"
+  },
+  "text": "நம்பர் 124. ஒன்றை லிட்டர். காலை ஷிஃப்ட."
+ },
+ {
+  "clip": "d03",
+  "cond": "clean",
+  "arm": "full",
+  "score": "3/4",
+  "valid": false,
+  "lat": 2512,
+  "slots": {
+   "member_id": 124,
+   "shift": "morning"
+  },
+  "text": "நம்பர். 124. ஒன்றை லிட்டர். காலை ஷிஃப்ட."
+ }
+]

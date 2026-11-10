@@ -1,0 +1,488 @@
+{
+ "generated_at": "2026-11-10T18:01:20+05:30",
+ "status": "partial",
+ "provider": {
+  "name": "Gnani Prisma v3.0 · live API",
+  "model": "prisma-v3.0",
+  "endpoint": "POST https://api.vachana.ai/stt/v3",
+  "key": "participant-supplied, not logged",
+  "tts": "Gnani Timbre v2.5 (live, smoke-tested separately)"
+ },
+ "synthetic": true,
+ "n_per_cell": 2,
+ "cells": 8,
+ "errors": [],
+ "elapsed_s": 7.8,
+ "environment": {
+  "asr": {
+   "model": "Gnani Prisma v3.0 · live API",
+   "compute": "",
+   "device": "",
+   "beam_size": 5,
+   "language": "ta",
+   "initial_prompt": "சொசைட்டி நம்பர். லிட்டர். ஃபேட். ஷிஃப்ட்.",
+   "temperature": "0.0 with fallback through 1.0; default compression-ratio and log-prob gates"
+  },
+  "tts": "Gnani Timbre v2.5 (live, not used for scoring)",
+  "chain": "band+gate",
+  "snr_definition": "active-speech RMS / noise RMS, measured per clip before the 8 kHz mu-law roundtrip",
+  "fixtures": {
+   "count": 24,
+   "voice": "ta-IN-ValluvarNeural",
+   "rate": "-18%",
+   "source": "Microsoft Edge TTS, synthetic Tamil/Tanglish scripts",
+   "seeds": 17
+  },
+  "machine": {
+   "platform": "Windows-11-10.0.26200-SP0",
+   "processor": "Intel64 Family 6 Model 183 Stepping 1, GenuineIntel",
+   "python": "3.12.10"
+  }
+ },
+ "summary": {
+  "clips": 2,
+  "cells": [
+   {
+    "condition": "clean",
+    "arm": "raw",
+    "n": 2,
+    "exact": 2,
+    "exact_pct": 100.0,
+    "exact_ci95": [
+     34.2,
+     100.0
+    ],
+    "validation_pct": 100.0,
+    "plausible_wrong": 0,
+    "plausible_wrong_pct": 0.0,
+    "reask_pct": 0.0,
+    "wer_pct": 46.2,
+    "asr_ms_avg": 756,
+    "asr_ms_p50": 756,
+    "slot_pct": {
+     "member_id": 100.0,
+     "litres": 100.0,
+     "fat": 100.0,
+     "shift": 100.0
+    }
+   },
+   {
+    "condition": "clean",
+    "arm": "mitigated",
+    "n": 2,
+    "exact": 2,
+    "exact_pct": 100.0,
+    "exact_ci95": [
+     34.2,
+     100.0
+    ],
+    "validation_pct": 100.0,
+    "plausible_wrong": 0,
+    "plausible_wrong_pct": 0.0,
+    "reask_pct": 0.0,
+    "wer_pct": 58.3,
+    "asr_ms_avg": 696,
+    "asr_ms_p50": 696,
+    "slot_pct": {
+     "member_id": 100.0,
+     "litres": 100.0,
+     "fat": 100.0,
+     "shift": 100.0
+    }
+   },
+   {
+    "condition": "5 dB",
+    "arm": "raw",
+    "n": 2,
+    "exact": 1,
+    "exact_pct": 50.0,
+    "exact_ci95": [
+     9.5,
+     90.5
+    ],
+    "validation_pct": 50.0,
+    "plausible_wrong": 0,
+    "plausible_wrong_pct": 0.0,
+    "reask_pct": 50.0,
+    "wer_pct": 69.3,
+    "asr_ms_avg": 785,
+    "asr_ms_p50": 785,
+    "slot_pct": {
+     "member_id": 100.0,
+     "litres": 100.0,
+     "fat": 100.0,
+     "shift": 50.0
+    }
+   },
+   {
+    "condition": "5 dB",
+    "arm": "mitigated",
+    "n": 2,
+    "exact": 2,
+    "exact_pct": 100.0,
+    "exact_ci95": [
+     34.2,
+     100.0
+    ],
+    "validation_pct": 100.0,
+    "plausible_wrong": 0,
+    "plausible_wrong_pct": 0.0,
+    "reask_pct": 0.0,
+    "wer_pct": 64.4,
+    "asr_ms_avg": 751,
+    "asr_ms_p50": 751,
+    "slot_pct": {
+     "member_id": 100.0,
+     "litres": 100.0,
+     "fat": 100.0,
+     "shift": 100.0
+    }
+   }
+  ],
+  "deltas": {
+   "clean": {
+    "exact_delta_pp": 0.0,
+    "wer_delta_pp": 12.1
+   },
+   "5 dB": {
+    "exact_delta_pp": 50.0,
+    "wer_delta_pp": -4.9
+   }
+  }
+ },
+ "policy": {
+  "definition": "Both raw and conditioned decodes are parsed. The sheet is pre-filled when both validate to the same four values, or when exactly one validates; otherwise the turn goes to readback or re-ask.",
+  "derived": true,
+  "cells": [
+   {
+    "condition": "clean",
+    "n": 2,
+    "agree": 2,
+    "disagree": 0,
+    "raw_only": 0,
+    "mit_only": 0,
+    "none": 0,
+    "accepted": 2,
+    "exact": 2,
+    "plausible_wrong": 0,
+    "reask": 0,
+    "exact_pct": 100.0,
+    "exact_ci95": [
+     34.2,
+     100.0
+    ],
+    "accepted_pct": 100.0
+   },
+   {
+    "condition": "5 dB",
+    "n": 2,
+    "agree": 1,
+    "disagree": 0,
+    "raw_only": 0,
+    "mit_only": 1,
+    "none": 0,
+    "accepted": 2,
+    "exact": 2,
+    "plausible_wrong": 0,
+    "reask": 0,
+    "exact_pct": 100.0,
+    "exact_ci95": [
+     34.2,
+     100.0
+    ],
+    "accepted_pct": 100.0
+   }
+  ]
+ },
+ "claim": "Provider check incomplete; no claim is made from it.",
+ "caveats": [
+  "Live provider check only; the shipped 192-run benchmark and its claim remain the local faster-whisper run.",
+  "24 synthetic TTS clips per condition; no field or real-farmer audio.",
+  "Prisma returns Tanglish; the slot compiler is applied unchanged, so exactness measures parse+validation, not raw verbatim ASR.",
+  "WER against the Tamil reference is script-mismatched and is not a headline metric for this arm.",
+  "Calls are metered and were made with a participant-supplied key; no key material is stored in this file."
+ ],
+ "runs": [
+  {
+   "clip": "b09",
+   "condition": "clean",
+   "scene": "society_hall",
+   "arm": "raw",
+   "chain": "raw",
+   "transcript": "நம்பர் one two four மூணு லிட்டர் இல்லை இல்லை மூன்றரை லிட்டர் date நாலு point எட்டு காலை.",
+   "slots": {
+    "member_id": 124,
+    "litres": 3.5,
+    "fat": 4.8,
+    "shift": "morning"
+   },
+   "gt": {
+    "member_id": 124,
+    "litres": 3.5,
+    "fat": 4.8,
+    "shift": "morning"
+   },
+   "matches": {
+    "member_id": true,
+    "litres": true,
+    "fat": true,
+    "shift": true
+   },
+   "all_exact": true,
+   "validation_ok": true,
+   "plausible_wrong": false,
+   "reask": false,
+   "flags": [],
+   "wer": 0.303,
+   "asr_ms": 815,
+   "wall_ms": 814.8,
+   "audio_s": null
+  },
+  {
+   "clip": "b09",
+   "condition": "clean",
+   "scene": "society_hall",
+   "arm": "mitigated",
+   "chain": "bandlimit 260-3500 Hz + spectral gate",
+   "transcript": "number one two four மூணு litre, இல்லை இல்லை, மூன்றரை litre. date நாலு point எட்டு காலை.",
+   "slots": {
+    "member_id": 124,
+    "litres": 3.5,
+    "fat": 4.8,
+    "shift": "morning"
+   },
+   "gt": {
+    "member_id": 124,
+    "litres": 3.5,
+    "fat": 4.8,
+    "shift": "morning"
+   },
+   "matches": {
+    "member_id": true,
+    "litres": true,
+    "fat": true,
+    "shift": true
+   },
+   "all_exact": true,
+   "validation_ok": true,
+   "plausible_wrong": false,
+   "reask": false,
+   "flags": [],
+   "wer": 0.5455,
+   "asr_ms": 724,
+   "wall_ms": 724.0,
+   "audio_s": null
+  },
+  {
+   "clip": "b09",
+   "condition": "5 dB",
+   "scene": "society_hall",
+   "arm": "raw",
+   "chain": "raw",
+   "transcript": "number one two four, மூணு liter, என்ன என்ன, மூன்றரை liter. page நாலு point எட்டு கானை.",
+   "slots": {
+    "member_id": 124,
+    "litres": 3.5,
+    "fat": 4.8
+   },
+   "gt": {
+    "member_id": 124,
+    "litres": 3.5,
+    "fat": 4.8,
+    "shift": "morning"
+   },
+   "matches": {
+    "member_id": true,
+    "litres": true,
+    "fat": true,
+    "shift": false
+   },
+   "all_exact": false,
+   "validation_ok": false,
+   "plausible_wrong": false,
+   "reask": true,
+   "flags": [
+    "shift_missing"
+   ],
+   "wer": 0.697,
+   "asr_ms": 761,
+   "wall_ms": 760.8,
+   "audio_s": null
+  },
+  {
+   "clip": "b09",
+   "condition": "5 dB",
+   "scene": "society_hall",
+   "arm": "mitigated",
+   "chain": "bandlimit 260-3500 Hz + spectral gate",
+   "transcript": "number one two four, மூணு liter, என்ன என்ன, மூன்றரை liter. பேக் நாலு point எட்டு காலை.",
+   "slots": {
+    "member_id": 124,
+    "litres": 3.5,
+    "fat": 4.8,
+    "shift": "morning"
+   },
+   "gt": {
+    "member_id": 124,
+    "litres": 3.5,
+    "fat": 4.8,
+    "shift": "morning"
+   },
+   "matches": {
+    "member_id": true,
+    "litres": true,
+    "fat": true,
+    "shift": true
+   },
+   "all_exact": true,
+   "validation_ok": true,
+   "plausible_wrong": false,
+   "reask": false,
+   "flags": [],
+   "wer": 0.6667,
+   "asr_ms": 770,
+   "wall_ms": 770.2,
+   "audio_s": null
+  },
+  {
+   "clip": "b12",
+   "condition": "clean",
+   "scene": "society_hall",
+   "arm": "raw",
+   "chain": "raw",
+   "transcript": "number one two seven, மூணு லிட்டர் பால் fat நாலு point. நாலு evening shift.",
+   "slots": {
+    "member_id": 127,
+    "litres": 3.0,
+    "fat": 4.4,
+    "shift": "evening"
+   },
+   "gt": {
+    "member_id": 127,
+    "litres": 3.0,
+    "fat": 4.4,
+    "shift": "evening"
+   },
+   "matches": {
+    "member_id": true,
+    "litres": true,
+    "fat": true,
+    "shift": true
+   },
+   "all_exact": true,
+   "validation_ok": true,
+   "plausible_wrong": false,
+   "reask": false,
+   "flags": [],
+   "wer": 0.6207,
+   "asr_ms": 697,
+   "wall_ms": 697.0,
+   "audio_s": null
+  },
+  {
+   "clip": "b12",
+   "condition": "clean",
+   "scene": "society_hall",
+   "arm": "mitigated",
+   "chain": "bandlimit 260-3500 Hz + spectral gate",
+   "transcript": "number one two seven, மூணு லிட்டர் பால் fat நாலு point. நாலு evening shift.",
+   "slots": {
+    "member_id": 127,
+    "litres": 3.0,
+    "fat": 4.4,
+    "shift": "evening"
+   },
+   "gt": {
+    "member_id": 127,
+    "litres": 3.0,
+    "fat": 4.4,
+    "shift": "evening"
+   },
+   "matches": {
+    "member_id": true,
+    "litres": true,
+    "fat": true,
+    "shift": true
+   },
+   "all_exact": true,
+   "validation_ok": true,
+   "plausible_wrong": false,
+   "reask": false,
+   "flags": [],
+   "wer": 0.6207,
+   "asr_ms": 669,
+   "wall_ms": 669.6,
+   "audio_s": null
+  },
+  {
+   "clip": "b12",
+   "condition": "5 dB",
+   "scene": "society_hall",
+   "arm": "raw",
+   "chain": "raw",
+   "transcript": "number one two seven மூணு liter பால் pack நாலு பாயன். நாலு evening shift.",
+   "slots": {
+    "member_id": 127,
+    "litres": 3.0,
+    "fat": 4.4,
+    "shift": "evening"
+   },
+   "gt": {
+    "member_id": 127,
+    "litres": 3.0,
+    "fat": 4.4,
+    "shift": "evening"
+   },
+   "matches": {
+    "member_id": true,
+    "litres": true,
+    "fat": true,
+    "shift": true
+   },
+   "all_exact": true,
+   "validation_ok": true,
+   "plausible_wrong": false,
+   "reask": false,
+   "flags": [],
+   "wer": 0.6897,
+   "asr_ms": 809,
+   "wall_ms": 808.5,
+   "audio_s": null
+  },
+  {
+   "clip": "b12",
+   "condition": "5 dB",
+   "scene": "society_hall",
+   "arm": "mitigated",
+   "chain": "bandlimit 260-3500 Hz + spectral gate",
+   "transcript": "number one two seven, மூணு litre பால், pack நாலு பாயின்ட். நாலு evening shift.",
+   "slots": {
+    "member_id": 127,
+    "litres": 3.0,
+    "fat": 4.4,
+    "shift": "evening"
+   },
+   "gt": {
+    "member_id": 127,
+    "litres": 3.0,
+    "fat": 4.4,
+    "shift": "evening"
+   },
+   "matches": {
+    "member_id": true,
+    "litres": true,
+    "fat": true,
+    "shift": true
+   },
+   "all_exact": true,
+   "validation_ok": true,
+   "plausible_wrong": false,
+   "reask": false,
+   "flags": [],
+   "wer": 0.6207,
+   "asr_ms": 732,
+   "wall_ms": 732.2,
+   "audio_s": null
+  }
+ ]
+}

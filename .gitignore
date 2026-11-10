@@ -1,0 +1,16 @@
+.env.txt
+.env
+__pycache__/
+*.pyc
+data/*.log
+data/turns/
+data/tts/
+data/tmp/
+.tmp/
+.tools-fonts.css
+video/audio/*.mp3
+video/videos/
+video/out/m*.mp4
+video/out/concat.txt
+video/diag/
+.tools/
